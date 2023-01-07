@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>login_Form</class>
+ <widget class="QWidget" name="login_Form">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -112,7 +112,7 @@ background-color: rgb(246, 211, 45,0);</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_2">
+         <widget class="QLineEdit" name="password_lin">
           <property name="minimumSize">
            <size>
             <width>441</width>
@@ -157,7 +157,7 @@ background-color: rgb(246, 211, 45,0);</string>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit">
+         <widget class="QLineEdit" name="username_lin">
           <property name="minimumSize">
            <size>
             <width>441</width>
@@ -248,12 +248,12 @@ QPushButton:hover {
          <enum>Qt::Vertical</enum>
         </property>
         <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
+         <enum>QSizePolicy::Preferred</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>120</height>
+          <height>90</height>
          </size>
         </property>
        </spacer>
@@ -281,12 +281,12 @@ QPushButton:hover {
          <enum>Qt::Vertical</enum>
         </property>
         <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
+         <enum>QSizePolicy::Maximum</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>40</height>
+          <height>50</height>
          </size>
         </property>
        </spacer>
