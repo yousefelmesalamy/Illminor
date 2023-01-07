@@ -12,7 +12,7 @@ class Illminor(QtWidgets.QStackedWidget):
         self.login_manger = Login_Manager()
 
 
-        #self.showFullScreen()
+        self.showFullScreen()
 
 
         # add widgets to the stack
