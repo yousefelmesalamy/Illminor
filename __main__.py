@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
-from views_mangers.loginView_manger import Login_Manager
+from views_mangers.loginView_Manager import Login_Manager
 import sys
 
 from PyQt5.QtGui import QImage, QPixmap
