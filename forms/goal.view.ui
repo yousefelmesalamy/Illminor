@@ -88,7 +88,7 @@ background-postion:calc(100% - 10px) center;
           </property>
           <property name="icon">
            <iconset resource="app_resources.qrc">
-            <normaloff>:/ICONS/icons/doctor.png</normaloff>:/ICONS/icons/doctor.png</iconset>
+            <normaloff>:/ICONS/icons/aa.png</normaloff>:/ICONS/icons/aa.png</iconset>
           </property>
           <property name="iconSize">
            <size>

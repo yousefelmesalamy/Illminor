@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1134</width>
-    <height>702</height>
+    <height>782</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,49 +17,15 @@
    <string notr="true">font-family:Ubuntu;
 font-size: 20px;</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_11">
-   <item row="0" column="0">
-    <widget class="QGroupBox" name="groupBox_3">
-     <property name="styleSheet">
-      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));</string>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_7">
-        <property name="minimumSize">
-         <size>
-          <width>606</width>
-          <height>605</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>606</width>
-          <height>605</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap resource="app_resources.qrc">:/ICONS/icons/LOGO.png</pixmap>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
+  <layout class="QGridLayout" name="gridLayout_3">
    <item row="0" column="1">
     <widget class="QGroupBox" name="groupBox">
+     <property name="maximumSize">
+      <size>
+       <width>720</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(18, 32, 62);
 background-color:rgb(239,243,252,255)</string>
@@ -348,7 +314,7 @@ padding-left:5px;
           </spacer>
          </item>
          <item row="0" column="2">
-          <widget class="QPushButton" name="login_pushbutton_3">
+          <widget class="QPushButton" name="login_pushbutton">
            <property name="minimumSize">
             <size>
              <width>150</width>
@@ -424,6 +390,52 @@ color:rgb(18,32,62,255);</string>
           </spacer>
          </item>
         </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="minimumSize">
+      <size>
+       <width>615</width>
+       <height>692</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="minimumSize">
+         <size>
+          <width>606</width>
+          <height>605</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>606</width>
+          <height>605</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="app_resources.qrc">:/ICONS/icons/LOGO.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
        </widget>
       </item>
      </layout>
