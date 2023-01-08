@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'forms/goal.view.ui'
+# Form implementation generated from reading ui file 'forms/goal_view.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -17,7 +17,7 @@ class Ui_Form(object):
         Form.resize(1050, 652)
         Form.setStyleSheet("font-family:Ubuntu;\n"
 "color: rgb(18, 32, 62);\n"
-"background-color:rgb(239,243,252,255)")
+"background-color: rgb(245, 246, 251);")
         self.gridLayout_2 = QtWidgets.QGridLayout(Form)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.label_3 = QtWidgets.QLabel(Form)
@@ -39,10 +39,10 @@ class Ui_Form(object):
         self.gridLayout.setObjectName("gridLayout")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.patient_pusbutton_2 = QtWidgets.QPushButton(self.frame)
-        self.patient_pusbutton_2.setMinimumSize(QtCore.QSize(200, 200))
-        self.patient_pusbutton_2.setMaximumSize(QtCore.QSize(150, 25656))
-        self.patient_pusbutton_2.setStyleSheet("QPushButton{\n"
+        self.doctor_btn = QtWidgets.QPushButton(self.frame)
+        self.doctor_btn.setMinimumSize(QtCore.QSize(200, 200))
+        self.doctor_btn.setMaximumSize(QtCore.QSize(150, 25656))
+        self.doctor_btn.setStyleSheet("QPushButton{\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));\n"
 "  border-radius: 25px;\n"
 "}\n"
@@ -53,14 +53,14 @@ class Ui_Form(object):
 "background-postion:calc(100% - 10px) center;\n"
 "}\n"
 "")
-        self.patient_pusbutton_2.setText("")
+        self.doctor_btn.setText("")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/ICONS/icons/aa.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.patient_pusbutton_2.setIcon(icon)
-        self.patient_pusbutton_2.setIconSize(QtCore.QSize(150, 150))
-        self.patient_pusbutton_2.setFlat(False)
-        self.patient_pusbutton_2.setObjectName("patient_pusbutton_2")
-        self.verticalLayout_2.addWidget(self.patient_pusbutton_2)
+        self.doctor_btn.setIcon(icon)
+        self.doctor_btn.setIconSize(QtCore.QSize(150, 150))
+        self.doctor_btn.setFlat(False)
+        self.doctor_btn.setObjectName("doctor_btn")
+        self.verticalLayout_2.addWidget(self.doctor_btn)
         self.label_4 = QtWidgets.QLabel(self.frame)
         font = QtGui.QFont()
         font.setFamily("Ubuntu")
@@ -73,10 +73,10 @@ class Ui_Form(object):
         self.gridLayout.addLayout(self.verticalLayout_2, 1, 3, 1, 1)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
-        self.patient_pusbutton = QtWidgets.QPushButton(self.frame)
-        self.patient_pusbutton.setMinimumSize(QtCore.QSize(200, 200))
-        self.patient_pusbutton.setMaximumSize(QtCore.QSize(150, 25656))
-        self.patient_pusbutton.setStyleSheet("QPushButton{\n"
+        self.patient_btn = QtWidgets.QPushButton(self.frame)
+        self.patient_btn.setMinimumSize(QtCore.QSize(200, 200))
+        self.patient_btn.setMaximumSize(QtCore.QSize(150, 25656))
+        self.patient_btn.setStyleSheet("QPushButton{\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));\n"
 "  border-radius: 25px;\n"
 "}\n"
@@ -87,14 +87,14 @@ class Ui_Form(object):
 "background-postion:calc(100% - 10px) center;\n"
 "}\n"
 "")
-        self.patient_pusbutton.setText("")
+        self.patient_btn.setText("")
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(":/ICONS/icons/user (1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.patient_pusbutton.setIcon(icon1)
-        self.patient_pusbutton.setIconSize(QtCore.QSize(150, 150))
-        self.patient_pusbutton.setFlat(False)
-        self.patient_pusbutton.setObjectName("patient_pusbutton")
-        self.verticalLayout.addWidget(self.patient_pusbutton)
+        self.patient_btn.setIcon(icon1)
+        self.patient_btn.setIconSize(QtCore.QSize(150, 150))
+        self.patient_btn.setFlat(False)
+        self.patient_btn.setObjectName("patient_btn")
+        self.verticalLayout.addWidget(self.patient_btn)
         self.label = QtWidgets.QLabel(self.frame)
         font = QtGui.QFont()
         font.setFamily("Ubuntu")
