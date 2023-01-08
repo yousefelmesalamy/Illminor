@@ -1,9 +1,12 @@
 <RCC>
   <qresource prefix="ICONS">
+    <file>icons/back-button.png</file>
+    <file>icons/message to pat.png</file>
     <file>icons/logo min.png</file>
     <file>icons/breast cancer text.png</file>
     <file>icons/diabetes text.png</file>
     <file>icons/parkinson text.png</file>
+    <file>icons/parkinson (1).png</file>
     <file>icons/heart text.png</file>
     <file>icons/brain text.png</file>
     <file>icons/logout.png</file>

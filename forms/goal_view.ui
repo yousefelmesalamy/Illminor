@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">font-family:Ubuntu;
 color: rgb(18, 32, 62);
-background-color:rgb(239,243,252,255)</string>
+background-color: rgb(245, 246, 251);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="1" column="1">
@@ -57,7 +57,7 @@ color:rgb(18,32,62,255);</string>
       <item row="1" column="3">
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QPushButton" name="patient_pusbutton_2">
+         <widget class="QPushButton" name="doctor_btn">
           <property name="minimumSize">
            <size>
             <width>200</width>
@@ -125,7 +125,7 @@ background-postion:calc(100% - 10px) center;
       <item row="1" column="1">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QPushButton" name="patient_pusbutton">
+         <widget class="QPushButton" name="patient_btn">
           <property name="minimumSize">
            <size>
             <width>200</width>

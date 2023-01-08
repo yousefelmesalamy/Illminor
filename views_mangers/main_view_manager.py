@@ -1,24 +1,19 @@
 from PyQt5 import QtWidgets , QtCore
-from views import goal_view
+from views import main_view
 import json
 import requests
 import os
-class Goal_Manager(QtWidgets.QWidget, goal_view.Ui_Form):
+class Main_Mnager(QtWidgets.QWidget, main_view.Ui_Form):
     loginAcceptedSignal = QtCore.pyqtSignal()
     def __init__(self):
-        super(Goal_Manager, self).__init__()
+        super(Main_Mnager, self).__init__()
         self.setupUi(self)
-
-        # self.login_btn.clicked.connect(self.handle_login)
-        # self.base_url = "https://saied.pythonanywhere.com/login/"
-        # self.userToken = ''
-
 
         self.loginAcceptedSignal.emit()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
-    w = Goal_Manager()
+    w = Main_Mnager()
     w.show()
     # app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     app.exec_()
