@@ -8,10 +8,10 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
     def __init__(self):
         super(Login_Manager, self).__init__()
         self.setupUi(self)
-
-        self.login_btn.clicked.connect(self.handle_login)
-        self.base_url = "https://saied.pythonanywhere.com/login/"
-        self.userToken = ''
+        #
+        # self.login_btn.clicked.connect(self.handle_login)
+        # self.base_url = "https://saied.pythonanywhere.com/login/"
+        # self.userToken = ''
 
 
     def handle_login(self):
@@ -55,7 +55,6 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
         self.password_lin.setText("")
 
 if __name__ == "__main__":
-    import qdarkstyle
     app = QtWidgets.QApplication([])
     w = Login_Manager()
     w.show()

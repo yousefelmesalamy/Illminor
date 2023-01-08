@@ -45,7 +45,7 @@ class Illminor(QtWidgets.QStackedWidget):
 
 
 if __name__ == "__main__":
-    import qdarkstyle
+
     app = QtWidgets.QApplication([])
     w = Illminor()
     w.show()
