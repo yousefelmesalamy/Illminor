@@ -1,7 +1,6 @@
 <RCC>
   <qresource prefix="ICONS">
     <file>icons/back-button.png</file>
-    <file>icons/message to pat.png</file>
     <file>icons/logo min.png</file>
     <file>icons/breast cancer text.png</file>
     <file>icons/diabetes text.png</file>
