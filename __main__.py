@@ -24,8 +24,9 @@ class Illminor(QtWidgets.QStackedWidget):
 
         # add widgets to the stack
         self.addWidget(self.login_manger) #0 done
-        self.addWidget(self.register_manager) #1
-        self.addWidget(self.goal_manager) #2
+        self.addWidget(self.goal_manager) #1
+        self.addWidget(self.register_manager) #2
+
         self.addWidget(self.main_manager) #3
         self.addWidget(self.parkinson_manager) #4
 
@@ -36,9 +37,10 @@ class Illminor(QtWidgets.QStackedWidget):
 
 
         #success screen
-        self.login_manger.signup_btn.clicked.connect(lambda :self.setCurrentIndex(2))
+        self.login_manger.signup_btn.clicked.connect(lambda :self.setCurrentIndex(1))
         self.register_manager.login_pushbutton.clicked.connect(lambda :self.setCurrentIndex(0))
-        self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(1))
+        self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(2))
+        self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
         self.login_manger.login_btn.clicked.connect(lambda :self.setCurrentIndex(3))
         self.main_manager.logout_btn.clicked.connect(lambda :self.setCurrentIndex(0))
         self.main_manager.parkinson_btn.clicked.connect(lambda :self.setCurrentIndex(4))

@@ -4,10 +4,8 @@ import json
 import requests
 import os
 
-
 class Parkinson_Mnager(QtWidgets.QWidget, parkinson_molde.Ui_Form):
     loginAcceptedSignal = QtCore.pyqtSignal()
-
     def __init__(self):
         super(Parkinson_Mnager, self).__init__()
         self.setupUi(self)
