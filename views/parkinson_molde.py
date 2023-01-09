@@ -65,24 +65,6 @@ class Ui_Form(object):
         self.label_15.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_15.setObjectName("label_15")
         self.gridLayout_3.addWidget(self.label_15, 8, 0, 1, 1)
-        self.HNR_lin = QtWidgets.QLineEdit(self.elements)
-        self.HNR_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.HNR_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.HNR_lin.setObjectName("HNR_lin")
-        self.gridLayout_3.addWidget(self.HNR_lin, 10, 1, 1, 1)
-        self.MDVP_Shimmer_dB_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_Shimmer_dB_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_Shimmer_dB_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_Shimmer_dB_lin.setObjectName("MDVP_Shimmer_dB_lin")
-        self.gridLayout_3.addWidget(self.MDVP_Shimmer_dB_lin, 0, 1, 1, 1)
         spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem3, 5, 1, 1, 1)
         self.label_17 = QtWidgets.QLabel(self.elements)
@@ -104,48 +86,12 @@ class Ui_Form(object):
         self.label_14.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_14.setObjectName("label_14")
         self.gridLayout_3.addWidget(self.label_14, 6, 0, 1, 1)
-        self.MDVP_APQ_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_APQ_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_APQ_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_APQ_lin.setObjectName("MDVP_APQ_lin")
-        self.gridLayout_3.addWidget(self.MDVP_APQ_lin, 8, 1, 1, 1)
-        self.Shimmer_DDA_lin = QtWidgets.QLineEdit(self.elements)
-        self.Shimmer_DDA_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.Shimmer_DDA_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.Shimmer_DDA_lin.setObjectName("Shimmer_DDA_lin")
-        self.gridLayout_3.addWidget(self.Shimmer_DDA_lin, 2, 1, 1, 1)
-        self.Shimmer_APQ5 = QtWidgets.QLineEdit(self.elements)
-        self.Shimmer_APQ5.setMinimumSize(QtCore.QSize(0, 49))
-        self.Shimmer_APQ5.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.Shimmer_APQ5.setObjectName("Shimmer_APQ5")
-        self.gridLayout_3.addWidget(self.Shimmer_APQ5, 6, 1, 1, 1)
         self.label_12 = QtWidgets.QLabel(self.elements)
         self.label_12.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_12.setObjectName("label_12")
         self.gridLayout_3.addWidget(self.label_12, 2, 0, 1, 1)
         spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem7, 11, 1, 1, 1)
-        self.PPE_lin = QtWidgets.QLineEdit(self.elements)
-        self.PPE_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.PPE_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.PPE_lin.setObjectName("PPE_lin")
-        self.gridLayout_3.addWidget(self.PPE_lin, 20, 1, 1, 1)
         spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem8, 3, 1, 1, 1)
         self.label_13 = QtWidgets.QLabel(self.elements)
@@ -165,15 +111,6 @@ class Ui_Form(object):
         self.label_18.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_18.setObjectName("label_18")
         self.gridLayout_3.addWidget(self.label_18, 14, 0, 1, 1)
-        self.spread2_lin = QtWidgets.QLineEdit(self.elements)
-        self.spread2_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.spread2_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.spread2_lin.setObjectName("spread2_lin")
-        self.gridLayout_3.addWidget(self.spread2_lin, 16, 1, 1, 1)
         self.label_20 = QtWidgets.QLabel(self.elements)
         self.label_20.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_20.setObjectName("label_20")
@@ -182,50 +119,201 @@ class Ui_Form(object):
         self.label_11.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_11.setObjectName("label_11")
         self.gridLayout_3.addWidget(self.label_11, 0, 0, 1, 1)
-        self.spread1_lin = QtWidgets.QLineEdit(self.elements)
-        self.spread1_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.spread1_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.spread1_lin.setObjectName("spread1_lin")
-        self.gridLayout_3.addWidget(self.spread1_lin, 14, 1, 1, 1)
         spacerItem11 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem11, 13, 1, 1, 1)
-        self.DFA_lin = QtWidgets.QLineEdit(self.elements)
-        self.DFA_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.DFA_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.DFA_lin.setObjectName("DFA_lin")
-        self.gridLayout_3.addWidget(self.DFA_lin, 12, 1, 1, 1)
-        self.Shimmer_APQ3 = QtWidgets.QLineEdit(self.elements)
-        self.Shimmer_APQ3.setMinimumSize(QtCore.QSize(0, 49))
-        self.Shimmer_APQ3.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.Shimmer_APQ3.setObjectName("Shimmer_APQ3")
-        self.gridLayout_3.addWidget(self.Shimmer_APQ3, 4, 1, 1, 1)
         self.label_19 = QtWidgets.QLabel(self.elements)
         self.label_19.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_19.setObjectName("label_19")
         self.gridLayout_3.addWidget(self.label_19, 16, 0, 1, 1)
-        self.D2_lin = QtWidgets.QLineEdit(self.elements)
-        self.D2_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.D2_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.D2_lin.setObjectName("D2_lin")
-        self.gridLayout_3.addWidget(self.D2_lin, 18, 1, 1, 1)
         spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_3.addItem(spacerItem12, 19, 1, 1, 1)
+        self.doubleSpinBox_11 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_11.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_11.setObjectName("doubleSpinBox_11")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_11, 0, 1, 1, 1)
+        self.doubleSpinBox_12 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_12.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_12.setObjectName("doubleSpinBox_12")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_12, 2, 1, 1, 1)
+        self.doubleSpinBox_13 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_13.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_13.setObjectName("doubleSpinBox_13")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_13, 4, 1, 1, 1)
+        self.doubleSpinBox_14 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_14.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_14.setObjectName("doubleSpinBox_14")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_14, 6, 1, 1, 1)
+        self.doubleSpinBox_15 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_15.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_15.setObjectName("doubleSpinBox_15")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_15, 8, 1, 1, 1)
+        self.doubleSpinBox_16 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_16.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_16.setObjectName("doubleSpinBox_16")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_16, 10, 1, 1, 1)
+        self.doubleSpinBox_17 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_17.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_17.setObjectName("doubleSpinBox_17")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_17, 12, 1, 1, 1)
+        self.doubleSpinBox_18 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_18.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_18.setObjectName("doubleSpinBox_18")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_18, 14, 1, 1, 1)
+        self.doubleSpinBox_19 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_19.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_19.setObjectName("doubleSpinBox_19")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_19, 16, 1, 1, 1)
+        self.doubleSpinBox_20 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_20.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_20.setObjectName("doubleSpinBox_20")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_20, 18, 1, 1, 1)
+        self.doubleSpinBox_21 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_21.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_21.setObjectName("doubleSpinBox_21")
+        self.gridLayout_3.addWidget(self.doubleSpinBox_21, 20, 1, 1, 1)
         self.gridLayout_4.addLayout(self.gridLayout_3, 0, 3, 1, 1)
         spacerItem13 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem13, 0, 2, 1, 1)
@@ -235,41 +323,14 @@ class Ui_Form(object):
         self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_3.setObjectName("label_3")
         self.gridLayout.addWidget(self.label_3, 0, 0, 1, 1)
-        self.RPDE_lin = QtWidgets.QLineEdit(self.elements)
-        self.RPDE_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.RPDE_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.RPDE_lin.setObjectName("RPDE_lin")
-        self.gridLayout.addWidget(self.RPDE_lin, 18, 1, 1, 1)
         self.label_21 = QtWidgets.QLabel(self.elements)
         self.label_21.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_21.setObjectName("label_21")
         self.gridLayout.addWidget(self.label_21, 16, 0, 1, 1)
         spacerItem14 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem14, 9, 1, 1, 1)
-        self.MDVP_PPQ_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_PPQ_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_PPQ_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_PPQ_lin.setObjectName("MDVP_PPQ_lin")
-        self.gridLayout.addWidget(self.MDVP_PPQ_lin, 10, 1, 1, 1)
         spacerItem15 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem15, 11, 1, 1, 1)
-        self.MDVP_Jitter_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_Jitter_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_Jitter_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_Jitter_lin.setObjectName("MDVP_Jitter_lin")
-        self.gridLayout.addWidget(self.MDVP_Jitter_lin, 4, 1, 1, 1)
         self.label_4 = QtWidgets.QLabel(self.elements)
         self.label_4.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_4.setObjectName("label_4")
@@ -278,15 +339,6 @@ class Ui_Form(object):
         self.gridLayout.addItem(spacerItem16, 7, 1, 1, 1)
         spacerItem17 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem17, 5, 1, 1, 1)
-        self.Jitter_DDP_lin = QtWidgets.QLineEdit(self.elements)
-        self.Jitter_DDP_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.Jitter_DDP_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.Jitter_DDP_lin.setObjectName("Jitter_DDP_lin")
-        self.gridLayout.addWidget(self.Jitter_DDP_lin, 12, 1, 1, 1)
         spacerItem18 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem18, 15, 1, 1, 1)
         self.label_6 = QtWidgets.QLabel(self.elements)
@@ -301,69 +353,24 @@ class Ui_Form(object):
         self.label_9.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_9.setObjectName("label_9")
         self.gridLayout.addWidget(self.label_9, 14, 0, 1, 1)
-        self.MDVP_RAP_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_RAP_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_RAP_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_RAP_lin.setObjectName("MDVP_RAP_lin")
-        self.gridLayout.addWidget(self.MDVP_RAP_lin, 8, 1, 1, 1)
         self.label_5 = QtWidgets.QLabel(self.elements)
         self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_5.setObjectName("label_5")
         self.gridLayout.addWidget(self.label_5, 4, 0, 1, 1)
-        self.MDVP_Jitter_Abs_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_Jitter_Abs_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_Jitter_Abs_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_Jitter_Abs_lin.setObjectName("MDVP_Jitter_Abs_lin")
-        self.gridLayout.addWidget(self.MDVP_Jitter_Abs_lin, 6, 1, 1, 1)
         spacerItem19 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem19, 1, 1, 1, 1)
         self.label_7 = QtWidgets.QLabel(self.elements)
         self.label_7.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_7.setObjectName("label_7")
         self.gridLayout.addWidget(self.label_7, 8, 0, 1, 1)
-        self.NHR_lin = QtWidgets.QLineEdit(self.elements)
-        self.NHR_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.NHR_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.NHR_lin.setObjectName("NHR_lin")
-        self.gridLayout.addWidget(self.NHR_lin, 16, 1, 1, 1)
         self.label_8 = QtWidgets.QLabel(self.elements)
         self.label_8.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_8.setObjectName("label_8")
         self.gridLayout.addWidget(self.label_8, 10, 0, 1, 1)
-        self.MDVP_Shimmer_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_Shimmer_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_Shimmer_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_Shimmer_lin.setObjectName("MDVP_Shimmer_lin")
-        self.gridLayout.addWidget(self.MDVP_Shimmer_lin, 14, 1, 1, 1)
         self.label_23 = QtWidgets.QLabel(self.elements)
         self.label_23.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_23.setObjectName("label_23")
         self.gridLayout.addWidget(self.label_23, 18, 0, 1, 1)
-        self.MDVP_Flo_Hz_lin = QtWidgets.QLineEdit(self.elements)
-        self.MDVP_Flo_Hz_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.MDVP_Flo_Hz_lin.setStyleSheet("background:transparent;\n"
-"border-radius: 12px;\n"
-"border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;")
-        self.MDVP_Flo_Hz_lin.setObjectName("MDVP_Flo_Hz_lin")
-        self.gridLayout.addWidget(self.MDVP_Flo_Hz_lin, 2, 1, 1, 1)
         spacerItem20 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem20, 3, 1, 1, 1)
         spacerItem21 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -372,17 +379,174 @@ class Ui_Form(object):
         self.gridLayout.addItem(spacerItem22, 17, 1, 1, 1)
         self.doubleSpinBox = QtWidgets.QDoubleSpinBox(self.elements)
         self.doubleSpinBox.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
 "\n"
 "QLineEdit{\n"
 "border: 1px solid #ABAFB7;\n"
 "\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox.setObjectName("doubleSpinBox")
+        self.gridLayout.addWidget(self.doubleSpinBox, 0, 1, 1, 1)
+        self.doubleSpinBox_2 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_2.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
 "\n"
 "}\n"
 "QLineEdit:focus {\n"
 "  border: 3px solid #555;\n"
-"}")
-        self.doubleSpinBox.setObjectName("doubleSpinBox")
-        self.gridLayout.addWidget(self.doubleSpinBox, 0, 1, 1, 1)
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_2.setObjectName("doubleSpinBox_2")
+        self.gridLayout.addWidget(self.doubleSpinBox_2, 2, 1, 1, 1)
+        self.doubleSpinBox_3 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_3.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_3.setObjectName("doubleSpinBox_3")
+        self.gridLayout.addWidget(self.doubleSpinBox_3, 4, 1, 1, 1)
+        self.doubleSpinBox_4 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_4.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_4.setObjectName("doubleSpinBox_4")
+        self.gridLayout.addWidget(self.doubleSpinBox_4, 6, 1, 1, 1)
+        self.doubleSpinBox_5 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_5.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_5.setObjectName("doubleSpinBox_5")
+        self.gridLayout.addWidget(self.doubleSpinBox_5, 8, 1, 1, 1)
+        self.doubleSpinBox_6 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_6.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_6.setObjectName("doubleSpinBox_6")
+        self.gridLayout.addWidget(self.doubleSpinBox_6, 10, 1, 1, 1)
+        self.doubleSpinBox_7 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_7.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_7.setObjectName("doubleSpinBox_7")
+        self.gridLayout.addWidget(self.doubleSpinBox_7, 12, 1, 1, 1)
+        self.doubleSpinBox_8 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_8.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_8.setObjectName("doubleSpinBox_8")
+        self.gridLayout.addWidget(self.doubleSpinBox_8, 14, 1, 1, 1)
+        self.doubleSpinBox_9 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_9.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_9.setObjectName("doubleSpinBox_9")
+        self.gridLayout.addWidget(self.doubleSpinBox_9, 16, 1, 1, 1)
+        self.doubleSpinBox_10 = QtWidgets.QDoubleSpinBox(self.elements)
+        self.doubleSpinBox_10.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
+"  cursor: pointer;\n"
+"  float: right;\n"
+"  padding: 5px 20px;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.doubleSpinBox_10.setObjectName("doubleSpinBox_10")
+        self.gridLayout.addWidget(self.doubleSpinBox_10, 18, 1, 1, 1)
         self.gridLayout_4.addLayout(self.gridLayout, 0, 1, 1, 1)
         spacerItem23 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem23, 0, 0, 1, 1)
@@ -396,11 +560,17 @@ class Ui_Form(object):
         self.show_result_btn = QtWidgets.QPushButton(Form)
         self.show_result_btn.setMinimumSize(QtCore.QSize(250, 50))
         self.show_result_btn.setMaximumSize(QtCore.QSize(330, 50))
-        self.show_result_btn.setStyleSheet("QPushButton{\n"
-"color:white;\n"
-"\n"
-"    background-color: rgb(130, 195, 236);\n"
-";border-radius: 12px;\n"
+        self.show_result_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
 "}\n"
 "QPushButton:pressed{\n"
 "padding-left:5px;\n"

@@ -148,40 +148,6 @@ font-size:40px</string>
           </property>
          </widget>
         </item>
-        <item row="10" column="1">
-         <widget class="QLineEdit" name="HNR_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QLineEdit" name="MDVP_Shimmer_dB_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="5" column="1">
          <spacer name="verticalSpacer_12">
           <property name="orientation">
@@ -270,57 +236,6 @@ padding:15px;</string>
           </property>
          </widget>
         </item>
-        <item row="8" column="1">
-         <widget class="QLineEdit" name="MDVP_APQ_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLineEdit" name="Shimmer_DDA_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="1">
-         <widget class="QLineEdit" name="Shimmer_APQ5">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_12">
           <property name="styleSheet">
@@ -343,23 +258,6 @@ padding:15px;</string>
            </size>
           </property>
          </spacer>
-        </item>
-        <item row="20" column="1">
-         <widget class="QLineEdit" name="PPE_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
         </item>
         <item row="3" column="1">
          <spacer name="verticalSpacer_11">
@@ -436,23 +334,6 @@ padding:15px;</string>
           </property>
          </widget>
         </item>
-        <item row="16" column="1">
-         <widget class="QLineEdit" name="spread2_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="18" column="0">
          <widget class="QLabel" name="label_20">
           <property name="styleSheet">
@@ -473,23 +354,6 @@ padding:15px;</string>
           </property>
          </widget>
         </item>
-        <item row="14" column="1">
-         <widget class="QLineEdit" name="spread1_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="13" column="1">
          <spacer name="verticalSpacer_16">
           <property name="orientation">
@@ -503,40 +367,6 @@ padding:15px;</string>
           </property>
          </spacer>
         </item>
-        <item row="12" column="1">
-         <widget class="QLineEdit" name="DFA_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="1">
-         <widget class="QLineEdit" name="Shimmer_APQ3">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="16" column="0">
          <widget class="QLabel" name="label_19">
           <property name="styleSheet">
@@ -544,23 +374,6 @@ padding:15px;</string>
           </property>
           <property name="text">
            <string>spread2</string>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="1">
-         <widget class="QLineEdit" name="D2_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
           </property>
          </widget>
         </item>
@@ -576,6 +389,226 @@ padding:15px;</string>
            </size>
           </property>
          </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_11">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_12">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_13">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_14">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_15">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_16">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_17">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_18">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_19">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_20">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_21">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -604,23 +637,6 @@ padding:15px;</string>
           </property>
          </widget>
         </item>
-        <item row="18" column="1">
-         <widget class="QLineEdit" name="RPDE_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="16" column="0">
          <widget class="QLabel" name="label_21">
           <property name="styleSheet">
@@ -644,23 +660,6 @@ padding:15px;</string>
           </property>
          </spacer>
         </item>
-        <item row="10" column="1">
-         <widget class="QLineEdit" name="MDVP_PPQ_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="11" column="1">
          <spacer name="verticalSpacer_6">
           <property name="orientation">
@@ -673,23 +672,6 @@ padding:15px;</string>
            </size>
           </property>
          </spacer>
-        </item>
-        <item row="4" column="1">
-         <widget class="QLineEdit" name="MDVP_Jitter_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_4">
@@ -726,23 +708,6 @@ padding:15px;</string>
            </size>
           </property>
          </spacer>
-        </item>
-        <item row="12" column="1">
-         <widget class="QLineEdit" name="Jitter_DDP_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
         </item>
         <item row="15" column="1">
          <spacer name="verticalSpacer_8">
@@ -787,23 +752,6 @@ padding:15px;</string>
           </property>
          </widget>
         </item>
-        <item row="8" column="1">
-         <widget class="QLineEdit" name="MDVP_RAP_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_5">
           <property name="styleSheet">
@@ -811,23 +759,6 @@ padding:15px;</string>
           </property>
           <property name="text">
            <string>MDVP_Jitter</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="1">
-         <widget class="QLineEdit" name="MDVP_Jitter_Abs_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
           </property>
          </widget>
         </item>
@@ -854,23 +785,6 @@ padding:15px;</string>
           </property>
          </widget>
         </item>
-        <item row="16" column="1">
-         <widget class="QLineEdit" name="NHR_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="10" column="0">
          <widget class="QLabel" name="label_8">
           <property name="styleSheet">
@@ -881,23 +795,6 @@ padding:15px;</string>
           </property>
          </widget>
         </item>
-        <item row="14" column="1">
-         <widget class="QLineEdit" name="MDVP_Shimmer_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
-          </property>
-         </widget>
-        </item>
         <item row="18" column="0">
          <widget class="QLabel" name="label_23">
           <property name="styleSheet">
@@ -905,23 +802,6 @@ padding:15px;</string>
           </property>
           <property name="text">
            <string>RPDE</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLineEdit" name="MDVP_Flo_Hz_lin">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>49</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background:transparent;
-border-radius: 12px;
-border: 2px solid  #ffffff;
-font-size:20px;
-padding:15px;</string>
           </property>
          </widget>
         </item>
@@ -968,15 +848,199 @@ padding:15px;</string>
          <widget class="QDoubleSpinBox" name="doubleSpinBox">
           <property name="styleSheet">
            <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
 
 QLineEdit{
 border: 1px solid #ABAFB7;
 
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
 
 }
 QLineEdit:focus {
   border: 3px solid #555;
-}</string>
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_7">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_9">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_10">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
           </property>
          </widget>
         </item>
@@ -1055,11 +1119,17 @@ QLineEdit:focus {
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton{
-color:white;
-
-	background-color: rgb(130, 195, 236);
-;border-radius: 12px;
+      <string notr="true">QPushButton {
+	background-color:rgba(6,103,184,255);
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 15px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: #2752B8;
+}
+QPushButton:hover {
+    background-color: #827397;
 }
 QPushButton:pressed{
 padding-left:5px;
