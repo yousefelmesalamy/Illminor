@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1220</width>
-    <height>945</height>
+    <height>981</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -73,61 +73,6 @@ background-postion:calc(100% - 10px) center;}
      </property>
     </widget>
    </item>
-   <item row="4" column="0" colspan="3">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>467</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="2">
-    <spacer name="verticalSpacer_20">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeType">
-      <enum>QSizePolicy::Fixed</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="4" column="4" colspan="2">
-    <spacer name="horizontalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>467</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="5">
-    <spacer name="horizontalSpacer_4">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>415</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
    <item row="0" column="2" colspan="3">
     <widget class="QLabel" name="label_25">
      <property name="styleSheet">
@@ -141,6 +86,32 @@ font-size:40px</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
+   </item>
+   <item row="4" column="0" colspan="3">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>467</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>348</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
    </item>
    <item row="4" column="3">
     <widget class="QPushButton" name="show_result_btn">
@@ -181,977 +152,43 @@ background-postion:calc(100% - 10px) center;}
      </property>
     </widget>
    </item>
-   <item row="2" column="0" colspan="6">
-    <widget class="QGroupBox" name="elements">
-     <property name="minimumSize">
-      <size>
-       <width>330</width>
-       <height>450</height>
-      </size>
-     </property>
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="title">
-      <string/>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-     <property name="checkable">
-      <bool>false</bool>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_4">
-      <item row="0" column="4">
-       <spacer name="horizontalSpacer_6">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="2">
-       <spacer name="horizontalSpacer_7">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="0">
-       <spacer name="horizontalSpacer_5">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="3">
-       <layout class="QGridLayout" name="gridLayout_3">
-        <item row="8" column="0">
-         <widget class="QLabel" name="label_15">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_APQ</string>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="1">
-         <spacer name="verticalSpacer_12">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="12" column="0">
-         <widget class="QLabel" name="label_17">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>DFA</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <spacer name="verticalSpacer_10">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="9" column="1">
-         <spacer name="verticalSpacer_14">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="7" column="1">
-         <spacer name="verticalSpacer_13">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="10" column="0">
-         <widget class="QLabel" name="label_16">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>HNR</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="0">
-         <widget class="QLabel" name="label_14">
-          <property name="minimumSize">
-           <size>
-            <width>171</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>Shimmer_APQ5</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_12">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>Shimmer_DDA</string>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="1">
-         <spacer name="verticalSpacer_15">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="3" column="1">
-         <spacer name="verticalSpacer_11">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="4" column="0">
-         <widget class="QLabel" name="label_13">
-          <property name="minimumSize">
-           <size>
-            <width>171</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>Shimmer_APQ3</string>
-          </property>
-         </widget>
-        </item>
-        <item row="17" column="1">
-         <spacer name="verticalSpacer_18">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="20" column="0">
-         <widget class="QLabel" name="label_22">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>PPE</string>
-          </property>
-         </widget>
-        </item>
-        <item row="15" column="1">
-         <spacer name="verticalSpacer_17">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="14" column="0">
-         <widget class="QLabel" name="label_18">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>spread1</string>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="0">
-         <widget class="QLabel" name="label_20">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>D2</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_11">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_Shimmer_dB</string>
-          </property>
-         </widget>
-        </item>
-        <item row="13" column="1">
-         <spacer name="verticalSpacer_16">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="16" column="0">
-         <widget class="QLabel" name="label_19">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>spread2</string>
-          </property>
-         </widget>
-        </item>
-        <item row="19" column="1">
-         <spacer name="verticalSpacer_19">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_11">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_12">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_13">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_14">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_15">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="10" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_16">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_17">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="14" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_18">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="16" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_19">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_20">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="20" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_21">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="0" column="1">
-       <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_3">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_Fo_Hz</string>
-          </property>
-         </widget>
-        </item>
-        <item row="16" column="0">
-         <widget class="QLabel" name="label_21">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>NHR</string>
-          </property>
-         </widget>
-        </item>
-        <item row="9" column="1">
-         <spacer name="verticalSpacer_5">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="11" column="1">
-         <spacer name="verticalSpacer_6">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_4">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_Flo_Hz</string>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="1">
-         <spacer name="verticalSpacer_4">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="5" column="1">
-         <spacer name="verticalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="15" column="1">
-         <spacer name="verticalSpacer_8">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="6" column="0">
-         <widget class="QLabel" name="label_6">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_Jitter_Abs</string>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="0">
-         <widget class="QLabel" name="label_10">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>Jitter_DDP</string>
-          </property>
-         </widget>
-        </item>
-        <item row="14" column="0">
-         <widget class="QLabel" name="label_9">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_Shimmer</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QLabel" name="label_5">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_Jitter</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="8" column="0">
-         <widget class="QLabel" name="label_7">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_RAP</string>
-          </property>
-         </widget>
-        </item>
-        <item row="10" column="0">
-         <widget class="QLabel" name="label_8">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>MDVP_PPQ</string>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="0">
-         <widget class="QLabel" name="label_23">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-          </property>
-          <property name="text">
-           <string>RPDE</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="1">
-         <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="13" column="1">
-         <spacer name="verticalSpacer_7">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="17" column="1">
-         <spacer name="verticalSpacer_9">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="10" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_7">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="14" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="16" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_9">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-        <item row="18" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_10">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item row="0" column="1">
-    <spacer name="horizontalSpacer_3">
+   <item row="0" column="5">
+    <spacer name="horizontalSpacer_4">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>348</width>
+       <width>415</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <spacer name="verticalSpacer_20">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="4" colspan="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>467</width>
        <height>20</height>
       </size>
      </property>
@@ -1188,6 +225,1048 @@ QLineEdit:focus {
       </size>
      </property>
     </spacer>
+   </item>
+   <item row="2" column="0" colspan="6">
+    <widget class="QGroupBox" name="elements">
+     <property name="minimumSize">
+      <size>
+       <width>330</width>
+       <height>450</height>
+      </size>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="minimumSize">
+         <size>
+          <width>420</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> QScrollBar:vertical {
+	border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(80, 80, 122);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: rgb(255, 0, 127);
+	background-color:rgba(6,103,184,255);
+
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>404</width>
+           <height>1075</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="13" column="1">
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="16" column="0">
+             <widget class="QLabel" name="label_21">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>NHR</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="1">
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_Flo_Hz</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="1">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="18" column="0">
+             <widget class="QLabel" name="label_23">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>RPDE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="18" column="1">
+             <widget class="QDoubleSpinBox" name="RPDE_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_Jitter</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_Shimmer</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_Flo_Hz_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="1">
+             <widget class="QDoubleSpinBox" name="NHR_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_PPQ_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_RAP_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_Jitter_Abs</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_Jitter_Abs_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_Jitter_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="AS">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_Fo_Hz</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="12" column="1">
+             <widget class="QDoubleSpinBox" name="Jitter_DDP_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="1">
+             <spacer name="verticalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_RAP</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_PPQ</string>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="1">
+             <spacer name="verticalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="12" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>Jitter_DDP</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="12" column="0">
+             <widget class="QLabel" name="label_17">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>DFA</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="verticalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="18" column="0">
+             <widget class="QLabel" name="label_20">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>D2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="label_15">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_APQ</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_16">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>HNR</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_14">
+              <property name="minimumSize">
+               <size>
+                <width>171</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>Shimmer_APQ5</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="1">
+             <widget class="QDoubleSpinBox" name="spread2_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="11" column="1">
+             <spacer name="verticalSpacer_15">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="13" column="1">
+             <spacer name="verticalSpacer_16">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="10" column="1">
+             <widget class="QDoubleSpinBox" name="HNR_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="16" column="0">
+             <widget class="QLabel" name="label_19">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>spread2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="1">
+             <widget class="QDoubleSpinBox" name="DFA_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QDoubleSpinBox" name="Shimmer_DDA_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="14" column="0">
+             <widget class="QLabel" name="label_18">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>spread1</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QDoubleSpinBox" name="Shimmer_APQ3_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="18" column="1">
+             <widget class="QDoubleSpinBox" name="D2_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="1">
+             <spacer name="verticalSpacer_17">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="1">
+             <widget class="QDoubleSpinBox" name="Shimmer_APQ5_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>Shimmer_DDA</string>
+              </property>
+             </widget>
+            </item>
+            <item row="20" column="1">
+             <widget class="QDoubleSpinBox" name="PPE_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <spacer name="verticalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="9" column="1">
+             <spacer name="verticalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="5" column="1">
+             <spacer name="verticalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="1">
+             <spacer name="verticalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="17" column="1">
+             <spacer name="verticalSpacer_18">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_13">
+              <property name="minimumSize">
+               <size>
+                <width>171</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>Shimmer_APQ3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_Shimmer_dB_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QDoubleSpinBox" name="MDVP_APQ_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="20" column="0">
+             <widget class="QLabel" name="label_22">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>PPE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="19" column="1">
+             <spacer name="verticalSpacer_19">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="14" column="1">
+             <widget class="QDoubleSpinBox" name="spread1_sb">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+              </property>
+              <property name="text">
+               <string>MDVP_Shimmer_dB</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
    </item>
   </layout>
  </widget>
