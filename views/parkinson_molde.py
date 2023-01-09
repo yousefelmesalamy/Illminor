@@ -25,30 +25,69 @@ class Ui_Form(object):
         self.back_btn = QtWidgets.QPushButton(Form)
         self.back_btn.setMinimumSize(QtCore.QSize(60, 60))
         self.back_btn.setMaximumSize(QtCore.QSize(60, 60))
-        self.back_btn.setStyleSheet("QPushButton:pressed{\n"
+        self.back_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}\n"
+"QPushButton:pressed{\n"
 "padding-left:5px;\n"
 "padding-top:5px;\n"
-"background-postion:calc(100% - 10px) center;}")
+"background-color:rgba(2, 65, 118, 100);\n"
+"background-postion:calc(100% - 10px) center;}\n"
+"")
         self.back_btn.setText("")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/ICONS/icons/back-button.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.back_btn.setIcon(icon)
-        self.back_btn.setIconSize(QtCore.QSize(60, 60))
+        self.back_btn.setIconSize(QtCore.QSize(30, 30))
         self.back_btn.setFlat(True)
         self.back_btn.setObjectName("back_btn")
         self.gridLayout_2.addWidget(self.back_btn, 0, 0, 1, 1)
         spacerItem = QtWidgets.QSpacerItem(467, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem, 3, 4, 1, 2)
-        spacerItem1 = QtWidgets.QSpacerItem(348, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem1, 0, 1, 1, 1)
+        self.gridLayout_2.addItem(spacerItem, 4, 0, 1, 3)
+        spacerItem1 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout_2.addItem(spacerItem1, 1, 2, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(467, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem2, 4, 4, 1, 2)
+        spacerItem3 = QtWidgets.QSpacerItem(415, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem3, 0, 5, 1, 1)
         self.label_25 = QtWidgets.QLabel(Form)
         self.label_25.setStyleSheet("background-color: rgb(85, 255, 127,0);\n"
 "font-size:40px")
         self.label_25.setAlignment(QtCore.Qt.AlignCenter)
         self.label_25.setObjectName("label_25")
         self.gridLayout_2.addWidget(self.label_25, 0, 2, 1, 3)
-        spacerItem2 = QtWidgets.QSpacerItem(415, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem2, 0, 5, 1, 1)
+        self.show_result_btn = QtWidgets.QPushButton(Form)
+        self.show_result_btn.setMinimumSize(QtCore.QSize(250, 50))
+        self.show_result_btn.setMaximumSize(QtCore.QSize(330, 50))
+        self.show_result_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-color:rgba(2, 65, 118, 100);\n"
+"background-postion:calc(100% - 10px) center;}\n"
+"")
+        self.show_result_btn.setObjectName("show_result_btn")
+        self.gridLayout_2.addWidget(self.show_result_btn, 4, 3, 1, 1)
         self.elements = QtWidgets.QGroupBox(Form)
         self.elements.setMinimumSize(QtCore.QSize(330, 450))
         self.elements.setAutoFillBackground(False)
@@ -59,24 +98,30 @@ class Ui_Form(object):
         self.elements.setObjectName("elements")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.elements)
         self.gridLayout_4.setObjectName("gridLayout_4")
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_4.addItem(spacerItem4, 0, 4, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_4.addItem(spacerItem5, 0, 2, 1, 1)
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_4.addItem(spacerItem6, 0, 0, 1, 1)
         self.gridLayout_3 = QtWidgets.QGridLayout()
         self.gridLayout_3.setObjectName("gridLayout_3")
         self.label_15 = QtWidgets.QLabel(self.elements)
         self.label_15.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_15.setObjectName("label_15")
         self.gridLayout_3.addWidget(self.label_15, 8, 0, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem3, 5, 1, 1, 1)
+        spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem7, 5, 1, 1, 1)
         self.label_17 = QtWidgets.QLabel(self.elements)
         self.label_17.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_17.setObjectName("label_17")
         self.gridLayout_3.addWidget(self.label_17, 12, 0, 1, 1)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem4, 1, 1, 1, 1)
-        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem5, 9, 1, 1, 1)
-        spacerItem6 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem6, 7, 1, 1, 1)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem8, 1, 1, 1, 1)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem9, 9, 1, 1, 1)
+        spacerItem10 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem10, 7, 1, 1, 1)
         self.label_16 = QtWidgets.QLabel(self.elements)
         self.label_16.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_16.setObjectName("label_16")
@@ -90,23 +135,23 @@ class Ui_Form(object):
         self.label_12.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_12.setObjectName("label_12")
         self.gridLayout_3.addWidget(self.label_12, 2, 0, 1, 1)
-        spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem7, 11, 1, 1, 1)
-        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem8, 3, 1, 1, 1)
+        spacerItem11 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem11, 11, 1, 1, 1)
+        spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem12, 3, 1, 1, 1)
         self.label_13 = QtWidgets.QLabel(self.elements)
         self.label_13.setMinimumSize(QtCore.QSize(171, 0))
         self.label_13.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_13.setObjectName("label_13")
         self.gridLayout_3.addWidget(self.label_13, 4, 0, 1, 1)
-        spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem9, 17, 1, 1, 1)
+        spacerItem13 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem13, 17, 1, 1, 1)
         self.label_22 = QtWidgets.QLabel(self.elements)
         self.label_22.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_22.setObjectName("label_22")
         self.gridLayout_3.addWidget(self.label_22, 20, 0, 1, 1)
-        spacerItem10 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem10, 15, 1, 1, 1)
+        spacerItem14 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem14, 15, 1, 1, 1)
         self.label_18 = QtWidgets.QLabel(self.elements)
         self.label_18.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_18.setObjectName("label_18")
@@ -119,14 +164,14 @@ class Ui_Form(object):
         self.label_11.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_11.setObjectName("label_11")
         self.gridLayout_3.addWidget(self.label_11, 0, 0, 1, 1)
-        spacerItem11 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem11, 13, 1, 1, 1)
+        spacerItem15 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem15, 13, 1, 1, 1)
         self.label_19 = QtWidgets.QLabel(self.elements)
         self.label_19.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_19.setObjectName("label_19")
         self.gridLayout_3.addWidget(self.label_19, 16, 0, 1, 1)
-        spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem12, 19, 1, 1, 1)
+        spacerItem16 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_3.addItem(spacerItem16, 19, 1, 1, 1)
         self.doubleSpinBox_11 = QtWidgets.QDoubleSpinBox(self.elements)
         self.doubleSpinBox_11.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
 "  cursor: pointer;\n"
@@ -315,8 +360,6 @@ class Ui_Form(object):
         self.doubleSpinBox_21.setObjectName("doubleSpinBox_21")
         self.gridLayout_3.addWidget(self.doubleSpinBox_21, 20, 1, 1, 1)
         self.gridLayout_4.addLayout(self.gridLayout_3, 0, 3, 1, 1)
-        spacerItem13 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_4.addItem(spacerItem13, 0, 2, 1, 1)
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
         self.label_3 = QtWidgets.QLabel(self.elements)
@@ -327,20 +370,20 @@ class Ui_Form(object):
         self.label_21.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_21.setObjectName("label_21")
         self.gridLayout.addWidget(self.label_21, 16, 0, 1, 1)
-        spacerItem14 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem14, 9, 1, 1, 1)
-        spacerItem15 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem15, 11, 1, 1, 1)
+        spacerItem17 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem17, 9, 1, 1, 1)
+        spacerItem18 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem18, 11, 1, 1, 1)
         self.label_4 = QtWidgets.QLabel(self.elements)
         self.label_4.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_4.setObjectName("label_4")
         self.gridLayout.addWidget(self.label_4, 2, 0, 1, 1)
-        spacerItem16 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem16, 7, 1, 1, 1)
-        spacerItem17 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem17, 5, 1, 1, 1)
-        spacerItem18 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem18, 15, 1, 1, 1)
+        spacerItem19 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem19, 7, 1, 1, 1)
+        spacerItem20 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem20, 5, 1, 1, 1)
+        spacerItem21 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem21, 15, 1, 1, 1)
         self.label_6 = QtWidgets.QLabel(self.elements)
         self.label_6.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_6.setObjectName("label_6")
@@ -357,8 +400,8 @@ class Ui_Form(object):
         self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_5.setObjectName("label_5")
         self.gridLayout.addWidget(self.label_5, 4, 0, 1, 1)
-        spacerItem19 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem19, 1, 1, 1, 1)
+        spacerItem22 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem22, 1, 1, 1, 1)
         self.label_7 = QtWidgets.QLabel(self.elements)
         self.label_7.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_7.setObjectName("label_7")
@@ -371,12 +414,12 @@ class Ui_Form(object):
         self.label_23.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_23.setObjectName("label_23")
         self.gridLayout.addWidget(self.label_23, 18, 0, 1, 1)
-        spacerItem20 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem20, 3, 1, 1, 1)
-        spacerItem21 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem21, 13, 1, 1, 1)
-        spacerItem22 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem22, 17, 1, 1, 1)
+        spacerItem23 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem23, 3, 1, 1, 1)
+        spacerItem24 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem24, 13, 1, 1, 1)
+        spacerItem25 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem25, 17, 1, 1, 1)
         self.doubleSpinBox = QtWidgets.QDoubleSpinBox(self.elements)
         self.doubleSpinBox.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
 "  cursor: pointer;\n"
@@ -548,40 +591,13 @@ class Ui_Form(object):
         self.doubleSpinBox_10.setObjectName("doubleSpinBox_10")
         self.gridLayout.addWidget(self.doubleSpinBox_10, 18, 1, 1, 1)
         self.gridLayout_4.addLayout(self.gridLayout, 0, 1, 1, 1)
-        spacerItem23 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_4.addItem(spacerItem23, 0, 0, 1, 1)
-        spacerItem24 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_4.addItem(spacerItem24, 0, 4, 1, 1)
-        spacerItem25 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout_4.addItem(spacerItem25, 1, 2, 1, 1)
         self.gridLayout_2.addWidget(self.elements, 2, 0, 1, 6)
-        spacerItem26 = QtWidgets.QSpacerItem(467, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem26, 3, 0, 1, 3)
-        self.show_result_btn = QtWidgets.QPushButton(Form)
-        self.show_result_btn.setMinimumSize(QtCore.QSize(250, 50))
-        self.show_result_btn.setMaximumSize(QtCore.QSize(330, 50))
-        self.show_result_btn.setStyleSheet("QPushButton {\n"
-"    background-color:rgba(6,103,184,255);\n"
-"    color: #FFFFFF;\n"
-"    padding: 2px;\n"
-"    font: bold 15px;\n"
-"    border-width: 6px;\n"
-"    border-radius: 10px;\n"
-"    border-color: #2752B8;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #827397;\n"
-"}\n"
-"QPushButton:pressed{\n"
-"padding-left:5px;\n"
-"padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
-"background-postion:calc(100% - 10px) center;}\n"
-"")
-        self.show_result_btn.setObjectName("show_result_btn")
-        self.gridLayout_2.addWidget(self.show_result_btn, 3, 3, 1, 1)
-        spacerItem27 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout_2.addItem(spacerItem27, 1, 2, 1, 1)
+        spacerItem26 = QtWidgets.QSpacerItem(348, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem26, 0, 1, 1, 1)
+        spacerItem27 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout_2.addItem(spacerItem27, 3, 3, 1, 1)
+        spacerItem28 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout_2.addItem(spacerItem28, 5, 3, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -590,6 +606,7 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_25.setText(_translate("Form", "CHECK PARKINSON"))
+        self.show_result_btn.setText(_translate("Form", "Show result"))
         self.label_15.setText(_translate("Form", "MDVP_APQ"))
         self.label_17.setText(_translate("Form", "DFA"))
         self.label_16.setText(_translate("Form", "HNR"))
@@ -611,5 +628,4 @@ class Ui_Form(object):
         self.label_7.setText(_translate("Form", "MDVP_RAP"))
         self.label_8.setText(_translate("Form", "MDVP_PPQ"))
         self.label_23.setText(_translate("Form", "RPDE"))
-        self.show_result_btn.setText(_translate("Form", "Show result"))
 import app_resources_rc
