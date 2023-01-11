@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1066</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+font-family:Ubuntu;
+font-size: 20px;
+	color:black;
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="back_btn">
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color:rgba(6,103,184,255);
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 15px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: #2752B8;
+}
+QPushButton:hover {
+    background-color: #827397;
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-postion:calc(100% - 10px) center;}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="app_resources.qrc">
+       <normaloff>:/ICONS/icons/back-button.png</normaloff>:/ICONS/icons/back-button.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5" colspan="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>391</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="2" colspan="4">
+    <widget class="QLabel" name="label_25">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 255, 127,0);
+font-size:40px</string>
+     </property>
+     <property name="text">
+      <string>CHECK DIABETES</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <spacer name="horizontalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>310</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="7" column="4">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>96</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="3">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="0" colspan="3">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>389</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="3" colspan="2">
+    <widget class="QPushButton" name="show_result_btn">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>330</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color:rgba(6,103,184,255);
+    color: #FFFFFF;
+    padding: 2px;
+    font: bold 15px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: #2752B8;
+}
+QPushButton:hover {
+    background-color: #827397;
+}
+QPushButton:pressed{
+padding-left:5px;
+padding-top:5px;
+background-color:rgba(2, 65, 118, 100);
+background-postion:calc(100% - 10px) center;}
+</string>
+     </property>
+     <property name="text">
+      <string>Show result</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>242</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="2" rowspan="2" colspan="4">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>330</width>
+       <height>450</height>
+      </size>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> border-color:transparent;
+background-color:transparent;</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+          </property>
+          <property name="text">
+           <string>Age</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="Age_SB">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+          </property>
+          <property name="text">
+           <string>glucose</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="glucose_sb">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+          </property>
+          <property name="text">
+           <string>bloodpressure</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="bloodpressure_sb">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+          </property>
+          <property name="text">
+           <string>skinthickness</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="skinthickness_sb">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+          </property>
+          <property name="text">
+           <string>insulin</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="insulin_sb">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="bmi_lin">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+          </property>
+          <property name="text">
+           <string>bmi</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="bmi_sb">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+          </property>
+          <property name="text">
+           <string>dpf</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="dpf_sb">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(119, 118, 123,0);
+  cursor: pointer;
+  float: right;
+  padding: 5px 20px;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <spacer name="verticalSpacer_20">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="app_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
