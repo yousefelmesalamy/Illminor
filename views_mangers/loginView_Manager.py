@@ -11,7 +11,7 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
         self.setupUi(self)
 
         self.login_btn.clicked.connect(self.handle_login)
-        self.base_url = "http://192.168.43.149:8000/login/"
+        self.base_url = "http://192.168.0.122:8000/login/"
         self.userToken = ''
 
 

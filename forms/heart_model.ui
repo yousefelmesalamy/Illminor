@@ -183,10 +183,25 @@ background-color:transparent;</string>
       <item row="8" column="1">
        <widget class="QDoubleSpinBox" name="thalach_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -286,10 +301,25 @@ padding:15px;
       <item row="11" column="1">
        <widget class="QDoubleSpinBox" name="ca_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -306,10 +336,25 @@ QLineEdit:focus {
       <item row="1" column="1">
        <widget class="QDoubleSpinBox" name="age_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -326,10 +371,25 @@ QLineEdit:focus {
       <item row="9" column="1">
        <widget class="QDoubleSpinBox" name="exang_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -386,10 +446,25 @@ QLineEdit:focus {
       <item row="4" column="1">
        <widget class="QDoubleSpinBox" name="trestbps_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -406,10 +481,25 @@ QLineEdit:focus {
       <item row="7" column="1">
        <widget class="QDoubleSpinBox" name="restecg_sv">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -426,10 +516,25 @@ QLineEdit:focus {
       <item row="10" column="1">
        <widget class="QDoubleSpinBox" name="slope_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -476,10 +581,25 @@ QLineEdit:focus {
       <item row="3" column="1">
        <widget class="QDoubleSpinBox" name="cp_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -496,10 +616,25 @@ QLineEdit:focus {
       <item row="6" column="1">
        <widget class="QDoubleSpinBox" name="fbs_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -526,10 +661,25 @@ QLineEdit:focus {
       <item row="5" column="1">
        <widget class="QDoubleSpinBox" name="chol_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -546,10 +696,25 @@ QLineEdit:focus {
       <item row="12" column="1">
        <widget class="QDoubleSpinBox" name="thal_sb">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;

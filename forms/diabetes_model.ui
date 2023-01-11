@@ -244,10 +244,25 @@ background-color:transparent;</string>
         <item>
          <widget class="QDoubleSpinBox" name="Age_SB">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+           <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -278,10 +293,25 @@ QLineEdit:focus {
         <item>
          <widget class="QDoubleSpinBox" name="glucose_sb">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+           <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -312,10 +342,25 @@ QLineEdit:focus {
         <item>
          <widget class="QDoubleSpinBox" name="bloodpressure_sb">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+           <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -346,10 +391,25 @@ QLineEdit:focus {
         <item>
          <widget class="QDoubleSpinBox" name="skinthickness_sb">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+           <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -380,10 +440,25 @@ QLineEdit:focus {
         <item>
          <widget class="QDoubleSpinBox" name="insulin_sb">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+           <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -414,10 +489,25 @@ QLineEdit:focus {
         <item>
          <widget class="QDoubleSpinBox" name="bmi_sb">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+           <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;
@@ -448,10 +538,25 @@ QLineEdit:focus {
         <item>
          <widget class="QDoubleSpinBox" name="dpf_sb">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
+           <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
 
 QLineEdit{
 border: 1px solid #ABAFB7;

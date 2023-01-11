@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(873, 762)
+        Form.resize(873, 876)
         Form.setStyleSheet("\n"
 "font-family:Ubuntu;\n"
 "font-size: 20px;\n"
@@ -22,6 +22,17 @@ class Ui_Form(object):
 "")
         self.gridLayout_2 = QtWidgets.QGridLayout(Form)
         self.gridLayout_2.setObjectName("gridLayout_2")
+        spacerItem = QtWidgets.QSpacerItem(244, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem, 2, 0, 1, 2)
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setStyleSheet("background-color: rgb(85, 255, 127,0);\n"
+"font-size:40px")
+        self.label_2.setObjectName("label_2")
+        self.gridLayout_2.addWidget(self.label_2, 0, 2, 1, 3)
+        spacerItem1 = QtWidgets.QSpacerItem(301, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem1, 4, 0, 1, 3)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem2, 2, 6, 1, 1)
         self.back_btn = QtWidgets.QPushButton(Form)
         self.back_btn.setMinimumSize(QtCore.QSize(60, 60))
         self.back_btn.setMaximumSize(QtCore.QSize(60, 60))
@@ -51,307 +62,8 @@ class Ui_Form(object):
         self.back_btn.setFlat(True)
         self.back_btn.setObjectName("back_btn")
         self.gridLayout_2.addWidget(self.back_btn, 0, 0, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(178, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem, 0, 1, 1, 1)
-        self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setStyleSheet("background-color: rgb(85, 255, 127,0);\n"
-"font-size:40px")
-        self.label_2.setObjectName("label_2")
-        self.gridLayout_2.addWidget(self.label_2, 0, 2, 1, 3)
-        spacerItem1 = QtWidgets.QSpacerItem(230, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem1, 0, 5, 1, 2)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_2.addItem(spacerItem2, 1, 3, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(244, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem3, 2, 0, 1, 2)
-        self.groupBox = QtWidgets.QGroupBox(Form)
-        self.groupBox.setMinimumSize(QtCore.QSize(420, 0))
-        self.groupBox.setMaximumSize(QtCore.QSize(420, 16777215))
-        self.groupBox.setStyleSheet(" QScrollBar:vertical {\n"
-"    border: none;\n"
-"    background: rgb(45, 45, 68);\n"
-"    width: 14px;\n"
-"    margin: 15px 0 15px 0;\n"
-"    border-radius: 0px;\n"
-" }\n"
-"\n"
-"/*  HANDLE BAR VERTICAL */\n"
-"QScrollBar::handle:vertical {    \n"
-"    background-color: rgb(80, 80, 122);\n"
-"    min-height: 30px;\n"
-"    border-radius: 7px;\n"
-"}\n"
-"QScrollBar::handle:vertical:hover{    \n"
-"    background-color: rgb(255, 0, 127);\n"
-"    background-color:rgba(6,103,184,255);\n"
-"\n"
-"}\n"
-"QScrollBar::handle:vertical:pressed {    \n"
-"    background-color: rgb(185, 0, 92);\n"
-"}\n"
-"\n"
-"/* BTN TOP - SCROLLBAR */\n"
-"QScrollBar::sub-line:vertical {\n"
-"    border: none;\n"
-"    background-color: rgb(59, 59, 90);\n"
-"    height: 15px;\n"
-"    border-top-left-radius: 7px;\n"
-"    border-top-right-radius: 7px;\n"
-"    subcontrol-position: top;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::sub-line:vertical:hover {    \n"
-"    background-color: rgb(255, 0, 127);\n"
-"}\n"
-"QScrollBar::sub-line:vertical:pressed {    \n"
-"    background-color: rgb(185, 0, 92);\n"
-"}\n"
-"\n"
-"/* BTN BOTTOM - SCROLLBAR */\n"
-"QScrollBar::add-line:vertical {\n"
-"    border: none;\n"
-"    background-color: rgb(59, 59, 90);\n"
-"    height: 15px;\n"
-"    border-bottom-left-radius: 7px;\n"
-"    border-bottom-right-radius: 7px;\n"
-"    subcontrol-position: bottom;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"QScrollBar::add-line:vertical:hover {    \n"
-"    background-color: rgb(255, 0, 127);\n"
-"}\n"
-"QScrollBar::add-line:vertical:pressed {    \n"
-"    background-color: rgb(185, 0, 92);\n"
-"}\n"
-"\n"
-"/* RESET ARROW */\n"
-"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
-"    background: none;\n"
-"}\n"
-"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
-"    background: none;\n"
-"}\n"
-"")
-        self.groupBox.setTitle("")
-        self.groupBox.setObjectName("groupBox")
-        self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
-        self.gridLayout.setObjectName("gridLayout")
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label = QtWidgets.QLabel(self.groupBox)
-        self.label.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label.setObjectName("label")
-        self.horizontalLayout.addWidget(self.label)
-        self.lineEdit = QtWidgets.QLineEdit(self.groupBox)
-        self.lineEdit.setMinimumSize(QtCore.QSize(196, 40))
-        self.lineEdit.setMaximumSize(QtCore.QSize(196, 16777215))
-        self.lineEdit.setStyleSheet("border: 2px solid #bebebe ;\n"
-"border-radius: 10% 10%;\n"
-"padding-left:5px;\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(18, 32, 62);")
-        self.lineEdit.setObjectName("lineEdit")
-        self.horizontalLayout.addWidget(self.lineEdit)
-        self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.label_3 = QtWidgets.QLabel(self.groupBox)
-        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout_2.addWidget(self.label_3)
-        self.bmi_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.bmi_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.bmi_sb.setObjectName("bmi_sb")
-        self.horizontalLayout_2.addWidget(self.bmi_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_2, 1, 0, 1, 1)
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.label_4 = QtWidgets.QLabel(self.groupBox)
-        self.label_4.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_4.setObjectName("label_4")
-        self.horizontalLayout_3.addWidget(self.label_4)
-        self.glucouse_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.glucouse_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.glucouse_sb.setObjectName("glucouse_sb")
-        self.horizontalLayout_3.addWidget(self.glucouse_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_3, 2, 0, 1, 1)
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.insuline_lin = QtWidgets.QLabel(self.groupBox)
-        self.insuline_lin.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.insuline_lin.setObjectName("insuline_lin")
-        self.horizontalLayout_4.addWidget(self.insuline_lin)
-        self.insuline_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.insuline_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.insuline_sb.setObjectName("insuline_sb")
-        self.horizontalLayout_4.addWidget(self.insuline_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_4, 3, 0, 1, 1)
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.homa_lin = QtWidgets.QLabel(self.groupBox)
-        self.homa_lin.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.homa_lin.setObjectName("homa_lin")
-        self.horizontalLayout_5.addWidget(self.homa_lin)
-        self.homa_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.homa_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.homa_sb.setObjectName("homa_sb")
-        self.horizontalLayout_5.addWidget(self.homa_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_5, 4, 0, 1, 1)
-        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        self.leptin = QtWidgets.QLabel(self.groupBox)
-        self.leptin.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.leptin.setObjectName("leptin")
-        self.horizontalLayout_6.addWidget(self.leptin)
-        self.leptin_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.leptin_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.leptin_sb.setObjectName("leptin_sb")
-        self.horizontalLayout_6.addWidget(self.leptin_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_6, 5, 0, 1, 1)
-        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
-        self.label_8 = QtWidgets.QLabel(self.groupBox)
-        self.label_8.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_8.setObjectName("label_8")
-        self.horizontalLayout_7.addWidget(self.label_8)
-        self.adiponcetin_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.adiponcetin_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.adiponcetin_sb.setObjectName("adiponcetin_sb")
-        self.horizontalLayout_7.addWidget(self.adiponcetin_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_7, 6, 0, 1, 1)
-        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
-        self.label_10 = QtWidgets.QLabel(self.groupBox)
-        self.label_10.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_10.setObjectName("label_10")
-        self.horizontalLayout_8.addWidget(self.label_10)
-        self.resistiin_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.resistiin_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.resistiin_sb.setObjectName("resistiin_sb")
-        self.horizontalLayout_8.addWidget(self.resistiin_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_8, 7, 0, 1, 1)
-        self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
-        self.label_9 = QtWidgets.QLabel(self.groupBox)
-        self.label_9.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_9.setObjectName("label_9")
-        self.horizontalLayout_9.addWidget(self.label_9)
-        self.mcp_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.mcp_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.mcp_sb.setObjectName("mcp_sb")
-        self.horizontalLayout_9.addWidget(self.mcp_sb)
-        self.gridLayout.addLayout(self.horizontalLayout_9, 8, 0, 1, 1)
-        self.gridLayout_2.addWidget(self.groupBox, 2, 2, 1, 4)
-        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem4, 2, 6, 1, 1)
-        spacerItem5 = QtWidgets.QSpacerItem(20, 63, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_2.addItem(spacerItem5, 3, 3, 1, 1)
-        spacerItem6 = QtWidgets.QSpacerItem(301, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem6, 4, 0, 1, 3)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem3, 1, 3, 1, 1)
         self.show_result_btn = QtWidgets.QPushButton(Form)
         self.show_result_btn.setMinimumSize(QtCore.QSize(250, 50))
         self.show_result_btn.setMaximumSize(QtCore.QSize(330, 50))
@@ -375,10 +87,326 @@ class Ui_Form(object):
 "")
         self.show_result_btn.setObjectName("show_result_btn")
         self.gridLayout_2.addWidget(self.show_result_btn, 4, 3, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem4, 5, 3, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(178, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem5, 0, 1, 1, 1)
+        spacerItem6 = QtWidgets.QSpacerItem(230, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem6, 0, 5, 1, 2)
         spacerItem7 = QtWidgets.QSpacerItem(286, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_2.addItem(spacerItem7, 4, 4, 1, 3)
-        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_2.addItem(spacerItem8, 5, 3, 1, 1)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 63, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem8, 3, 3, 1, 1)
+        self.groupBox_2 = QtWidgets.QGroupBox(Form)
+        self.groupBox_2.setStyleSheet(" border-color:transparent;\n"
+"background-color:transparent;")
+        self.groupBox_2.setTitle("")
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.gridLayout = QtWidgets.QGridLayout(self.groupBox_2)
+        self.gridLayout.setObjectName("gridLayout")
+        self.adiponcetin_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.adiponcetin_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.adiponcetin_sb.setObjectName("adiponcetin_sb")
+        self.gridLayout.addWidget(self.adiponcetin_sb, 7, 1, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 2, 0, 1, 1)
+        self.label_10 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_10.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_10.setObjectName("label_10")
+        self.gridLayout.addWidget(self.label_10, 8, 0, 1, 1)
+        self.insuline_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.insuline_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.insuline_sb.setObjectName("insuline_sb")
+        self.gridLayout.addWidget(self.insuline_sb, 4, 1, 1, 1)
+        self.glucouse_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.glucouse_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.glucouse_sb.setObjectName("glucouse_sb")
+        self.gridLayout.addWidget(self.glucouse_sb, 3, 1, 1, 1)
+        self.insuline_lin = QtWidgets.QLabel(self.groupBox_2)
+        self.insuline_lin.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.insuline_lin.setObjectName("insuline_lin")
+        self.gridLayout.addWidget(self.insuline_lin, 4, 0, 1, 1)
+        self.homa_lin = QtWidgets.QLabel(self.groupBox_2)
+        self.homa_lin.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.homa_lin.setObjectName("homa_lin")
+        self.gridLayout.addWidget(self.homa_lin, 5, 0, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_8.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_8.setObjectName("label_8")
+        self.gridLayout.addWidget(self.label_8, 7, 0, 1, 1)
+        self.mcp_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.mcp_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.mcp_sb.setObjectName("mcp_sb")
+        self.gridLayout.addWidget(self.mcp_sb, 9, 1, 1, 1)
+        self.homa_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.homa_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.homa_sb.setObjectName("homa_sb")
+        self.gridLayout.addWidget(self.homa_sb, 5, 1, 1, 1)
+        self.label_4 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_4.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 3, 0, 1, 1)
+        self.resistiin_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.resistiin_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.resistiin_sb.setObjectName("resistiin_sb")
+        self.gridLayout.addWidget(self.resistiin_sb, 8, 1, 1, 1)
+        self.leptin_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.leptin_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.leptin_sb.setObjectName("leptin_sb")
+        self.gridLayout.addWidget(self.leptin_sb, 6, 1, 1, 1)
+        self.leptin = QtWidgets.QLabel(self.groupBox_2)
+        self.leptin.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.leptin.setObjectName("leptin")
+        self.gridLayout.addWidget(self.leptin, 6, 0, 1, 1)
+        self.lineEdit = QtWidgets.QLineEdit(self.groupBox_2)
+        self.lineEdit.setMinimumSize(QtCore.QSize(196, 40))
+        self.lineEdit.setMaximumSize(QtCore.QSize(196, 16777215))
+        self.lineEdit.setStyleSheet("border: 2px solid #bebebe ;\n"
+"border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.lineEdit.setObjectName("lineEdit")
+        self.gridLayout.addWidget(self.lineEdit, 1, 1, 1, 1)
+        self.label_9 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_9.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_9.setObjectName("label_9")
+        self.gridLayout.addWidget(self.label_9, 9, 0, 1, 1)
+        self.label = QtWidgets.QLabel(self.groupBox_2)
+        self.label.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
+        self.bmi_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
+        self.bmi_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.bmi_sb.setObjectName("bmi_sb")
+        self.gridLayout.addWidget(self.bmi_sb, 2, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.groupBox_2, 2, 3, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -387,14 +415,14 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_2.setText(_translate("Form", "Check Blood Cancer"))
-        self.label.setText(_translate("Form", "Age"))
+        self.show_result_btn.setText(_translate("Form", "Show result"))
         self.label_3.setText(_translate("Form", "bmi"))
-        self.label_4.setText(_translate("Form", "glucouse"))
+        self.label_10.setText(_translate("Form", "resistiin"))
         self.insuline_lin.setText(_translate("Form", "insuline"))
         self.homa_lin.setText(_translate("Form", "homa"))
-        self.leptin.setText(_translate("Form", "leptin"))
         self.label_8.setText(_translate("Form", "adiponcetin"))
-        self.label_10.setText(_translate("Form", "resistiin"))
+        self.label_4.setText(_translate("Form", "glucouse"))
+        self.leptin.setText(_translate("Form", "leptin"))
         self.label_9.setText(_translate("Form", "mcp"))
-        self.show_result_btn.setText(_translate("Form", "Show result"))
+        self.label.setText(_translate("Form", "Age"))
 import app_resources_rc

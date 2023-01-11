@@ -49,6 +49,45 @@ class Ui_Form(object):
         self.groupBox.setObjectName("groupBox")
         self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
         self.gridLayout.setObjectName("gridLayout")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.label_6 = QtWidgets.QLabel(self.groupBox)
+        self.label_6.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_6.setObjectName("label_6")
+        self.horizontalLayout_6.addWidget(self.label_6)
+        self.MDVP_Fo_Hz_SB_5 = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.MDVP_Fo_Hz_SB_5.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.MDVP_Fo_Hz_SB_5.setObjectName("MDVP_Fo_Hz_SB_5")
+        self.horizontalLayout_6.addWidget(self.MDVP_Fo_Hz_SB_5)
+        self.gridLayout.addLayout(self.horizontalLayout_6, 5, 0, 1, 1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_2 = QtWidgets.QLabel(self.groupBox)
@@ -75,78 +114,6 @@ class Ui_Form(object):
         self.sex_comboBox.addItem(icon1, "")
         self.horizontalLayout.addWidget(self.sex_comboBox)
         self.gridLayout.addLayout(self.horizontalLayout, 1, 0, 1, 1)
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.label_3 = QtWidgets.QLabel(self.groupBox)
-        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout_3.addWidget(self.label_3)
-        self.MDVP_Fo_Hz_SB_2 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_2.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.MDVP_Fo_Hz_SB_2.setObjectName("MDVP_Fo_Hz_SB_2")
-        self.horizontalLayout_3.addWidget(self.MDVP_Fo_Hz_SB_2)
-        self.gridLayout.addLayout(self.horizontalLayout_3, 2, 0, 1, 1)
-        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.label_5 = QtWidgets.QLabel(self.groupBox)
-        self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_5.setObjectName("label_5")
-        self.horizontalLayout_5.addWidget(self.label_5)
-        self.MDVP_Fo_Hz_SB_4 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_4.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.MDVP_Fo_Hz_SB_4.setObjectName("MDVP_Fo_Hz_SB_4")
-        self.horizontalLayout_5.addWidget(self.MDVP_Fo_Hz_SB_4)
-        self.gridLayout.addLayout(self.horizontalLayout_5, 4, 0, 1, 1)
-        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
-        self.label_7 = QtWidgets.QLabel(self.groupBox)
-        self.label_7.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_7.setObjectName("label_7")
-        self.horizontalLayout_7.addWidget(self.label_7)
-        self.MDVP_Fo_Hz_SB_6 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_6.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.MDVP_Fo_Hz_SB_6.setObjectName("MDVP_Fo_Hz_SB_6")
-        self.horizontalLayout_7.addWidget(self.MDVP_Fo_Hz_SB_6)
-        self.gridLayout.addLayout(self.horizontalLayout_7, 6, 0, 1, 1)
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
         self.label_8 = QtWidgets.QLabel(self.groupBox)
@@ -154,10 +121,25 @@ class Ui_Form(object):
         self.label_8.setObjectName("label_8")
         self.horizontalLayout_8.addWidget(self.label_8)
         self.MDVP_Fo_Hz_SB_7 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_7.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
+        self.MDVP_Fo_Hz_SB_7.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
 "\n"
 "QLineEdit{\n"
 "border: 1px solid #ABAFB7;\n"
@@ -171,17 +153,32 @@ class Ui_Form(object):
         self.MDVP_Fo_Hz_SB_7.setObjectName("MDVP_Fo_Hz_SB_7")
         self.horizontalLayout_8.addWidget(self.MDVP_Fo_Hz_SB_7)
         self.gridLayout.addLayout(self.horizontalLayout_8, 7, 0, 1, 1)
-        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        self.label_6 = QtWidgets.QLabel(self.groupBox)
-        self.label_6.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_6.setObjectName("label_6")
-        self.horizontalLayout_6.addWidget(self.label_6)
-        self.MDVP_Fo_Hz_SB_5 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_5.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.label_3 = QtWidgets.QLabel(self.groupBox)
+        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_3.addWidget(self.label_3)
+        self.MDVP_Fo_Hz_SB_2 = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.MDVP_Fo_Hz_SB_2.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
 "\n"
 "QLineEdit{\n"
 "border: 1px solid #ABAFB7;\n"
@@ -192,9 +189,9 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB_5.setObjectName("MDVP_Fo_Hz_SB_5")
-        self.horizontalLayout_6.addWidget(self.MDVP_Fo_Hz_SB_5)
-        self.gridLayout.addLayout(self.horizontalLayout_6, 5, 0, 1, 1)
+        self.MDVP_Fo_Hz_SB_2.setObjectName("MDVP_Fo_Hz_SB_2")
+        self.horizontalLayout_3.addWidget(self.MDVP_Fo_Hz_SB_2)
+        self.gridLayout.addLayout(self.horizontalLayout_3, 2, 0, 1, 1)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.label_4 = QtWidgets.QLabel(self.groupBox)
@@ -202,10 +199,25 @@ class Ui_Form(object):
         self.label_4.setObjectName("label_4")
         self.horizontalLayout_4.addWidget(self.label_4)
         self.MDVP_Fo_Hz_SB_3 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_3.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
+        self.MDVP_Fo_Hz_SB_3.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
 "\n"
 "QLineEdit{\n"
 "border: 1px solid #ABAFB7;\n"
@@ -219,6 +231,84 @@ class Ui_Form(object):
         self.MDVP_Fo_Hz_SB_3.setObjectName("MDVP_Fo_Hz_SB_3")
         self.horizontalLayout_4.addWidget(self.MDVP_Fo_Hz_SB_3)
         self.gridLayout.addLayout(self.horizontalLayout_4, 3, 0, 1, 1)
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.label_7 = QtWidgets.QLabel(self.groupBox)
+        self.label_7.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_7.setObjectName("label_7")
+        self.horizontalLayout_7.addWidget(self.label_7)
+        self.MDVP_Fo_Hz_SB_6 = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.MDVP_Fo_Hz_SB_6.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.MDVP_Fo_Hz_SB_6.setObjectName("MDVP_Fo_Hz_SB_6")
+        self.horizontalLayout_7.addWidget(self.MDVP_Fo_Hz_SB_6)
+        self.gridLayout.addLayout(self.horizontalLayout_7, 6, 0, 1, 1)
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.label_5 = QtWidgets.QLabel(self.groupBox)
+        self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout_5.addWidget(self.label_5)
+        self.MDVP_Fo_Hz_SB_4 = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.MDVP_Fo_Hz_SB_4.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.MDVP_Fo_Hz_SB_4.setObjectName("MDVP_Fo_Hz_SB_4")
+        self.horizontalLayout_5.addWidget(self.MDVP_Fo_Hz_SB_4)
+        self.gridLayout.addLayout(self.horizontalLayout_5, 4, 0, 1, 1)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.label = QtWidgets.QLabel(self.groupBox)
@@ -226,10 +316,25 @@ class Ui_Form(object):
         self.label.setObjectName("label")
         self.horizontalLayout_2.addWidget(self.label)
         self.MDVP_Fo_Hz_SB = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
+        self.MDVP_Fo_Hz_SB.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
 "\n"
 "QLineEdit{\n"
 "border: 1px solid #ABAFB7;\n"
@@ -308,16 +413,16 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_9.setText(_translate("Form", "Check Alzahimer"))
+        self.label_6.setText(_translate("Form", "eTIV"))
         self.label_2.setText(_translate("Form", "Sex"))
         self.sex_comboBox.setItemText(0, _translate("Form", "Select"))
         self.sex_comboBox.setItemText(1, _translate("Form", "Male"))
         self.sex_comboBox.setItemText(2, _translate("Form", "Female"))
-        self.label_3.setText(_translate("Form", "EDUC"))
-        self.label_5.setText(_translate("Form", "MMSE"))
-        self.label_7.setText(_translate("Form", "nWBV"))
         self.label_8.setText(_translate("Form", "ASF"))
-        self.label_6.setText(_translate("Form", "eTIV"))
+        self.label_3.setText(_translate("Form", "EDUC"))
         self.label_4.setText(_translate("Form", "SES"))
+        self.label_7.setText(_translate("Form", "nWBV"))
+        self.label_5.setText(_translate("Form", "MMSE"))
         self.label.setText(_translate("Form", "Age"))
         self.show_result_btn.setText(_translate("Form", "Show result"))
 import app_resources_rc
