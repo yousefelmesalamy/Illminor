@@ -15,7 +15,9 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1127, 782)
-        Form.setStyleSheet("font-family:Ubuntu;\n"
+        Form.setStyleSheet("background-color: rgb(239, 243, 252);\n"
+"color: rgb(18, 32, 62);\n"
+"font-family:Ubuntu;\n"
 "font-size: 20px;")
         self.gridLayout_3 = QtWidgets.QGridLayout(Form)
         self.gridLayout_3.setObjectName("gridLayout_3")
@@ -36,8 +38,12 @@ class Ui_Form(object):
         self.widget_3.setFont(font)
         self.widget_3.setStyleSheet("")
         self.widget_3.setObjectName("widget_3")
-        self.gridLayout_18 = QtWidgets.QGridLayout(self.widget_3)
-        self.gridLayout_18.setObjectName("gridLayout_18")
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.widget_3)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout_4.addItem(spacerItem, 3, 0, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_4.addItem(spacerItem1, 5, 0, 1, 2)
         self.label_13 = QtWidgets.QLabel(self.widget_3)
         font = QtGui.QFont()
         font.setFamily("arow")
@@ -49,97 +55,11 @@ class Ui_Form(object):
 "font-size:30px;\n"
 "color:rgb(18,32,62,255);")
         self.label_13.setObjectName("label_13")
-        self.gridLayout_18.addWidget(self.label_13, 2, 0, 1, 1)
-        self.gridLayout_19 = QtWidgets.QGridLayout()
-        self.gridLayout_19.setObjectName("gridLayout_19")
-        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout_19.addItem(spacerItem, 1, 0, 1, 1)
-        self.gridLayout_20 = QtWidgets.QGridLayout()
-        self.gridLayout_20.setObjectName("gridLayout_20")
-        self.label_14 = QtWidgets.QLabel(self.widget_3)
-        self.label_14.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_14.setObjectName("label_14")
-        self.gridLayout_20.addWidget(self.label_14, 0, 0, 1, 1)
-        self.password_check_lin_3 = QtWidgets.QLineEdit(self.widget_3)
-        self.password_check_lin_3.setMinimumSize(QtCore.QSize(350, 40))
-        self.password_check_lin_3.setStyleSheet("font-family:arow;\n"
-"background-color: rgb(255, 255, 255);\n"
-"border-radius: 10% 10%;\n"
-"font-size:15px;\n"
-"padding-left:5px;\n"
-"")
-        self.password_check_lin_3.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.password_check_lin_3.setObjectName("password_check_lin_3")
-        self.gridLayout_20.addWidget(self.password_check_lin_3, 1, 0, 1, 1)
-        self.gridLayout_19.addLayout(self.gridLayout_20, 6, 0, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout_19.addItem(spacerItem1, 3, 0, 1, 1)
-        self.gridLayout_21 = QtWidgets.QGridLayout()
-        self.gridLayout_21.setObjectName("gridLayout_21")
-        self.label_15 = QtWidgets.QLabel(self.widget_3)
-        self.label_15.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_15.setObjectName("label_15")
-        self.gridLayout_21.addWidget(self.label_15, 0, 0, 1, 1)
-        self.email_lin_3 = QtWidgets.QLineEdit(self.widget_3)
-        self.email_lin_3.setMinimumSize(QtCore.QSize(350, 40))
-        self.email_lin_3.setStyleSheet("font-family:arow;\n"
-"background-color: rgb(255, 255, 255);\n"
-"border-radius: 10% 10%;\n"
-"font-size:15px;\n"
-"padding-left:5px;\n"
-"")
-        self.email_lin_3.setInputMask("")
-        self.email_lin_3.setText("")
-        self.email_lin_3.setMaxLength(32767)
-        self.email_lin_3.setFrame(False)
-        self.email_lin_3.setPlaceholderText("")
-        self.email_lin_3.setObjectName("email_lin_3")
-        self.gridLayout_21.addWidget(self.email_lin_3, 1, 0, 1, 1)
-        self.gridLayout_19.addLayout(self.gridLayout_21, 0, 0, 1, 1)
-        self.gridLayout_22 = QtWidgets.QGridLayout()
-        self.gridLayout_22.setObjectName("gridLayout_22")
-        self.label_16 = QtWidgets.QLabel(self.widget_3)
-        self.label_16.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_16.setObjectName("label_16")
-        self.gridLayout_22.addWidget(self.label_16, 0, 0, 1, 1)
-        self.username_lin_3 = QtWidgets.QLineEdit(self.widget_3)
-        self.username_lin_3.setMinimumSize(QtCore.QSize(350, 40))
-        self.username_lin_3.setStyleSheet("font-family:arow;\n"
-"background-color: rgb(255, 255, 255);\n"
-"border-radius: 10% 10%;\n"
-"font-size:15px;\n"
-"padding-left:5px;\n"
-"")
-        self.username_lin_3.setObjectName("username_lin_3")
-        self.gridLayout_22.addWidget(self.username_lin_3, 1, 0, 1, 1)
-        self.gridLayout_19.addLayout(self.gridLayout_22, 2, 0, 1, 1)
-        self.gridLayout_23 = QtWidgets.QGridLayout()
-        self.gridLayout_23.setObjectName("gridLayout_23")
-        self.password_lin_3 = QtWidgets.QLineEdit(self.widget_3)
-        self.password_lin_3.setMinimumSize(QtCore.QSize(350, 40))
-        self.password_lin_3.setStyleSheet("font-family:arow;\n"
-"background-color: rgb(255, 255, 255);\n"
-"border-radius: 10% 10%;\n"
-"font-size:15px;\n"
-"padding-left:5px;\n"
-"")
-        self.password_lin_3.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.password_lin_3.setObjectName("password_lin_3")
-        self.gridLayout_23.addWidget(self.password_lin_3, 1, 0, 1, 1)
-        self.label_17 = QtWidgets.QLabel(self.widget_3)
-        self.label_17.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_17.setObjectName("label_17")
-        self.gridLayout_23.addWidget(self.label_17, 0, 0, 1, 1)
-        self.gridLayout_19.addLayout(self.gridLayout_23, 4, 0, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout_19.addItem(spacerItem2, 5, 0, 1, 1)
-        self.gridLayout_18.addLayout(self.gridLayout_19, 4, 0, 1, 2)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout_18.addItem(spacerItem3, 1, 1, 1, 1)
-        self.login_pushbutton = QtWidgets.QPushButton(self.widget_3)
-        self.login_pushbutton.setMinimumSize(QtCore.QSize(150, 50))
-        self.login_pushbutton.setMaximumSize(QtCore.QSize(150, 50))
-        self.login_pushbutton.setStyleSheet("QPushButton {\n"
+        self.gridLayout_4.addWidget(self.label_13, 2, 0, 1, 1)
+        self.login_btn = QtWidgets.QPushButton(self.widget_3)
+        self.login_btn.setMinimumSize(QtCore.QSize(150, 50))
+        self.login_btn.setMaximumSize(QtCore.QSize(150, 50))
+        self.login_btn.setStyleSheet("QPushButton {\n"
 "    background-color:rgba(255,255,255,255);\n"
 "    color: black;\n"
 "    padding: 2px;\n"
@@ -158,12 +78,112 @@ class Ui_Form(object):
 "background-postion:calc(100% - 10px) center;\n"
 "}\n"
 "")
-        self.login_pushbutton.setObjectName("login_pushbutton")
-        self.gridLayout_18.addWidget(self.login_pushbutton, 0, 1, 1, 1)
+        self.login_btn.setObjectName("login_btn")
+        self.gridLayout_4.addWidget(self.login_btn, 0, 1, 1, 1)
+        self.gridLayout_19 = QtWidgets.QGridLayout()
+        self.gridLayout_19.setObjectName("gridLayout_19")
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout_19.addItem(spacerItem2, 1, 0, 1, 1)
+        self.gridLayout_20 = QtWidgets.QGridLayout()
+        self.gridLayout_20.setObjectName("gridLayout_20")
+        self.password_check_lin_3 = QtWidgets.QLineEdit(self.widget_3)
+        self.password_check_lin_3.setMinimumSize(QtCore.QSize(350, 40))
+        self.password_check_lin_3.setStyleSheet("border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.password_check_lin_3.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.password_check_lin_3.setObjectName("password_check_lin_3")
+        self.gridLayout_20.addWidget(self.password_check_lin_3, 1, 0, 1, 1)
+        self.label_14 = QtWidgets.QLabel(self.widget_3)
+        self.label_14.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_14.setObjectName("label_14")
+        self.gridLayout_20.addWidget(self.label_14, 0, 0, 1, 1)
+        self.gridLayout_19.addLayout(self.gridLayout_20, 6, 0, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout_19.addItem(spacerItem3, 3, 0, 1, 1)
+        self.gridLayout_21 = QtWidgets.QGridLayout()
+        self.gridLayout_21.setObjectName("gridLayout_21")
+        self.label_15 = QtWidgets.QLabel(self.widget_3)
+        self.label_15.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_15.setObjectName("label_15")
+        self.gridLayout_21.addWidget(self.label_15, 0, 0, 1, 1)
+        self.email_lin_3 = QtWidgets.QLineEdit(self.widget_3)
+        self.email_lin_3.setMinimumSize(QtCore.QSize(350, 40))
+        self.email_lin_3.setStyleSheet("border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.email_lin_3.setInputMask("")
+        self.email_lin_3.setText("")
+        self.email_lin_3.setMaxLength(32767)
+        self.email_lin_3.setFrame(False)
+        self.email_lin_3.setPlaceholderText("")
+        self.email_lin_3.setObjectName("email_lin_3")
+        self.gridLayout_21.addWidget(self.email_lin_3, 1, 0, 1, 1)
+        self.gridLayout_19.addLayout(self.gridLayout_21, 0, 0, 1, 1)
+        self.gridLayout_22 = QtWidgets.QGridLayout()
+        self.gridLayout_22.setObjectName("gridLayout_22")
+        self.label_16 = QtWidgets.QLabel(self.widget_3)
+        self.label_16.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_16.setObjectName("label_16")
+        self.gridLayout_22.addWidget(self.label_16, 0, 0, 1, 1)
+        self.username_lin_3 = QtWidgets.QLineEdit(self.widget_3)
+        self.username_lin_3.setMinimumSize(QtCore.QSize(350, 40))
+        self.username_lin_3.setStyleSheet("border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.username_lin_3.setObjectName("username_lin_3")
+        self.gridLayout_22.addWidget(self.username_lin_3, 1, 0, 1, 1)
+        self.gridLayout_19.addLayout(self.gridLayout_22, 2, 0, 1, 1)
+        self.gridLayout_23 = QtWidgets.QGridLayout()
+        self.gridLayout_23.setObjectName("gridLayout_23")
+        self.password_lin_3 = QtWidgets.QLineEdit(self.widget_3)
+        self.password_lin_3.setMinimumSize(QtCore.QSize(350, 40))
+        self.password_lin_3.setStyleSheet("border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.password_lin_3.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.password_lin_3.setObjectName("password_lin_3")
+        self.gridLayout_23.addWidget(self.password_lin_3, 1, 0, 1, 1)
+        self.label_17 = QtWidgets.QLabel(self.widget_3)
+        self.label_17.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_17.setObjectName("label_17")
+        self.gridLayout_23.addWidget(self.label_17, 0, 0, 1, 1)
+        self.gridLayout_19.addLayout(self.gridLayout_23, 4, 0, 1, 1)
         spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout_18.addItem(spacerItem4, 3, 0, 1, 1)
-        spacerItem5 = QtWidgets.QSpacerItem(20, 80, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_18.addItem(spacerItem5, 5, 0, 1, 1)
+        self.gridLayout_19.addItem(spacerItem4, 5, 0, 1, 1)
+        self.gridLayout_4.addLayout(self.gridLayout_19, 4, 0, 1, 2)
+        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_4.addItem(spacerItem5, 1, 1, 1, 1)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem6)
+        self.siginup_btn = QtWidgets.QPushButton(self.widget_3)
+        self.siginup_btn.setMinimumSize(QtCore.QSize(221, 50))
+        self.siginup_btn.setMaximumSize(QtCore.QSize(150, 50))
+        self.siginup_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}")
+        self.siginup_btn.setObjectName("siginup_btn")
+        self.horizontalLayout.addWidget(self.siginup_btn)
+        spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem7)
+        self.gridLayout_4.addLayout(self.horizontalLayout, 6, 0, 1, 2)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_4.addItem(spacerItem8, 7, 0, 1, 2)
         self.gridLayout.addWidget(self.widget_3, 0, 0, 1, 1)
         self.gridLayout_3.addWidget(self.groupBox, 0, 1, 1, 1)
         self.groupBox_3 = QtWidgets.QGroupBox(Form)
@@ -191,9 +211,10 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_13.setText(_translate("Form", "Register"))
+        self.login_btn.setText(_translate("Form", "LOGIN"))
         self.label_14.setText(_translate("Form", "confirm password"))
         self.label_15.setText(_translate("Form", "Email"))
         self.label_16.setText(_translate("Form", "Username"))
         self.label_17.setText(_translate("Form", "Password"))
-        self.login_pushbutton.setText(_translate("Form", "LOGIN"))
+        self.siginup_btn.setText(_translate("Form", "SIGNUP"))
 import app_resources_rc

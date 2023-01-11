@@ -9,7 +9,7 @@ class Register_Manager(QtWidgets.QWidget, register_view.Ui_Form):
         super(Register_Manager, self).__init__()
         self.setupUi(self)
 
-        self.login_pushbutton.clicked.connect(self.handle_login)
+        self.login_btn.clicked.connect(self.handle_login)
         # self.base_url = "https://saied.pythonanywhere.com/login/"
         # self.userToken = ''
 

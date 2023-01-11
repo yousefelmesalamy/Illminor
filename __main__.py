@@ -9,6 +9,9 @@ from views_mangers.blood_manger import Blood_MANGER
 from views_mangers.breast_manger import BREAST_MANGER
 from views_mangers.diabetes_manger import Diabetes_MANGER
 from views_mangers.heart_manger import Heart_MANGER
+from views_mangers.change_password_manager import CHANGE_PASSWORD_Mnager
+from views_mangers.profileclient_manager import PROFILE_CLIENT_Mnager
+from views_mangers.profileclient_edit_manager import PROFILE_CLIENT_EDIT_Mnager
 import sys
 
 from PyQt5.QtGui import QImage, QPixmap
@@ -17,7 +20,7 @@ class Illminor(QtWidgets.QStackedWidget):
     def __init__(self , name=None, *args, **kwargs ):
         super(Illminor, self).__init__()
 
-        self.base_url = "http://192.168.43.44:8000"
+        self.base_url = "http://192.168.43.149:8000"
 
         #install widget
         self.login_manger = Login_Manager()
@@ -30,6 +33,10 @@ class Illminor(QtWidgets.QStackedWidget):
         self.breast_manager=BREAST_MANGER()
         self.diabetes_manager=Diabetes_MANGER()
         self.heart_manager=Heart_MANGER()
+        self.change_password_manager=CHANGE_PASSWORD_Mnager()
+        self.profile_manager=PROFILE_CLIENT_Mnager()
+        self.profile_edit_manager=PROFILE_CLIENT_EDIT_Mnager()
+
 
         # self.showFullScreen()
 
@@ -44,37 +51,114 @@ class Illminor(QtWidgets.QStackedWidget):
         self.addWidget(self.blood_manager) #6
         self.addWidget(self.breast_manager) #7
         self.addWidget(self.diabetes_manager) #8
-        self.addWidget(self.heart_manager) #9
+        self.addWidget(self.change_password_manager) #9
+        self.addWidget(self.profile_manager) #10
+        self.addWidget(self.profile_edit_manager) #11
+        self.addWidget(self.heart_manager) #12
+
+
 
         # install signals
         self.login_manger.DoctorloginAcceptedSignal.connect(self.handle_doctor_login)
         self.login_manger.PatientloginAcceptedSignal.connect(self.handle_patient_login)
 
 
+        #istall back-btns
+        self.parkinson_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
+        self.heart_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
+        self.breast_manager.back_btn_2.clicked.connect(lambda: self.setCurrentIndex(3))
+        self.blood_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
+        self.diabetes_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
+        self.alzahimer_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
+
         #success screen
-        self.login_manger.signup_btn.clicked.connect(lambda :self.handel_signup)
-        self.register_manager.login_pushbutton.clicked.connect(lambda :self.setCurrentIndex(0))
-        self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(2))
-        self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
-        # self.login_manger.login_btn.clicked.connect(lambda :self.setCurrentIndex(3))
-        self.main_manager.logout_btn.clicked.connect(lambda :self.setCurrentIndex(0))
-        self.main_manager.parkinson_btn.clicked.connect(lambda :self.setCurrentIndex(4))
+        self.login_manger.signup_btn.clicked.connect(self.handle_signup_to_goal)
+        self.main_manager.user_btn.clicked.connect(self.handle_main_to_user_profile)
+        self.main_manager.change_password_btn.clicked.connect(self.handle_main_to_change_password)
+        self.main_manager.brain_cancer_btn.clicked.connect(self.handle_main_to_alzahimer)
+        self.main_manager.heart_btn.clicked.connect(self.handle_main_to_heart)
+        self.main_manager.blood_btn.clicked.connect(self.handle_main_to_blood)
+        self.main_manager.breast_btn.clicked.connect(self.handle_main_to_breast)
+        self.main_manager.parkinson_btn.clicked.connect(self.handle_main_to_parkinsor)
+        self.goal_manager.doctor_btn.clicked.connect(self.goal_to_signup_doctor)
+        self.goal_manager.patient_btn.clicked.connect(self.goal_to_patient_signup)
+
+
+
+        self.profile_manager.home_btn.clicked.connect(self.hndle_profile_to_home)
+        self.profile_manager.change_password_btn.clicked.connect(self.hndle_profile_to_change_password)
+        self.profile_edit_manager.change_password_btn.clicked.connect(self.hndle_profile_edit_to_change_password)
+        self.profile_edit_manager.home_btn.clicked.connect(self.hndle_profile_edit_to_home)
+        self.profile_edit_manager.logout_btn.clicked.connect(self.handle_logout)
+        self.profile_manager.logout_btn.clicked.connect(self.handle_logout)
+        self.change_password_manager.home_btn.clicked.connect(self.chanage_password_to_home)
+        self.change_password_manager.user_btn.clicked.connect(self.chanage_password_to_profile)
+        self.profile_manager.editprofile_btn.clicked.connect(self.profile_to_edit_profile)
+        self.register_manager.login_btn.clicked.connect(self.signup_to_login)
+
+
+
+
+
+
+        # self.register_manager.login_btn.clicked.connect(lambda :self.setCurrentIndex(0))
+        # self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(2))
+        # self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
+        # self.login_manger.login_btn.clicked.connect(lambda     :self.setCurrentIndex(3))
+        # self.main_manager.parkinson_btn.clicked.connect(lambda :self.setCurrentIndex(4))
         self.main_manager.diabetes_btn.clicked.connect(self.handle_diabetes)
-        self.parkinson_manager.back_btn.clicked.connect(lambda :self.setCurrentIndex(3))
-
-
+        self.profile_edit_manager.cancel_btn.clicked.connect(self.profile_edit_to_profile)
 
         # self.login_manger.signup_lbl.clicked.connect(lambda :self.setCurrentIndex(1))
 
 
+    def goal_to_patient_signup(self):
+        self.setCurrentIndex(2)
+    def goal_to_signup_doctor(self):
+        self.setCurrentIndex(2)
+    def handle_main_to_parkinsor(self):
+        self.setCurrentIndex(4)
 
+    def  handle_main_to_breast(self):
+        self.setCurrentIndex(7)
+    def handle_main_to_blood(self):
+        self.setCurrentIndex(6)
+    def handle_main_to_heart(self):
+        self.setCurrentIndex(12)
+    def handle_main_to_alzahimer(self):
+        self.setCurrentIndex(5)
+    def signup_to_login(self):
+        self.setCurrentIndex(0)
+    def profile_edit_to_profile(self):
+        self.setCurrentIndex(10)
+
+    def profile_to_edit_profile(self):
+        self.setCurrentIndex(11)
+    def chanage_password_to_profile(self):
+        self.setCurrentIndex(10)
+    def chanage_password_to_home(self):
+        self.setCurrentIndex(3)
+    def handle_logout(self):
+        self.setCurrentIndex(0)
+    def hndle_profile_edit_to_home(self):
+        self.setCurrentIndex(3)
+    def hndle_profile_edit_to_change_password(self):
+        self.setCurrentIndex(9)
+    def hndle_profile_to_change_password(self):
+        self.setCurrentIndex(9)
+    def hndle_profile_to_home(self):
+        self.setCurrentIndex(3)
+    def handle_main_to_change_password(self):
+        self.setCurrentIndex(9)
+    def handle_main_to_user_profile(self):
+        self.setCurrentIndex(10)
     def handle_doctor_login(self):
         self.setCurrentIndex(3)
     def handle_patient_login(self):
         self.main_manager.results_btn.setVisible(False)
         self.setCurrentIndex(3)
-    def handle_signup(self):
-        self.setCurrentIndex(2)
+    def handle_signup_to_goal(self):
+        self.setCurrentIndex(1)
 
     def handle_diabetes(self):
         self.diabetes_manager.base_url=self.base_url

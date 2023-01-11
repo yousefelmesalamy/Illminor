@@ -234,22 +234,25 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="Age_sb">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="minimumSize">
+           <size>
+            <width>196</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>196</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(119, 118, 123,0);
-  cursor: pointer;
-  float: right;
-  padding: 5px 20px;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
+           <string notr="true">border: 2px solid #bebebe ;
+border-radius: 10% 10%;
+padding-left:5px;
+background-color: rgb(255, 255, 255);
+color: rgb(18, 32, 62);</string>
           </property>
          </widget>
         </item>

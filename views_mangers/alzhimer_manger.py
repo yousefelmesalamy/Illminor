@@ -4,7 +4,7 @@ from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtWidgets import *
 import requests
 
-response = requests.get("http://f1f4-197-54-137-81.ngrok.io/alzheimer")
+# response = requests.get("http://f1f4-197-54-137-81.ngrok.io/alzheimer")
 class Alzahimer_MANGER(QtWidgets.QWidget, alzhimer_model.Ui_Form):
     acceptedSignal = pyqtSignal()
     def __init__(self):

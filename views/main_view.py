@@ -18,8 +18,8 @@ class Ui_Form(object):
         Form.setStyleSheet("font-family:Ubuntu;\n"
 "font-size: 20px;\n"
 "background-color: rgb(239, 243, 252);")
-        self.gridLayout_4 = QtWidgets.QGridLayout(Form)
-        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.gridLayout_2 = QtWidgets.QGridLayout(Form)
+        self.gridLayout_2.setObjectName("gridLayout_2")
         self.groupBox_2 = QtWidgets.QGroupBox(Form)
         self.groupBox_2.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "border-radius:20% 20%;\n"
@@ -244,126 +244,157 @@ class Ui_Form(object):
         self.gridLayout_3.addItem(spacerItem15, 1, 4, 1, 1)
         spacerItem16 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_3.addItem(spacerItem16, 3, 4, 1, 1)
-        self.gridLayout_4.addWidget(self.groupBox_2, 2, 2, 1, 2)
-        self.groupBox = QtWidgets.QGroupBox(Form)
-        self.groupBox.setMinimumSize(QtCore.QSize(90, 0))
-        self.groupBox.setMaximumSize(QtCore.QSize(90, 16777215))
-        self.groupBox.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));\n"
-"\n"
-"\n"
-"\n"
-"border-radius: 20% 20%;\n"
-"color: white;")
-        self.groupBox.setTitle("")
-        self.groupBox.setObjectName("groupBox")
-        self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
-        self.gridLayout.setObjectName("gridLayout")
-        spacerItem17 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem17, 0, 0, 1, 1)
-        spacerItem18 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout.addItem(spacerItem18, 2, 0, 1, 1)
-        self.results_btn = QtWidgets.QPushButton(self.groupBox)
-        self.results_btn.setMinimumSize(QtCore.QSize(0, 60))
+        self.results_btn = QtWidgets.QPushButton(self.groupBox_2)
+        self.results_btn.setMinimumSize(QtCore.QSize(80, 80))
+        self.results_btn.setMaximumSize(QtCore.QSize(80, 80))
         self.results_btn.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 255, 255,0);\n"
+"border-radius:15% 15%;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"\n"
+"\n"
+"\n"
+"border: 2px solid #bebebe ;\n"
+"    background-color: rgb(214, 214, 214);\n"
+"  background-color: white;\n"
+"  color: black;\n"
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
 "padding-left:5px;\n"
 "padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
 "background-postion:calc(100% - 10px) center;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));}")
+"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165,.5), stop:1 rgba(12, 148, 207,.1));}")
         self.results_btn.setText("")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/ICONS/icons/clipboard.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon6.addPixmap(QtGui.QPixmap(":/ICONS/icons/2 (1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.results_btn.setIcon(icon6)
         self.results_btn.setIconSize(QtCore.QSize(40, 40))
         self.results_btn.setFlat(True)
         self.results_btn.setObjectName("results_btn")
-        self.gridLayout.addWidget(self.results_btn, 1, 0, 1, 1)
-        self.change_password_btn = QtWidgets.QPushButton(self.groupBox)
-        self.change_password_btn.setMinimumSize(QtCore.QSize(0, 60))
-        self.change_password_btn.setStyleSheet("QPushButton{\n"
-"background-color: rgb(255, 255, 255,0);\n"
-"}\n"
+        self.gridLayout_3.addWidget(self.results_btn, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.groupBox_2, 0, 2, 1, 1)
+        spacerItem17 = QtWidgets.QSpacerItem(20, 693, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem17, 0, 1, 1, 1)
+        self.groupBox = QtWidgets.QGroupBox(Form)
+        self.groupBox.setMinimumSize(QtCore.QSize(105, 0))
+        self.groupBox.setMaximumSize(QtCore.QSize(105, 16777215))
+        self.groupBox.setStyleSheet("QGroupBox{\n"
+"    background-color: rgb(255, 255, 255);\n"
 "\n"
-"QPushButton:pressed{\n"
-"padding-left:5px;\n"
-"padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
-"background-postion:calc(100% - 10px) center;\n"
-"}\n"
+"border-radius: 20% 20%;\n"
+"color: white;\n"
+"  box-shadow: 5px 10px;\n"
 "\n"
-"QPushButton:hover {\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));}")
-        self.change_password_btn.setText("")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/ICONS/icons/key.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.change_password_btn.setIcon(icon7)
-        self.change_password_btn.setIconSize(QtCore.QSize(40, 40))
-        self.change_password_btn.setFlat(True)
-        self.change_password_btn.setObjectName("change_password_btn")
-        self.gridLayout.addWidget(self.change_password_btn, 5, 0, 1, 1)
-        spacerItem19 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem19, 6, 0, 1, 1)
-        spacerItem20 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout.addItem(spacerItem20, 4, 0, 1, 1)
+";}")
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName("gridLayout")
         self.user_btn = QtWidgets.QPushButton(self.groupBox)
-        self.user_btn.setMinimumSize(QtCore.QSize(0, 60))
+        self.user_btn.setMinimumSize(QtCore.QSize(80, 80))
         self.user_btn.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 255, 255,0);\n"
+"border-radius:15% 15%;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"\n"
+"\n"
+"\n"
+"border: 2px solid #bebebe ;\n"
+"    background-color: rgb(214, 214, 214);\n"
+"  background-color: white;\n"
+"  color: black;\n"
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
 "padding-left:5px;\n"
 "padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
 "background-postion:calc(100% - 10px) center;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));}")
+"    background-color: rgb(255, 95, 86,.5);}\n"
+"")
         self.user_btn.setText("")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(":/ICONS/icons/aaaaaa.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.user_btn.setIcon(icon8)
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap(":/ICONS/icons/22.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.user_btn.setIcon(icon7)
         self.user_btn.setIconSize(QtCore.QSize(40, 40))
         self.user_btn.setFlat(True)
         self.user_btn.setObjectName("user_btn")
-        self.gridLayout.addWidget(self.user_btn, 3, 0, 1, 1)
-        self.gridLayout_4.addWidget(self.groupBox, 0, 0, 3, 1)
-        spacerItem21 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_4.addItem(spacerItem21, 1, 2, 1, 1)
-        spacerItem22 = QtWidgets.QSpacerItem(20, 693, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_4.addItem(spacerItem22, 2, 1, 1, 1)
-        self.logout_btn = QtWidgets.QPushButton(Form)
-        self.logout_btn.setMinimumSize(QtCore.QSize(140, 60))
-        self.logout_btn.setMaximumSize(QtCore.QSize(130, 60))
-        self.logout_btn.setStyleSheet("QPushButton{\n"
+        self.gridLayout.addWidget(self.user_btn, 5, 0, 1, 1)
+        self.change_password_btn = QtWidgets.QPushButton(self.groupBox)
+        self.change_password_btn.setMinimumSize(QtCore.QSize(80, 80))
+        self.change_password_btn.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 255, 255,0);\n"
-"border-radius:10% 10%;\n"
+"border-radius:15% 15%;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"\n"
+"\n"
+"\n"
+"border: 2px solid #bebebe ;\n"
+"    background-color: rgb(214, 214, 214);\n"
+"  background-color: white;\n"
+"  color: black;\n"
 "}\n"
 "\n"
 "QPushButton:pressed{\n"
 "padding-left:5px;\n"
 "padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
 "background-postion:calc(100% - 10px) center;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(170, 0, 0,.3);}")
+"    background-color: rgb(255, 240, 76,.5);}")
+        self.change_password_btn.setText("")
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap(":/ICONS/icons/password.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.change_password_btn.setIcon(icon8)
+        self.change_password_btn.setIconSize(QtCore.QSize(40, 40))
+        self.change_password_btn.setFlat(True)
+        self.change_password_btn.setObjectName("change_password_btn")
+        self.gridLayout.addWidget(self.change_password_btn, 7, 0, 1, 1)
+        spacerItem18 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem18, 6, 0, 1, 1)
+        spacerItem19 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem19, 8, 0, 1, 1)
+        spacerItem20 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem20, 0, 0, 1, 1)
+        spacerItem21 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem21, 4, 0, 1, 1)
+        self.home_btn = QtWidgets.QPushButton(self.groupBox)
+        self.home_btn.setMinimumSize(QtCore.QSize(80, 80))
+        self.home_btn.setMaximumSize(QtCore.QSize(80, 80))
+        self.home_btn.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(56, 163, 255);\n"
+"border-radius:15% 15%;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-postion:calc(100% - 10px) center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165,.5), stop:1 rgba(12, 148, 207,.1));}")
+        self.home_btn.setText("")
         icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap(":/ICONS/icons/logout.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.logout_btn.setIcon(icon9)
-        self.logout_btn.setIconSize(QtCore.QSize(50, 50))
-        self.logout_btn.setFlat(False)
-        self.logout_btn.setObjectName("logout_btn")
-        self.gridLayout_4.addWidget(self.logout_btn, 0, 1, 1, 2)
+        icon9.addPixmap(QtGui.QPixmap(":/ICONS/icons/home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.home_btn.setIcon(icon9)
+        self.home_btn.setIconSize(QtCore.QSize(50, 50))
+        self.home_btn.setFlat(True)
+        self.home_btn.setObjectName("home_btn")
+        self.gridLayout.addWidget(self.home_btn, 3, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.groupBox, 0, 0, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -371,5 +402,4 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.logout_btn.setText(_translate("Form", "LOGOUT"))
 import app_resources_rc
