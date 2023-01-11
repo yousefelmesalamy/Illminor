@@ -11,7 +11,7 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
         self.setupUi(self)
 
         self.login_btn.clicked.connect(self.handle_login)
-        self.base_url = "http://192.168.43.44:8000/login"
+        self.base_url = "http://192.168.43.149:8000/login/"
         self.userToken = ''
 
 
@@ -30,7 +30,7 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
             msg.exec_()
         else:
             data = {
-                    "email": username,
+                    "username": username,
                     "password": password
                     }
             try:

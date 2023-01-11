@@ -1,6 +1,13 @@
 <RCC>
   <qresource prefix="ICONS">
+    <file>icons/home.png</file>
+    <file>icons/edit.png</file>
+    <file>icons/22.png</file>
+    <file>icons/password.png</file>
+    <file>icons/2 (1).png</file>
     <file>icons/upload.png</file>
+    <file>icons/password.png</file>
+    <file>icons/log-out.png</file>
     <file>icons/back-button.png</file>
     <file>icons/logo min.png</file>
     <file>icons/breast cancer text.png</file>

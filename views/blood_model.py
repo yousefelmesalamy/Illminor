@@ -142,23 +142,16 @@ class Ui_Form(object):
         self.label.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label.setObjectName("label")
         self.horizontalLayout.addWidget(self.label)
-        self.Age_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.Age_sb.setStyleSheet("background-color: rgb(119, 118, 123,0);\n"
-"  cursor: pointer;\n"
-"  float: right;\n"
-"  padding: 5px 20px;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.Age_sb.setObjectName("Age_sb")
-        self.horizontalLayout.addWidget(self.Age_sb)
+        self.lineEdit = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit.setMinimumSize(QtCore.QSize(196, 40))
+        self.lineEdit.setMaximumSize(QtCore.QSize(196, 16777215))
+        self.lineEdit.setStyleSheet("border: 2px solid #bebebe ;\n"
+"border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.lineEdit.setObjectName("lineEdit")
+        self.horizontalLayout.addWidget(self.lineEdit)
         self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
