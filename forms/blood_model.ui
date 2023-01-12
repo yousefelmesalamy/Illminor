@@ -14,11 +14,9 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-font-family:Ubuntu;
+   <string notr="true">font-family:Ubuntu;
 font-size: 20px;
-	color:black;
-</string>
+background-color: rgb(239, 243, 252);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="2" column="0" colspan="2">
@@ -242,6 +240,18 @@ background-postion:calc(100% - 10px) center;}
    </item>
    <item row="2" column="3">
     <widget class="QGroupBox" name="groupBox_2">
+     <property name="minimumSize">
+      <size>
+       <width>350</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>350</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <property name="styleSheet">
       <string notr="true"> border-color:transparent;
 background-color:transparent;</string>

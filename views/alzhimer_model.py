@@ -15,7 +15,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(765, 810)
-        Form.setStyleSheet("\n"
+        Form.setStyleSheet("background-color: rgb(239, 243, 252);\n"
 "font-family:Ubuntu;\n"
 "font-size: 20px;\n"
 "    color:black;\n"

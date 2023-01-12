@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
+   <string notr="true">background-color: rgb(239, 243, 252);
 font-family:Ubuntu;
 font-size: 20px;
 	color:black;
@@ -347,7 +347,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-262</y>
+           <y>0</y>
            <width>404</width>
            <height>970</height>
           </rect>

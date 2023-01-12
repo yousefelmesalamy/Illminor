@@ -20,7 +20,7 @@ class Illminor(QtWidgets.QStackedWidget):
     def __init__(self , name=None, *args, **kwargs ):
         super(Illminor, self).__init__()
 
-        self.base_url = "http://192.168.0.122:8000"
+        self.base_url = "http://illacc.pythonanywhere.com/"
 
         #install widget
         self.login_manger = Login_Manager()

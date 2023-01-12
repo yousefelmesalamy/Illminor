@@ -15,7 +15,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1220, 981)
-        Form.setStyleSheet("\n"
+        Form.setStyleSheet("background-color: rgb(239, 243, 252);\n"
 "font-family:Ubuntu;\n"
 "font-size: 20px;\n"
 "    color:black;\n"
@@ -178,7 +178,7 @@ class Ui_Form(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, -262, 404, 970))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 404, 970))
         self.scrollAreaWidgetContents.setStyleSheet(" border-color:transparent;\n"
 "background-color:transparent;")
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")

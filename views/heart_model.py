@@ -15,7 +15,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1022, 912)
-        Form.setStyleSheet("\n"
+        Form.setStyleSheet("background-color: rgb(239, 243, 252);\n"
 "font-family:Ubuntu;\n"
 "font-size: 20px;\n"
 "    color:black;\n"
@@ -539,7 +539,7 @@ class Ui_Form(object):
         self.gridLayout.addItem(spacerItem4, 0, 5, 1, 1)
         spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem5, 3, 3, 1, 1)
-        spacerItem6 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        spacerItem6 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout.addItem(spacerItem6, 1, 3, 1, 1)
 
         self.retranslateUi(Form)

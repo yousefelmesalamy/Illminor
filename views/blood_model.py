@@ -15,11 +15,9 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(873, 876)
-        Form.setStyleSheet("\n"
-"font-family:Ubuntu;\n"
+        Form.setStyleSheet("font-family:Ubuntu;\n"
 "font-size: 20px;\n"
-"    color:black;\n"
-"")
+"background-color: rgb(239, 243, 252);")
         self.gridLayout_2 = QtWidgets.QGridLayout(Form)
         self.gridLayout_2.setObjectName("gridLayout_2")
         spacerItem = QtWidgets.QSpacerItem(244, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -98,6 +96,8 @@ class Ui_Form(object):
         spacerItem8 = QtWidgets.QSpacerItem(20, 63, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_2.addItem(spacerItem8, 3, 3, 1, 1)
         self.groupBox_2 = QtWidgets.QGroupBox(Form)
+        self.groupBox_2.setMinimumSize(QtCore.QSize(350, 0))
+        self.groupBox_2.setMaximumSize(QtCore.QSize(350, 16777215))
         self.groupBox_2.setStyleSheet(" border-color:transparent;\n"
 "background-color:transparent;")
         self.groupBox_2.setTitle("")

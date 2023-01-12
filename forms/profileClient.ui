@@ -134,6 +134,12 @@ border: 2px solid #bebebe ;
                <property name="text">
                 <string/>
                </property>
+               <property name="pixmap">
+                <pixmap resource="app_resources.qrc">:/ICONS/icons/aaaaaa.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
                </property>

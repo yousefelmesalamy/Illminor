@@ -69,6 +69,8 @@ class Ui_Form(object):
 "")
         self.profile_lbl.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.profile_lbl.setText("")
+        self.profile_lbl.setPixmap(QtGui.QPixmap(":/ICONS/icons/aaaaaa.png"))
+        self.profile_lbl.setScaledContents(True)
         self.profile_lbl.setAlignment(QtCore.Qt.AlignCenter)
         self.profile_lbl.setObjectName("profile_lbl")
         self.verticalLayout.addWidget(self.profile_lbl)

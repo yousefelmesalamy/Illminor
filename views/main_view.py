@@ -244,38 +244,6 @@ class Ui_Form(object):
         self.gridLayout_3.addItem(spacerItem15, 1, 4, 1, 1)
         spacerItem16 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_3.addItem(spacerItem16, 3, 4, 1, 1)
-        self.results_btn = QtWidgets.QPushButton(self.groupBox_2)
-        self.results_btn.setMinimumSize(QtCore.QSize(80, 80))
-        self.results_btn.setMaximumSize(QtCore.QSize(80, 80))
-        self.results_btn.setStyleSheet("QPushButton{\n"
-"background-color: rgb(255, 255, 255,0);\n"
-"border-radius:15% 15%;\n"
-"    border-color: rgb(0, 0, 0);\n"
-"\n"
-"\n"
-"\n"
-"border: 2px solid #bebebe ;\n"
-"    background-color: rgb(214, 214, 214);\n"
-"  background-color: white;\n"
-"  color: black;\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"padding-left:5px;\n"
-"padding-top:5px;\n"
-"background-postion:calc(100% - 10px) center;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165,.5), stop:1 rgba(12, 148, 207,.1));}")
-        self.results_btn.setText("")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/ICONS/icons/2 (1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.results_btn.setIcon(icon6)
-        self.results_btn.setIconSize(QtCore.QSize(40, 40))
-        self.results_btn.setFlat(True)
-        self.results_btn.setObjectName("results_btn")
-        self.gridLayout_3.addWidget(self.results_btn, 0, 0, 1, 1)
         self.gridLayout_2.addWidget(self.groupBox_2, 0, 2, 1, 1)
         spacerItem17 = QtWidgets.QSpacerItem(20, 693, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_2.addItem(spacerItem17, 0, 1, 1, 1)
@@ -319,9 +287,9 @@ class Ui_Form(object):
 "    background-color: rgb(255, 95, 86,.5);}\n"
 "")
         self.user_btn.setText("")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/ICONS/icons/22.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.user_btn.setIcon(icon7)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap(":/ICONS/icons/22.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.user_btn.setIcon(icon6)
         self.user_btn.setIconSize(QtCore.QSize(40, 40))
         self.user_btn.setFlat(True)
         self.user_btn.setObjectName("user_btn")
@@ -350,9 +318,9 @@ class Ui_Form(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(255, 240, 76,.5);}")
         self.change_password_btn.setText("")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(":/ICONS/icons/password.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.change_password_btn.setIcon(icon8)
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap(":/ICONS/icons/password.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.change_password_btn.setIcon(icon7)
         self.change_password_btn.setIconSize(QtCore.QSize(40, 40))
         self.change_password_btn.setFlat(True)
         self.change_password_btn.setObjectName("change_password_btn")
@@ -387,13 +355,47 @@ class Ui_Form(object):
 "QPushButton:hover {\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165,.5), stop:1 rgba(12, 148, 207,.1));}")
         self.home_btn.setText("")
-        icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap(":/ICONS/icons/home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.home_btn.setIcon(icon9)
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap(":/ICONS/icons/home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.home_btn.setIcon(icon8)
         self.home_btn.setIconSize(QtCore.QSize(50, 50))
         self.home_btn.setFlat(True)
         self.home_btn.setObjectName("home_btn")
         self.gridLayout.addWidget(self.home_btn, 3, 0, 1, 1)
+        self.results_btn = QtWidgets.QPushButton(self.groupBox)
+        self.results_btn.setMinimumSize(QtCore.QSize(80, 80))
+        self.results_btn.setMaximumSize(QtCore.QSize(80, 80))
+        self.results_btn.setStyleSheet("QPushButton{\n"
+"background-color: rgb(255, 255, 255,0);\n"
+"border-radius:15% 15%;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"\n"
+"\n"
+"\n"
+"border: 2px solid #bebebe ;\n"
+"    background-color: rgb(214, 214, 214);\n"
+"  background-color: white;\n"
+"  color: black;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-postion:calc(100% - 10px) center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165,.5), stop:1 rgba(12, 148, 207,.1));}")
+        self.results_btn.setText("")
+        icon9 = QtGui.QIcon()
+        icon9.addPixmap(QtGui.QPixmap(":/ICONS/icons/2 (1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.results_btn.setIcon(icon9)
+        self.results_btn.setIconSize(QtCore.QSize(40, 40))
+        self.results_btn.setFlat(True)
+        self.results_btn.setObjectName("results_btn")
+        self.gridLayout.addWidget(self.results_btn, 1, 0, 1, 1)
+        spacerItem22 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem22, 2, 0, 1, 1)
         self.gridLayout_2.addWidget(self.groupBox, 0, 0, 1, 1)
 
         self.retranslateUi(Form)
