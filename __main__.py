@@ -16,6 +16,7 @@ import sys
 
 from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtCore import QTimer, QThread, pyqtSignal, pyqtSlot
+
 class Illminor(QtWidgets.QStackedWidget):
     def __init__(self , name=None, *args, **kwargs ):
         super(Illminor, self).__init__()
