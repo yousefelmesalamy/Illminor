@@ -15,8 +15,10 @@ class Diabetes_MANGER(QtWidgets.QWidget, diabetes_model.Ui_Form):
         self.show_result_btn.clicked.connect(self.run)
 
     def run(self):
-        diabetes_url = self.base_url+"/diabetes"
+        diabetes_url = f"{self.base_url}/diabtesTest/"
 
+
+        pregnancies = float(self.pregnancies_sb.text())
         age = int(self.Age_SB.text())
         glucose = float(self.glucose_sb.text())
         bloodpressure = float(self.bloodpressure_sb.text())
@@ -35,12 +37,13 @@ class Diabetes_MANGER(QtWidgets.QWidget, diabetes_model.Ui_Form):
                 "insulin":insulin,
                 "bmi":bmi,
                 "dpf":dpf,
+                "pregnancies":pregnancies,
             }
             headers = {"Accept":"application/json ; indent=4",
                        "Content-Type":"application/json", "Authorization":f"Token {self.token}"}
 
             try :
-                response = requests.post(diabetes_url, data=data, headers=headers)
+                response = requests.post(diabetes_url, json=data, headers=headers)
                 print(response.json())
             except Exception as e :
                 print(e)

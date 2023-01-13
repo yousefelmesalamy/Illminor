@@ -87,18 +87,10 @@ class Ui_Form(object):
         self.groupBox.setObjectName("groupBox")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.groupBox)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.label_6 = QtWidgets.QLabel(self.groupBox)
-        self.label_6.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_6.setObjectName("label_6")
-        self.gridLayout_2.addWidget(self.label_6, 6, 0, 1, 1)
-        self.label_13 = QtWidgets.QLabel(self.groupBox)
-        self.label_13.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_13.setObjectName("label_13")
-        self.gridLayout_2.addWidget(self.label_13, 0, 0, 1, 1)
-        self.label_2 = QtWidgets.QLabel(self.groupBox)
-        self.label_2.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_2.setObjectName("label_2")
-        self.gridLayout_2.addWidget(self.label_2, 2, 0, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.groupBox)
+        self.label_8.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_8.setObjectName("label_8")
+        self.gridLayout_2.addWidget(self.label_8, 7, 0, 1, 1)
         self.thalach_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
         self.thalach_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
@@ -130,222 +122,11 @@ class Ui_Form(object):
 "\n"
 "")
         self.thalach_sb.setObjectName("thalach_sb")
-        self.gridLayout_2.addWidget(self.thalach_sb, 8, 1, 1, 1)
-        self.sex_comboBox = QtWidgets.QComboBox(self.groupBox)
-        self.sex_comboBox.setMinimumSize(QtCore.QSize(0, 49))
-        self.sex_comboBox.setStyleSheet("background:transparent;\n"
-"  border-radius: 20px;\n"
-"color:black    ;\n"
-" border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;\n"
-"\n"
-"")
-        self.sex_comboBox.setObjectName("sex_comboBox")
-        self.sex_comboBox.addItem("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/icons/icons/male.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.sex_comboBox.addItem(icon1, "")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/icons/icons/female.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.sex_comboBox.addItem(icon2, "")
-        self.gridLayout_2.addWidget(self.sex_comboBox, 2, 1, 1, 1)
-        self.label_12 = QtWidgets.QLabel(self.groupBox)
-        self.label_12.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_12.setObjectName("label_12")
-        self.gridLayout_2.addWidget(self.label_12, 12, 0, 1, 1)
-        self.label_10 = QtWidgets.QLabel(self.groupBox)
-        self.label_10.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_10.setObjectName("label_10")
-        self.gridLayout_2.addWidget(self.label_10, 9, 0, 1, 1)
-        self.Name_lin = QtWidgets.QLineEdit(self.groupBox)
-        self.Name_lin.setMinimumSize(QtCore.QSize(0, 49))
-        self.Name_lin.setStyleSheet("background:transparent;\n"
-"  border-radius: 20px;\n"
-"color:black    ;\n"
-" border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;\n"
-"\n"
-"")
-        self.Name_lin.setObjectName("Name_lin")
-        self.gridLayout_2.addWidget(self.Name_lin, 0, 1, 1, 1)
-        self.ca_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.ca_sb.setStyleSheet("  height: 32px;\n"
-"  border-radius: 4px;\n"
-"  border: 1px solid #959595;\n"
-"  position: relative;\n"
-"  text-align: center;\n"
-"  font-size: 20px;\n"
-"  width: 80px;\n"
-"  outline: none;\n"
-"\n"
-"  caret-color: transparent;;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.ca_sb.setObjectName("ca_sb")
-        self.gridLayout_2.addWidget(self.ca_sb, 11, 1, 1, 1)
-        self.age_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.age_sb.setStyleSheet("  height: 32px;\n"
-"  border-radius: 4px;\n"
-"  border: 1px solid #959595;\n"
-"  position: relative;\n"
-"  text-align: center;\n"
-"  font-size: 20px;\n"
-"  width: 80px;\n"
-"  outline: none;\n"
-"\n"
-"  caret-color: transparent;;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.age_sb.setObjectName("age_sb")
-        self.gridLayout_2.addWidget(self.age_sb, 1, 1, 1, 1)
-        self.exang_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.exang_sb.setStyleSheet("  height: 32px;\n"
-"  border-radius: 4px;\n"
-"  border: 1px solid #959595;\n"
-"  position: relative;\n"
-"  text-align: center;\n"
-"  font-size: 20px;\n"
-"  width: 80px;\n"
-"  outline: none;\n"
-"\n"
-"  caret-color: transparent;;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.exang_sb.setObjectName("exang_sb")
-        self.gridLayout_2.addWidget(self.exang_sb, 9, 1, 1, 1)
-        self.label_3 = QtWidgets.QLabel(self.groupBox)
-        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_3.setObjectName("label_3")
-        self.gridLayout_2.addWidget(self.label_3, 3, 0, 1, 1)
-        self.label_8 = QtWidgets.QLabel(self.groupBox)
-        self.label_8.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_8.setObjectName("label_8")
-        self.gridLayout_2.addWidget(self.label_8, 8, 0, 1, 1)
-        self.label = QtWidgets.QLabel(self.groupBox)
-        self.label.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label.setObjectName("label")
-        self.gridLayout_2.addWidget(self.label, 1, 0, 1, 1)
-        self.label_7 = QtWidgets.QLabel(self.groupBox)
-        self.label_7.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_7.setObjectName("label_7")
-        self.gridLayout_2.addWidget(self.label_7, 7, 0, 1, 1)
-        self.trestbps_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.trestbps_sb.setStyleSheet("  height: 32px;\n"
-"  border-radius: 4px;\n"
-"  border: 1px solid #959595;\n"
-"  position: relative;\n"
-"  text-align: center;\n"
-"  font-size: 20px;\n"
-"  width: 80px;\n"
-"  outline: none;\n"
-"\n"
-"  caret-color: transparent;;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.trestbps_sb.setObjectName("trestbps_sb")
-        self.gridLayout_2.addWidget(self.trestbps_sb, 4, 1, 1, 1)
-        self.restecg_sv = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.restecg_sv.setStyleSheet("  height: 32px;\n"
-"  border-radius: 4px;\n"
-"  border: 1px solid #959595;\n"
-"  position: relative;\n"
-"  text-align: center;\n"
-"  font-size: 20px;\n"
-"  width: 80px;\n"
-"  outline: none;\n"
-"\n"
-"  caret-color: transparent;;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.restecg_sv.setObjectName("restecg_sv")
-        self.gridLayout_2.addWidget(self.restecg_sv, 7, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.thalach_sb, 7, 1, 1, 1)
+        self.label_6 = QtWidgets.QLabel(self.groupBox)
+        self.label_6.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_6.setObjectName("label_6")
+        self.gridLayout_2.addWidget(self.label_6, 5, 0, 1, 1)
         self.slope_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
         self.slope_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
@@ -377,87 +158,23 @@ class Ui_Form(object):
 "\n"
 "")
         self.slope_sb.setObjectName("slope_sb")
-        self.gridLayout_2.addWidget(self.slope_sb, 10, 1, 1, 1)
-        self.label_5 = QtWidgets.QLabel(self.groupBox)
-        self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_5.setObjectName("label_5")
-        self.gridLayout_2.addWidget(self.label_5, 5, 0, 1, 1)
-        self.label_4 = QtWidgets.QLabel(self.groupBox)
-        self.label_4.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_4.setObjectName("label_4")
-        self.gridLayout_2.addWidget(self.label_4, 4, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.slope_sb, 9, 1, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_2.setObjectName("label_2")
+        self.gridLayout_2.addWidget(self.label_2, 1, 0, 1, 1)
         self.label_9 = QtWidgets.QLabel(self.groupBox)
         self.label_9.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_9.setObjectName("label_9")
-        self.gridLayout_2.addWidget(self.label_9, 10, 0, 1, 1)
-        self.cp_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.cp_sb.setStyleSheet("  height: 32px;\n"
-"  border-radius: 4px;\n"
-"  border: 1px solid #959595;\n"
-"  position: relative;\n"
-"  text-align: center;\n"
-"  font-size: 20px;\n"
-"  width: 80px;\n"
-"  outline: none;\n"
-"\n"
-"  caret-color: transparent;;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.cp_sb.setObjectName("cp_sb")
-        self.gridLayout_2.addWidget(self.cp_sb, 3, 1, 1, 1)
-        self.fbs_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.fbs_sb.setStyleSheet("  height: 32px;\n"
-"  border-radius: 4px;\n"
-"  border: 1px solid #959595;\n"
-"  position: relative;\n"
-"  text-align: center;\n"
-"  font-size: 20px;\n"
-"  width: 80px;\n"
-"  outline: none;\n"
-"\n"
-"  caret-color: transparent;;\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"\n"
-"QLineEdit{\n"
-"border: 1px solid #ABAFB7;\n"
-"\n"
-"}\n"
-"QLineEdit:focus {\n"
-"  border: 3px solid #555;\n"
-"}\n"
-"\n"
-"")
-        self.fbs_sb.setObjectName("fbs_sb")
-        self.gridLayout_2.addWidget(self.fbs_sb, 6, 1, 1, 1)
-        self.label_11 = QtWidgets.QLabel(self.groupBox)
-        self.label_11.setStyleSheet("background-color: rgb(255, 255, 255,0);")
-        self.label_11.setObjectName("label_11")
-        self.gridLayout_2.addWidget(self.label_11, 11, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.label_9, 9, 0, 1, 1)
+        self.label_12 = QtWidgets.QLabel(self.groupBox)
+        self.label_12.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_12.setObjectName("label_12")
+        self.gridLayout_2.addWidget(self.label_12, 11, 0, 1, 1)
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label.setObjectName("label")
+        self.gridLayout_2.addWidget(self.label, 0, 0, 1, 1)
         self.chol_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
         self.chol_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
@@ -489,7 +206,79 @@ class Ui_Form(object):
 "\n"
 "")
         self.chol_sb.setObjectName("chol_sb")
-        self.gridLayout_2.addWidget(self.chol_sb, 5, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.chol_sb, 4, 1, 1, 1)
+        self.oldpeak_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.oldpeak_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.oldpeak_sb.setObjectName("oldpeak_sb")
+        self.gridLayout_2.addWidget(self.oldpeak_sb, 12, 1, 1, 1)
+        self.label_26 = QtWidgets.QLabel(self.groupBox)
+        self.label_26.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_26.setObjectName("label_26")
+        self.gridLayout_2.addWidget(self.label_26, 12, 0, 1, 1)
+        self.label_4 = QtWidgets.QLabel(self.groupBox)
+        self.label_4.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_4.setObjectName("label_4")
+        self.gridLayout_2.addWidget(self.label_4, 3, 0, 1, 1)
+        self.restecg_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.restecg_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.restecg_sb.setObjectName("restecg_sb")
+        self.gridLayout_2.addWidget(self.restecg_sb, 6, 1, 1, 1)
         self.thal_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
         self.thal_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
@@ -521,7 +310,273 @@ class Ui_Form(object):
 "\n"
 "")
         self.thal_sb.setObjectName("thal_sb")
-        self.gridLayout_2.addWidget(self.thal_sb, 12, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.thal_sb, 11, 1, 1, 1)
+        self.label_7 = QtWidgets.QLabel(self.groupBox)
+        self.label_7.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_7.setObjectName("label_7")
+        self.gridLayout_2.addWidget(self.label_7, 6, 0, 1, 1)
+        self.trestbps_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.trestbps_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.trestbps_sb.setObjectName("trestbps_sb")
+        self.gridLayout_2.addWidget(self.trestbps_sb, 3, 1, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.groupBox)
+        self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_3.setObjectName("label_3")
+        self.gridLayout_2.addWidget(self.label_3, 2, 0, 1, 1)
+        self.fbs_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.fbs_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.fbs_sb.setObjectName("fbs_sb")
+        self.gridLayout_2.addWidget(self.fbs_sb, 5, 1, 1, 1)
+        self.pregnancies_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.pregnancies_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.pregnancies_sb.setObjectName("pregnancies_sb")
+        self.gridLayout_2.addWidget(self.pregnancies_sb, 14, 1, 1, 1)
+        self.ca_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.ca_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.ca_sb.setObjectName("ca_sb")
+        self.gridLayout_2.addWidget(self.ca_sb, 10, 1, 1, 1)
+        self.exang_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.exang_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.exang_sb.setObjectName("exang_sb")
+        self.gridLayout_2.addWidget(self.exang_sb, 8, 1, 1, 1)
+        self.sex_comboBox = QtWidgets.QComboBox(self.groupBox)
+        self.sex_comboBox.setMinimumSize(QtCore.QSize(0, 49))
+        self.sex_comboBox.setStyleSheet("background:transparent;\n"
+"  border-radius: 20px;\n"
+"color:white    ;\n"
+" border: 2px solid  #ffffff;\n"
+"font-size:20px;\n"
+"padding:15px;\n"
+"\n"
+"")
+        self.sex_comboBox.setObjectName("sex_comboBox")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/icons/icons/male.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.sex_comboBox.addItem(icon1, "")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap(":/icons/icons/female.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.sex_comboBox.addItem(icon2, "")
+        self.gridLayout_2.addWidget(self.sex_comboBox, 1, 1, 1, 1)
+        self.cp_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.cp_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.cp_sb.setObjectName("cp_sb")
+        self.gridLayout_2.addWidget(self.cp_sb, 2, 1, 1, 1)
+        self.label_10 = QtWidgets.QLabel(self.groupBox)
+        self.label_10.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_10.setObjectName("label_10")
+        self.gridLayout_2.addWidget(self.label_10, 8, 0, 1, 1)
+        self.age_sb = QtWidgets.QSpinBox(self.groupBox)
+        self.age_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.age_sb.setObjectName("age_sb")
+        self.gridLayout_2.addWidget(self.age_sb, 0, 1, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.groupBox)
+        self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_5.setObjectName("label_5")
+        self.gridLayout_2.addWidget(self.label_5, 4, 0, 1, 1)
+        self.label_11 = QtWidgets.QLabel(self.groupBox)
+        self.label_11.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_11.setObjectName("label_11")
+        self.gridLayout_2.addWidget(self.label_11, 10, 0, 1, 1)
+        self.label_27 = QtWidgets.QLabel(self.groupBox)
+        self.label_27.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_27.setObjectName("label_27")
+        self.gridLayout_2.addWidget(self.label_27, 14, 0, 1, 1)
         self.gridLayout.addWidget(self.groupBox, 2, 2, 1, 3)
         spacerItem1 = QtWidgets.QSpacerItem(389, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout.addItem(spacerItem1, 4, 0, 1, 3)
@@ -549,21 +604,21 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.show_result_btn_2.setText(_translate("Form", "Show result"))
-        self.label_6.setText(_translate("Form", "fbs"))
-        self.label_13.setText(_translate("Form", "Name"))
-        self.label_2.setText(_translate("Form", "Sex"))
-        self.sex_comboBox.setItemText(0, _translate("Form", "Select"))
-        self.sex_comboBox.setItemText(1, _translate("Form", "Male"))
-        self.sex_comboBox.setItemText(2, _translate("Form", "Female"))
-        self.label_12.setText(_translate("Form", "thal"))
-        self.label_10.setText(_translate("Form", "exang"))
-        self.label_3.setText(_translate("Form", "CP"))
         self.label_8.setText(_translate("Form", "thalach"))
-        self.label.setText(_translate("Form", "Age"))
-        self.label_7.setText(_translate("Form", "restecg"))
-        self.label_5.setText(_translate("Form", "chol"))
-        self.label_4.setText(_translate("Form", "trestbps"))
+        self.label_6.setText(_translate("Form", "fbs"))
+        self.label_2.setText(_translate("Form", "Gander"))
         self.label_9.setText(_translate("Form", "slope"))
+        self.label_12.setText(_translate("Form", "thal"))
+        self.label.setText(_translate("Form", "age"))
+        self.label_26.setText(_translate("Form", "oldpeak"))
+        self.label_4.setText(_translate("Form", "trestbps"))
+        self.label_7.setText(_translate("Form", "restecg"))
+        self.label_3.setText(_translate("Form", "cp"))
+        self.sex_comboBox.setItemText(0, _translate("Form", "Male"))
+        self.sex_comboBox.setItemText(1, _translate("Form", "Female"))
+        self.label_10.setText(_translate("Form", "exang"))
+        self.label_5.setText(_translate("Form", "chol"))
         self.label_11.setText(_translate("Form", "ca"))
+        self.label_27.setText(_translate("Form", "pregnancies"))
         self.label_25.setText(_translate("Form", "HEART CHECK"))
 import app_resources_rc

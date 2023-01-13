@@ -21,7 +21,7 @@ class Illminor(QtWidgets.QStackedWidget):
     def __init__(self , name=None, *args, **kwargs ):
         super(Illminor, self).__init__()
 
-        self.base_url = "http://illacc.pythonanywhere.com/"
+        self.base_url = "http://172.20.10.2:8000"
 
         #install widget
         self.login_manger = Login_Manager()
@@ -83,9 +83,6 @@ class Illminor(QtWidgets.QStackedWidget):
         self.main_manager.parkinson_btn.clicked.connect(self.handle_main_to_parkinsor)
         self.goal_manager.doctor_btn.clicked.connect(self.goal_to_signup_doctor)
         self.goal_manager.patient_btn.clicked.connect(self.goal_to_patient_signup)
-
-
-
         self.profile_manager.home_btn.clicked.connect(self.hndle_profile_to_home)
         self.profile_manager.change_password_btn.clicked.connect(self.hndle_profile_to_change_password)
         self.profile_edit_manager.change_password_btn.clicked.connect(self.hndle_profile_edit_to_change_password)
@@ -95,32 +92,50 @@ class Illminor(QtWidgets.QStackedWidget):
         self.change_password_manager.home_btn.clicked.connect(self.chanage_password_to_home)
         self.change_password_manager.user_btn.clicked.connect(self.chanage_password_to_profile)
         self.profile_manager.editprofile_btn.clicked.connect(self.profile_to_edit_profile)
-        self.register_manager.login_btn.clicked.connect(self.signup_to_login)
+        # self.register_manager.login_btn.clicked.connect(self.signup_to_login)
         # self.register_manager.login_btn.clicked.connect(lambda :self.setCurrentIndex(0))
         # self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(2))
         # self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
-        # self.login_manger.login_btn.clicked.connect(lambda     :self.setCurrentIndex(3))
-        # self.main_manager.parkinson_btn.clicked.connect(lambda :self.setCurrentIndex(4))
+        # self.login_manger.login_btn.clicked.connect(lambda:self.setCurrentIndex(3))
+        self.main_manager.user_btn.clicked.connect(self.home_to_user_profile)
+
         self.main_manager.diabetes_btn.clicked.connect(self.handle_diabetes)
         self.profile_edit_manager.cancel_btn.clicked.connect(self.profile_edit_to_profile)
 
         # self.login_manger.signup_lbl.clicked.connect(lambda :self.setCurrentIndex(1))
 
 
+
+    def home_to_user_profile(self):
+        self.setCurrentIndex(10)
+
     def goal_to_patient_signup(self):
+        self.register_manager.is_doctor = False
         self.setCurrentIndex(2)
     def goal_to_signup_doctor(self):
+        self.register_manager.is_doctor = True
+
         self.setCurrentIndex(2)
     def handle_main_to_parkinsor(self):
+        self.parkinson_manager.base_url=self.base_url
+        self.parkinson_manager.token = self.login_manger.userToken
         self.setCurrentIndex(4)
 
     def  handle_main_to_breast(self):
+        self.breast_manager.base_url=self.base_url
+        self.breast_manager.token = self.login_manger.userToken
         self.setCurrentIndex(7)
     def handle_main_to_blood(self):
+        self.blood_manager.base_url = self.base_url
+        self.blood_manager.token = self.login_manger.userToken
         self.setCurrentIndex(6)
     def handle_main_to_heart(self):
+        self.heart_manager.base_url=self.base_url
+        self.heart_manager.token = self.login_manger.userToken
         self.setCurrentIndex(12)
     def handle_main_to_alzahimer(self):
+        self.alzahimer_manager.base_url=self.base_url
+        self.alzahimer_manager.token = self.login_manger.userToken
         self.setCurrentIndex(5)
     def signup_to_login(self):
         self.setCurrentIndex(0)

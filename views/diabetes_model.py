@@ -22,76 +22,14 @@ class Ui_Form(object):
 "")
         self.gridLayout_2 = QtWidgets.QGridLayout(Form)
         self.gridLayout_2.setObjectName("gridLayout_2")
-        self.back_btn = QtWidgets.QPushButton(Form)
-        self.back_btn.setMinimumSize(QtCore.QSize(60, 60))
-        self.back_btn.setMaximumSize(QtCore.QSize(60, 60))
-        self.back_btn.setStyleSheet("QPushButton {\n"
-"    background-color:rgba(6,103,184,255);\n"
-"    color: #FFFFFF;\n"
-"    padding: 2px;\n"
-"    font: bold 15px;\n"
-"    border-width: 6px;\n"
-"    border-radius: 10px;\n"
-"    border-color: #2752B8;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #827397;\n"
-"}\n"
-"QPushButton:pressed{\n"
-"padding-left:5px;\n"
-"padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
-"background-postion:calc(100% - 10px) center;}\n"
-"")
-        self.back_btn.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/ICONS/icons/back-button.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.back_btn.setIcon(icon)
-        self.back_btn.setIconSize(QtCore.QSize(30, 30))
-        self.back_btn.setFlat(True)
-        self.back_btn.setObjectName("back_btn")
-        self.gridLayout_2.addWidget(self.back_btn, 0, 0, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(391, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem, 6, 5, 1, 2)
+        spacerItem = QtWidgets.QSpacerItem(310, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem, 0, 6, 1, 1)
         self.label_25 = QtWidgets.QLabel(Form)
         self.label_25.setStyleSheet("background-color: rgb(85, 255, 127,0);\n"
 "font-size:40px")
         self.label_25.setAlignment(QtCore.Qt.AlignCenter)
         self.label_25.setObjectName("label_25")
         self.gridLayout_2.addWidget(self.label_25, 0, 2, 1, 4)
-        spacerItem1 = QtWidgets.QSpacerItem(310, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem1, 0, 6, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 96, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_2.addItem(spacerItem2, 7, 4, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_2.addItem(spacerItem3, 5, 3, 1, 1)
-        spacerItem4 = QtWidgets.QSpacerItem(389, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem4, 6, 0, 1, 3)
-        self.show_result_btn = QtWidgets.QPushButton(Form)
-        self.show_result_btn.setMinimumSize(QtCore.QSize(250, 50))
-        self.show_result_btn.setMaximumSize(QtCore.QSize(330, 50))
-        self.show_result_btn.setStyleSheet("QPushButton {\n"
-"    background-color:rgba(6,103,184,255);\n"
-"    color: #FFFFFF;\n"
-"    padding: 2px;\n"
-"    font: bold 15px;\n"
-"    border-width: 6px;\n"
-"    border-radius: 10px;\n"
-"    border-color: #2752B8;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #827397;\n"
-"}\n"
-"QPushButton:pressed{\n"
-"padding-left:5px;\n"
-"padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
-"background-postion:calc(100% - 10px) center;}\n"
-"")
-        self.show_result_btn.setObjectName("show_result_btn")
-        self.gridLayout_2.addWidget(self.show_result_btn, 6, 3, 1, 2)
-        spacerItem5 = QtWidgets.QSpacerItem(242, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem5, 0, 1, 1, 1)
         self.groupBox = QtWidgets.QGroupBox(Form)
         self.groupBox.setMinimumSize(QtCore.QSize(330, 450))
         self.groupBox.setAutoFillBackground(False)
@@ -109,7 +47,7 @@ class Ui_Form(object):
         self.label.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label.setObjectName("label")
         self.horizontalLayout_7.addWidget(self.label)
-        self.Age_SB = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.Age_SB = QtWidgets.QSpinBox(self.groupBox)
         self.Age_SB.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
@@ -376,7 +314,108 @@ class Ui_Form(object):
         self.dpf_sb.setObjectName("dpf_sb")
         self.horizontalLayout.addWidget(self.dpf_sb)
         self.gridLayout.addLayout(self.horizontalLayout, 6, 0, 1, 1)
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.label_9 = QtWidgets.QLabel(self.groupBox)
+        self.label_9.setStyleSheet("background-color: rgb(255, 255, 255,0);")
+        self.label_9.setObjectName("label_9")
+        self.horizontalLayout_8.addWidget(self.label_9)
+        self.pregnancies_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.pregnancies_sb.setStyleSheet("  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.pregnancies_sb.setObjectName("pregnancies_sb")
+        self.horizontalLayout_8.addWidget(self.pregnancies_sb)
+        self.gridLayout.addLayout(self.horizontalLayout_8, 7, 0, 1, 1)
         self.gridLayout_2.addWidget(self.groupBox, 3, 2, 2, 4)
+        self.back_btn = QtWidgets.QPushButton(Form)
+        self.back_btn.setMinimumSize(QtCore.QSize(60, 60))
+        self.back_btn.setMaximumSize(QtCore.QSize(60, 60))
+        self.back_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-color:rgba(2, 65, 118, 100);\n"
+"background-postion:calc(100% - 10px) center;}\n"
+"")
+        self.back_btn.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/ICONS/icons/back-button.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.back_btn.setIcon(icon)
+        self.back_btn.setIconSize(QtCore.QSize(30, 30))
+        self.back_btn.setFlat(True)
+        self.back_btn.setObjectName("back_btn")
+        self.gridLayout_2.addWidget(self.back_btn, 0, 0, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(391, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem1, 6, 5, 1, 2)
+        spacerItem2 = QtWidgets.QSpacerItem(389, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem2, 6, 0, 1, 3)
+        self.show_result_btn = QtWidgets.QPushButton(Form)
+        self.show_result_btn.setMinimumSize(QtCore.QSize(250, 50))
+        self.show_result_btn.setMaximumSize(QtCore.QSize(330, 50))
+        self.show_result_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-color:rgba(2, 65, 118, 100);\n"
+"background-postion:calc(100% - 10px) center;}\n"
+"")
+        self.show_result_btn.setObjectName("show_result_btn")
+        self.gridLayout_2.addWidget(self.show_result_btn, 6, 3, 1, 2)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem3, 5, 3, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 96, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem4, 7, 4, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(242, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem5, 0, 1, 1, 1)
         spacerItem6 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.gridLayout_2.addItem(spacerItem6, 1, 2, 1, 1)
 
@@ -387,7 +426,6 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_25.setText(_translate("Form", "CHECK DIABETES"))
-        self.show_result_btn.setText(_translate("Form", "Show result"))
         self.label.setText(_translate("Form", "Age"))
         self.label_3.setText(_translate("Form", "glucose"))
         self.label_4.setText(_translate("Form", "bloodpressure"))
@@ -395,4 +433,6 @@ class Ui_Form(object):
         self.label_6.setText(_translate("Form", "insulin"))
         self.bmi_lin.setText(_translate("Form", "bmi"))
         self.label_8.setText(_translate("Form", "dpf"))
+        self.label_9.setText(_translate("Form", "pregnancies"))
+        self.show_result_btn.setText(_translate("Form", "Show result"))
 import app_resources_rc

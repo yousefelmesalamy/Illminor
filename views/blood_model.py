@@ -356,16 +356,6 @@ class Ui_Form(object):
         self.leptin.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.leptin.setObjectName("leptin")
         self.gridLayout.addWidget(self.leptin, 6, 0, 1, 1)
-        self.lineEdit = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit.setMinimumSize(QtCore.QSize(196, 40))
-        self.lineEdit.setMaximumSize(QtCore.QSize(196, 16777215))
-        self.lineEdit.setStyleSheet("border: 2px solid #bebebe ;\n"
-"border-radius: 10% 10%;\n"
-"padding-left:5px;\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(18, 32, 62);")
-        self.lineEdit.setObjectName("lineEdit")
-        self.gridLayout.addWidget(self.lineEdit, 1, 1, 1, 1)
         self.label_9 = QtWidgets.QLabel(self.groupBox_2)
         self.label_9.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_9.setObjectName("label_9")
@@ -404,8 +394,42 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.bmi_sb.setDecimals(5)
+        self.bmi_sb.setMaximum(10000000.0)
         self.bmi_sb.setObjectName("bmi_sb")
         self.gridLayout.addWidget(self.bmi_sb, 2, 1, 1, 1)
+        self.age_lin = QtWidgets.QSpinBox(self.groupBox_2)
+        self.age_lin.setStyleSheet("QSpinBox {  height: 32px;\n"
+"  border-radius: 4px;\n"
+"  border: 1px solid #959595;\n"
+"  position: relative;\n"
+"  text-align: center;\n"
+"  font-size: 20px;\n"
+"  width: 80px;\n"
+"  outline: none;\n"
+"\n"
+"  caret-color: transparent;;\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"}\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"\n"
+"QLineEdit{\n"
+"border: 1px solid #ABAFB7;\n"
+"\n"
+"}\n"
+"QLineEdit:focus {\n"
+"  border: 3px solid #555;\n"
+"}\n"
+"\n"
+"")
+        self.age_lin.setObjectName("age_lin")
+        self.gridLayout.addWidget(self.age_lin, 1, 1, 1, 1)
         self.gridLayout_2.addWidget(self.groupBox_2, 2, 3, 1, 1)
 
         self.retranslateUi(Form)

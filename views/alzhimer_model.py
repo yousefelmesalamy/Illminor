@@ -55,8 +55,8 @@ class Ui_Form(object):
         self.label_6.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_6.setObjectName("label_6")
         self.horizontalLayout_6.addWidget(self.label_6)
-        self.MDVP_Fo_Hz_SB_5 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_5.setStyleSheet("  height: 32px;\n"
+        self.eTIV_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.eTIV_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
 "  position: relative;\n"
@@ -85,8 +85,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB_5.setObjectName("MDVP_Fo_Hz_SB_5")
-        self.horizontalLayout_6.addWidget(self.MDVP_Fo_Hz_SB_5)
+        self.eTIV_sb.setObjectName("eTIV_sb")
+        self.horizontalLayout_6.addWidget(self.eTIV_sb)
         self.gridLayout.addLayout(self.horizontalLayout_6, 5, 0, 1, 1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
@@ -94,9 +94,9 @@ class Ui_Form(object):
         self.label_2.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_2.setObjectName("label_2")
         self.horizontalLayout.addWidget(self.label_2)
-        self.sex_comboBox = QtWidgets.QComboBox(self.groupBox)
-        self.sex_comboBox.setMinimumSize(QtCore.QSize(0, 49))
-        self.sex_comboBox.setStyleSheet("background:transparent;\n"
+        self.gender_comboBox = QtWidgets.QComboBox(self.groupBox)
+        self.gender_comboBox.setMinimumSize(QtCore.QSize(0, 49))
+        self.gender_comboBox.setStyleSheet("background:transparent;\n"
 "  border-radius: 20px;\n"
 "color:#ffffff    ;\n"
 " border: 2px solid  #ffffff;\n"
@@ -104,15 +104,14 @@ class Ui_Form(object):
 "padding:15px;\n"
 "\n"
 "")
-        self.sex_comboBox.setObjectName("sex_comboBox")
-        self.sex_comboBox.addItem("")
+        self.gender_comboBox.setObjectName("gender_comboBox")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icons/icons/male.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.sex_comboBox.addItem(icon, "")
+        self.gender_comboBox.addItem(icon, "")
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(":/icons/icons/female.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.sex_comboBox.addItem(icon1, "")
-        self.horizontalLayout.addWidget(self.sex_comboBox)
+        self.gender_comboBox.addItem(icon1, "")
+        self.horizontalLayout.addWidget(self.gender_comboBox)
         self.gridLayout.addLayout(self.horizontalLayout, 1, 0, 1, 1)
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
@@ -120,8 +119,8 @@ class Ui_Form(object):
         self.label_8.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_8.setObjectName("label_8")
         self.horizontalLayout_8.addWidget(self.label_8)
-        self.MDVP_Fo_Hz_SB_7 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_7.setStyleSheet("  height: 32px;\n"
+        self.ASF_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.ASF_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
 "  position: relative;\n"
@@ -150,8 +149,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB_7.setObjectName("MDVP_Fo_Hz_SB_7")
-        self.horizontalLayout_8.addWidget(self.MDVP_Fo_Hz_SB_7)
+        self.ASF_sb.setObjectName("ASF_sb")
+        self.horizontalLayout_8.addWidget(self.ASF_sb)
         self.gridLayout.addLayout(self.horizontalLayout_8, 7, 0, 1, 1)
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
@@ -159,8 +158,8 @@ class Ui_Form(object):
         self.label_3.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_3.addWidget(self.label_3)
-        self.MDVP_Fo_Hz_SB_2 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_2.setStyleSheet("  height: 32px;\n"
+        self.EDUC_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.EDUC_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
 "  position: relative;\n"
@@ -189,8 +188,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB_2.setObjectName("MDVP_Fo_Hz_SB_2")
-        self.horizontalLayout_3.addWidget(self.MDVP_Fo_Hz_SB_2)
+        self.EDUC_sb.setObjectName("EDUC_sb")
+        self.horizontalLayout_3.addWidget(self.EDUC_sb)
         self.gridLayout.addLayout(self.horizontalLayout_3, 2, 0, 1, 1)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
@@ -198,8 +197,8 @@ class Ui_Form(object):
         self.label_4.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_4.setObjectName("label_4")
         self.horizontalLayout_4.addWidget(self.label_4)
-        self.MDVP_Fo_Hz_SB_3 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_3.setStyleSheet("  height: 32px;\n"
+        self.SES_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.SES_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
 "  position: relative;\n"
@@ -228,8 +227,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB_3.setObjectName("MDVP_Fo_Hz_SB_3")
-        self.horizontalLayout_4.addWidget(self.MDVP_Fo_Hz_SB_3)
+        self.SES_sb.setObjectName("SES_sb")
+        self.horizontalLayout_4.addWidget(self.SES_sb)
         self.gridLayout.addLayout(self.horizontalLayout_4, 3, 0, 1, 1)
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
@@ -237,8 +236,8 @@ class Ui_Form(object):
         self.label_7.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_7.setObjectName("label_7")
         self.horizontalLayout_7.addWidget(self.label_7)
-        self.MDVP_Fo_Hz_SB_6 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_6.setStyleSheet("  height: 32px;\n"
+        self.nWBV_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.nWBV_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
 "  position: relative;\n"
@@ -267,8 +266,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB_6.setObjectName("MDVP_Fo_Hz_SB_6")
-        self.horizontalLayout_7.addWidget(self.MDVP_Fo_Hz_SB_6)
+        self.nWBV_sb.setObjectName("nWBV_sb")
+        self.horizontalLayout_7.addWidget(self.nWBV_sb)
         self.gridLayout.addLayout(self.horizontalLayout_7, 6, 0, 1, 1)
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
@@ -276,8 +275,8 @@ class Ui_Form(object):
         self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label_5.setObjectName("label_5")
         self.horizontalLayout_5.addWidget(self.label_5)
-        self.MDVP_Fo_Hz_SB_4 = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB_4.setStyleSheet("  height: 32px;\n"
+        self.MMSE_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
+        self.MMSE_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
 "  position: relative;\n"
@@ -306,8 +305,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB_4.setObjectName("MDVP_Fo_Hz_SB_4")
-        self.horizontalLayout_5.addWidget(self.MDVP_Fo_Hz_SB_4)
+        self.MMSE_sb.setObjectName("MMSE_sb")
+        self.horizontalLayout_5.addWidget(self.MMSE_sb)
         self.gridLayout.addLayout(self.horizontalLayout_5, 4, 0, 1, 1)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
@@ -315,8 +314,8 @@ class Ui_Form(object):
         self.label.setStyleSheet("background-color: rgb(255, 255, 255,0);")
         self.label.setObjectName("label")
         self.horizontalLayout_2.addWidget(self.label)
-        self.MDVP_Fo_Hz_SB = QtWidgets.QDoubleSpinBox(self.groupBox)
-        self.MDVP_Fo_Hz_SB.setStyleSheet("  height: 32px;\n"
+        self.Age_sb = QtWidgets.QSpinBox(self.groupBox)
+        self.Age_sb.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "  border: 1px solid #959595;\n"
 "  position: relative;\n"
@@ -345,8 +344,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.MDVP_Fo_Hz_SB.setObjectName("MDVP_Fo_Hz_SB")
-        self.horizontalLayout_2.addWidget(self.MDVP_Fo_Hz_SB)
+        self.Age_sb.setObjectName("Age_sb")
+        self.horizontalLayout_2.addWidget(self.Age_sb)
         self.gridLayout.addLayout(self.horizontalLayout_2, 0, 0, 1, 1)
         self.gridLayout_2.addWidget(self.groupBox, 2, 1, 1, 4)
         spacerItem5 = QtWidgets.QSpacerItem(200, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -414,10 +413,9 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_9.setText(_translate("Form", "Check Alzahimer"))
         self.label_6.setText(_translate("Form", "eTIV"))
-        self.label_2.setText(_translate("Form", "Sex"))
-        self.sex_comboBox.setItemText(0, _translate("Form", "Select"))
-        self.sex_comboBox.setItemText(1, _translate("Form", "Male"))
-        self.sex_comboBox.setItemText(2, _translate("Form", "Female"))
+        self.label_2.setText(_translate("Form", "gender"))
+        self.gender_comboBox.setItemText(0, _translate("Form", "Male"))
+        self.gender_comboBox.setItemText(1, _translate("Form", "Female"))
         self.label_8.setText(_translate("Form", "ASF"))
         self.label_3.setText(_translate("Form", "EDUC"))
         self.label_4.setText(_translate("Form", "SES"))

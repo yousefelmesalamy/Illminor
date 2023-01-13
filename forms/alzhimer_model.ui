@@ -141,7 +141,7 @@ background-color:transparent;</string>
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB_5">
+         <widget class="QDoubleSpinBox" name="eTIV_sb">
           <property name="styleSheet">
            <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -185,12 +185,12 @@ QLineEdit:focus {
            <string notr="true">background-color: rgb(255, 255, 255,0);</string>
           </property>
           <property name="text">
-           <string>Sex</string>
+           <string>gender</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="sex_comboBox">
+         <widget class="QComboBox" name="gender_comboBox">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -207,11 +207,6 @@ padding:15px;
 
 </string>
           </property>
-          <item>
-           <property name="text">
-            <string>Select</string>
-           </property>
-          </item>
           <item>
            <property name="text">
             <string>Male</string>
@@ -247,7 +242,7 @@ padding:15px;
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB_7">
+         <widget class="QDoubleSpinBox" name="ASF_sb">
           <property name="styleSheet">
            <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -296,7 +291,7 @@ QLineEdit:focus {
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB_2">
+         <widget class="QDoubleSpinBox" name="EDUC_sb">
           <property name="styleSheet">
            <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -345,7 +340,7 @@ QLineEdit:focus {
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB_3">
+         <widget class="QDoubleSpinBox" name="SES_sb">
           <property name="styleSheet">
            <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -394,7 +389,7 @@ QLineEdit:focus {
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB_6">
+         <widget class="QDoubleSpinBox" name="nWBV_sb">
           <property name="styleSheet">
            <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -443,7 +438,7 @@ QLineEdit:focus {
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB_4">
+         <widget class="QDoubleSpinBox" name="MMSE_sb">
           <property name="styleSheet">
            <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -492,7 +487,7 @@ QLineEdit:focus {
          </widget>
         </item>
         <item>
-         <widget class="QDoubleSpinBox" name="MDVP_Fo_Hz_SB">
+         <widget class="QSpinBox" name="Age_sb">
           <property name="styleSheet">
            <string notr="true">  height: 32px;
   border-radius: 4px;

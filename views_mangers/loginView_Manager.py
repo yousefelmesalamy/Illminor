@@ -11,7 +11,7 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
         self.setupUi(self)
 
         self.login_btn.clicked.connect(self.handle_login)
-        self.base_url = "http://illacc.pythonanywhere.com/login/"
+        self.base_url = "http://172.20.10.2:8000/login/"
         self.userToken = ''
 
     def handle_login(self):

@@ -575,29 +575,6 @@ QLineEdit:focus {
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="lineEdit">
-        <property name="minimumSize">
-         <size>
-          <width>196</width>
-          <height>40</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>196</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border: 2px solid #bebebe ;
-border-radius: 10% 10%;
-padding-left:5px;
-background-color: rgb(255, 255, 255);
-color: rgb(18, 32, 62);</string>
-        </property>
-       </widget>
-      </item>
       <item row="9" column="0">
        <widget class="QLabel" name="label_9">
         <property name="styleSheet">
@@ -635,6 +612,47 @@ color: rgb(18, 32, 62);</string>
 QLineEdit{
 border: 1px solid #ABAFB7;
 
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+        </property>
+        <property name="decimals">
+         <number>5</number>
+        </property>
+        <property name="maximum">
+         <double>10000000.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="age_lin">
+        <property name="styleSheet">
+         <string notr="true">QSpinBox {  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+}
 }
 QLineEdit:focus {
   border: 3px solid #555;
