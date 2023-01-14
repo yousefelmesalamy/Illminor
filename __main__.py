@@ -21,7 +21,7 @@ class Illminor(QtWidgets.QStackedWidget):
     def __init__(self , name=None, *args, **kwargs ):
         super(Illminor, self).__init__()
 
-        self.base_url = "http://172.20.10.2:8000"
+        self.base_url = "https://illacc.pythonanywhere.com"
 
         #install widget
         self.login_manger = Login_Manager()
@@ -98,6 +98,7 @@ class Illminor(QtWidgets.QStackedWidget):
         # self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
         # self.login_manger.login_btn.clicked.connect(lambda:self.setCurrentIndex(3))
         self.main_manager.user_btn.clicked.connect(self.home_to_user_profile)
+        self.register_manager.login_btn.clicked.connect(self.signup_to_login)
 
         self.main_manager.diabetes_btn.clicked.connect(self.handle_diabetes)
         self.profile_edit_manager.cancel_btn.clicked.connect(self.profile_edit_to_profile)
@@ -169,6 +170,9 @@ class Illminor(QtWidgets.QStackedWidget):
         self.setCurrentIndex(3)
     def handle_signup_to_goal(self):
         self.setCurrentIndex(1)
+
+    def signup_to_login(self):
+        self.setCurrentIndex(0)
 
     def handle_diabetes(self):
         self.diabetes_manager.base_url=self.base_url
