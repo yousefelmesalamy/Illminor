@@ -13,40 +13,39 @@ class Register_Manager(QtWidgets.QWidget, register_view.Ui_Form):
         super(Register_Manager, self).__init__()
         self.setupUi(self)
 
-        self.siginup_btn.clicked.connect(self.run)
+        self.siginup_btn_4.clicked.connect(self.run)
         self.base_url = ""
         self.userToken = ''
         self.is_doctor = False
-        profile_picture=self.profile_picture_lbl.mousePressEvent = self.getfiles
-        pixmap = QPixmap("")
-        self.profile_picture_lbl.setPixmap(pixmap)
+        self.profile_picture_lbl_4.mousePressEvent = self.getfiles
+
 
     def getfiles(self , event):
         self.fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self, 'Single File', '', 'Images (*.png, *.jpeg , *.jpg) ')
         try :
-            self.fileName = QtGui.QImage(self.fileName)
-            self.profile_picture_lbl.setPixmap(QtGui.QPixmap(self.fileName).scaled(150,150))
+            self.image = QtGui.QImage(self.fileName)
+            self.profile_picture_lbl_4.setPixmap(QtGui.QPixmap(self.image).scaled(150,150))
         except Exception as e :
             print(e)
 
     def run(self):
         self.register_url = f"{self.base_url}/users"
 
-        username = (self.username_lin.text())
-        first_name = (self.first_name_lin.text())
-        last_name = (self.last_name_lin.text())
-        name = (self.name_lin.text())
-        email = (self.email_lin.text())
-        bio = (self.bio_lin.text())
-        phone_number = float(self.phone_number_lin.text())
-        gander = self.gander_combobox.currentText()
+        username = self.username_lin_4.text()
+        first_name = self.first_name_lin_4.text()
+        last_name = self.last_name_lin_4.text()
+        name = self.name_lin_4.text()
+        email = self.email_lin_4.text()
+        bio = self.bio_lin_4.toPlainText()
+        phone_number = self.phone_number_lin_4.text()
+        gander = self.gander_combobox_4.currentText()
         if gander == "Male":
             sex = 0
         else:
             sex = 1
-        age = float(self.age_sb.text())
-        password2 = (self.password2_lin.text())
-        password1 = (self.password1_lin.text())
+        age = float(self.age_sb_4.text())
+        password2 = (self.password2_lin_4.text())
+        password1 = (self.password1_lin_4.text())
 
         try :
 

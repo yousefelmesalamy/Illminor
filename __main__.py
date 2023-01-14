@@ -111,11 +111,12 @@ class Illminor(QtWidgets.QStackedWidget):
         self.setCurrentIndex(10)
 
     def goal_to_patient_signup(self):
+        self.register_manager.base_url=self.base_url
         self.register_manager.is_doctor = False
         self.setCurrentIndex(2)
     def goal_to_signup_doctor(self):
+        self.register_manager.base_url=self.base_url
         self.register_manager.is_doctor = True
-
         self.setCurrentIndex(2)
     def handle_main_to_parkinsor(self):
         self.parkinson_manager.base_url=self.base_url
