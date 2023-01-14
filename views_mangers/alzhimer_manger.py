@@ -24,17 +24,17 @@ class Alzahimer_MANGER(QtWidgets.QWidget, alzhimer_model.Ui_Form):
 
             Age = int(self.Age_sb.text())
             gender = self.gender_comboBox.currentText()
-            if gender == "Male" :
+            if gender == "Male":
                 gender = 0
             else:
                 gender = 1
 
-            EDUC = float(self.EDUC_sb.text())
-            SES = float(self.SES_sb.text())
-            MMSE = float(self.MMSE_sb.text())
-            eTIV = float(self.eTIV_sb.text())
-            nWBV = float(self.nWBV_sb.text())
-            ASF = float(self.ASF_sb.text())
+            EDUC = self.EDUC_sb.text()
+            SES = self.SES_sb.text()
+            MMSE = self.MMSE_sb.text()
+            eTIV = self.eTIV_sb.text()
+            nWBV = self.nWBV_sb.text()
+            ASF = self.ASF_sb.text()
         except Exception as param_errors :
             print("param errors",param_errors)
 

@@ -1,4 +1,4 @@
-from PyQt5 import QtWidgets , QtCore
+from PyQt5 import QtWidgets, QtCore
 from views import login_view
 import json
 import requests
