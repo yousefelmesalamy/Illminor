@@ -13,13 +13,14 @@ class Register_Manager(QtWidgets.QWidget, register_view.Ui_Form):
         super(Register_Manager, self).__init__()
         self.setupUi(self)
 
-        self.siginup_btn.clicked.connect(self.run)
+        self.siginup_btn_4.clicked.connect(self.run)
         self.base_url = ""
         self.userToken = ''
         self.is_doctor = False
-        self.profile_picture_lbl.mousePressEvent = self.getfiles
         # pixmap = QPixmap("")
         # self.profile_picture_lbl.setPixmap(pixmap)
+        self.profile_picture_lbl_4.mousePressEvent = self.getfiles
+
 
     def getfiles(self , event):
         self.fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self, 'Single File', '', 'Images (*.png, *.jpeg , *.jpg) ')
