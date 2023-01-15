@@ -414,7 +414,7 @@ border-radius:20% 20%;
         </property>
         <property name="icon">
          <iconset resource="app_resources.qrc">
-          <normaloff>:/ICONS/icons/brain text.png</normaloff>:/ICONS/icons/brain text.png</iconset>
+          <normaloff>:/ICONS/icons/ALZAHIMER-ICON.png</normaloff>:/ICONS/icons/ALZAHIMER-ICON.png</iconset>
         </property>
         <property name="iconSize">
          <size>

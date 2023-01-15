@@ -194,7 +194,7 @@ class Ui_Form(object):
 "}")
         self.brain_cancer_btn.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/ICONS/icons/brain text.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon4.addPixmap(QtGui.QPixmap(":/ICONS/icons/ALZAHIMER-ICON.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.brain_cancer_btn.setIcon(icon4)
         self.brain_cancer_btn.setIconSize(QtCore.QSize(150, 150))
         self.brain_cancer_btn.setFlat(False)

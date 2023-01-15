@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="ICONS">
     <file>icons/home.png</file>
+    <file>icons/ALZAHIMER-ICON.png</file>
     <file>icons/edit.png</file>
     <file>icons/22.png</file>
     <file>icons/password.png</file>
