@@ -14,13 +14,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1312, 1109)
+        Form.resize(1279, 1272)
         Form.setStyleSheet("background-color: rgb(239, 243, 252);\n"
 "color: rgb(18, 32, 62);\n"
 "font-family:Ubuntu;\n"
 "font-size: 20px;")
-        self.gridLayout_3 = QtWidgets.QGridLayout(Form)
-        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.gridLayout_47 = QtWidgets.QGridLayout(Form)
+        self.gridLayout_47.setObjectName("gridLayout_47")
         self.groupBox_3 = QtWidgets.QGroupBox(Form)
         self.groupBox_3.setMinimumSize(QtCore.QSize(615, 692))
         self.groupBox_3.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165, 255), stop:1 rgba(12, 148, 207, 255));")
@@ -37,7 +37,7 @@ class Ui_Form(object):
         self.label_7.setAlignment(QtCore.Qt.AlignCenter)
         self.label_7.setObjectName("label_7")
         self.gridLayout_2.addWidget(self.label_7, 0, 0, 1, 1)
-        self.gridLayout_3.addWidget(self.groupBox_3, 0, 0, 1, 1)
+        self.gridLayout_47.addWidget(self.groupBox_3, 0, 0, 1, 1)
         self.groupBox = QtWidgets.QGroupBox(Form)
         self.groupBox.setMinimumSize(QtCore.QSize(0, 0))
         self.groupBox.setMaximumSize(QtCore.QSize(720, 16777215))
@@ -45,20 +45,9 @@ class Ui_Form(object):
 "background-color:rgb(239,243,252,255)")
         self.groupBox.setTitle("")
         self.groupBox.setObjectName("groupBox")
-        self.gridLayout_5 = QtWidgets.QGridLayout(self.groupBox)
-        self.gridLayout_5.setObjectName("gridLayout_5")
-        self.widget_3 = QtWidgets.QWidget(self.groupBox)
-        font = QtGui.QFont()
-        font.setFamily("Ubuntu")
-        font.setPointSize(-1)
-        font.setBold(True)
-        font.setWeight(75)
-        self.widget_3.setFont(font)
-        self.widget_3.setStyleSheet("")
-        self.widget_3.setObjectName("widget_3")
-        self.gridLayout_15 = QtWidgets.QGridLayout(self.widget_3)
-        self.gridLayout_15.setObjectName("gridLayout_15")
-        self.label_13 = QtWidgets.QLabel(self.widget_3)
+        self.gridLayout_46 = QtWidgets.QGridLayout(self.groupBox)
+        self.gridLayout_46.setObjectName("gridLayout_46")
+        self.label_13 = QtWidgets.QLabel(self.groupBox)
         font = QtGui.QFont()
         font.setFamily("arow")
         font.setPointSize(-1)
@@ -69,277 +58,188 @@ class Ui_Form(object):
 "font-size:30px;\n"
 "color:rgb(18,32,62,255);")
         self.label_13.setObjectName("label_13")
-        self.gridLayout_15.addWidget(self.label_13, 0, 1, 1, 1)
-        self.login_btn = QtWidgets.QPushButton(self.widget_3)
-        self.login_btn.setMinimumSize(QtCore.QSize(150, 50))
-        self.login_btn.setMaximumSize(QtCore.QSize(150, 50))
-        self.login_btn.setStyleSheet("QPushButton {\n"
-"    background-color:rgba(255,255,255,255);\n"
-"    color: black;\n"
-"    padding: 2px;\n"
-"    font: bold 15px;\n"
-"    border-width: 6px;\n"
-"    border-radius: 10px;\n"
-"    border-color: #2752B8;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #827397;\n"
-"}\n"
-"QPushButton:pressed{\n"
-"padding-left:5px;\n"
-"padding-top:5px;\n"
-"background-color:rgba(2, 65, 118, 100);\n"
-"background-postion:calc(100% - 10px) center;\n"
-"}\n"
-"")
-        self.login_btn.setObjectName("login_btn")
-        self.gridLayout_15.addWidget(self.login_btn, 0, 3, 1, 1)
-        self.gridLayout_11 = QtWidgets.QGridLayout()
-        self.gridLayout_11.setObjectName("gridLayout_11")
-        self.username_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.username_lin.setMinimumSize(QtCore.QSize(350, 40))
-        self.username_lin.setMaximumSize(QtCore.QSize(250, 40))
-        self.username_lin.setStyleSheet("border-radius: 10% 10%;\n"
-"padding-left:5px;\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(18, 32, 62);")
-        self.username_lin.setInputMask("")
-        self.username_lin.setText("")
-        self.username_lin.setMaxLength(32767)
-        self.username_lin.setFrame(False)
-        self.username_lin.setPlaceholderText("")
-        self.username_lin.setObjectName("username_lin")
-        self.gridLayout_11.addWidget(self.username_lin, 1, 0, 1, 1)
-        self.label_18 = QtWidgets.QLabel(self.widget_3)
-        self.label_18.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_18.setObjectName("label_18")
-        self.gridLayout_11.addWidget(self.label_18, 0, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_11, 2, 1, 1, 3)
+        self.gridLayout_46.addWidget(self.label_13, 0, 0, 1, 1)
+        self.scrollArea = QtWidgets.QScrollArea(self.groupBox)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 599, 1169))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.gridLayout_42 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
+        self.gridLayout_42.setObjectName("gridLayout_42")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_15.addItem(spacerItem, 3, 0, 1, 1)
-        self.gridLayout_9 = QtWidgets.QGridLayout()
-        self.gridLayout_9.setObjectName("gridLayout_9")
-        self.label_20 = QtWidgets.QLabel(self.widget_3)
-        self.label_20.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_20.setObjectName("label_20")
-        self.gridLayout_9.addWidget(self.label_20, 0, 0, 1, 1)
-        self.first_name_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.first_name_lin.setMinimumSize(QtCore.QSize(165, 40))
-        self.first_name_lin.setMaximumSize(QtCore.QSize(165, 40))
-        self.first_name_lin.setStyleSheet("border-radius: 10% 10%;\n"
-"padding-left:5px;\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(18, 32, 62);")
-        self.first_name_lin.setInputMask("")
-        self.first_name_lin.setText("")
-        self.first_name_lin.setMaxLength(32767)
-        self.first_name_lin.setFrame(False)
-        self.first_name_lin.setPlaceholderText("")
-        self.first_name_lin.setObjectName("first_name_lin")
-        self.gridLayout_9.addWidget(self.first_name_lin, 1, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_9, 3, 1, 1, 1)
-        self.gridLayout_10 = QtWidgets.QGridLayout()
-        self.gridLayout_10.setObjectName("gridLayout_10")
-        self.last_name_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.last_name_lin.setMinimumSize(QtCore.QSize(165, 40))
-        self.last_name_lin.setMaximumSize(QtCore.QSize(165, 40))
-        self.last_name_lin.setStyleSheet("border-radius: 10% 10%;\n"
-"padding-left:5px;\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(18, 32, 62);")
-        self.last_name_lin.setInputMask("")
-        self.last_name_lin.setText("")
-        self.last_name_lin.setMaxLength(32767)
-        self.last_name_lin.setFrame(False)
-        self.last_name_lin.setPlaceholderText("")
-        self.last_name_lin.setObjectName("last_name_lin")
-        self.gridLayout_10.addWidget(self.last_name_lin, 1, 0, 1, 1)
-        self.label_22 = QtWidgets.QLabel(self.widget_3)
-        self.label_22.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_22.setObjectName("label_22")
-        self.gridLayout_10.addWidget(self.label_22, 0, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_10, 3, 2, 1, 2)
+        self.horizontalLayout_8.addItem(spacerItem)
+        self.profile_picture_lbl_4 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.profile_picture_lbl_4.setMinimumSize(QtCore.QSize(130, 130))
+        self.profile_picture_lbl_4.setMaximumSize(QtCore.QSize(130, 130))
+        self.profile_picture_lbl_4.setStyleSheet("border-radius:30% 30%;\n"
+"")
+        self.profile_picture_lbl_4.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.profile_picture_lbl_4.setText("")
+        self.profile_picture_lbl_4.setPixmap(QtGui.QPixmap(":/ICONS/icons/aaaaaa.png"))
+        self.profile_picture_lbl_4.setScaledContents(True)
+        self.profile_picture_lbl_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.profile_picture_lbl_4.setObjectName("profile_picture_lbl_4")
+        self.horizontalLayout_8.addWidget(self.profile_picture_lbl_4)
         spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_15.addItem(spacerItem1, 3, 4, 1, 1)
-        self.gridLayout_8 = QtWidgets.QGridLayout()
-        self.gridLayout_8.setObjectName("gridLayout_8")
-        self.label_19 = QtWidgets.QLabel(self.widget_3)
-        self.label_19.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_19.setObjectName("label_19")
-        self.gridLayout_8.addWidget(self.label_19, 0, 0, 1, 1)
-        self.name_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.name_lin.setMinimumSize(QtCore.QSize(350, 40))
-        self.name_lin.setMaximumSize(QtCore.QSize(350, 40))
-        self.name_lin.setStyleSheet("border-radius: 10% 10%;\n"
+        self.horizontalLayout_8.addItem(spacerItem1)
+        self.gridLayout_42.addLayout(self.horizontalLayout_8, 0, 0, 1, 2)
+        self.gridLayout_35 = QtWidgets.QGridLayout()
+        self.gridLayout_35.setObjectName("gridLayout_35")
+        self.username_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.username_lin_4.setMinimumSize(QtCore.QSize(350, 40))
+        self.username_lin_4.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.username_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
 "padding-left:5px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(18, 32, 62);")
-        self.name_lin.setInputMask("")
-        self.name_lin.setText("")
-        self.name_lin.setMaxLength(32767)
-        self.name_lin.setFrame(False)
-        self.name_lin.setPlaceholderText("")
-        self.name_lin.setObjectName("name_lin")
-        self.gridLayout_8.addWidget(self.name_lin, 1, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_8, 4, 1, 1, 3)
-        self.gridLayout_7 = QtWidgets.QGridLayout()
-        self.gridLayout_7.setObjectName("gridLayout_7")
-        self.label_15 = QtWidgets.QLabel(self.widget_3)
-        self.label_15.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_15.setObjectName("label_15")
-        self.gridLayout_7.addWidget(self.label_15, 0, 0, 1, 1)
-        self.email_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.email_lin.setMinimumSize(QtCore.QSize(350, 40))
-        self.email_lin.setMaximumSize(QtCore.QSize(350, 40))
-        self.email_lin.setStyleSheet("border-radius: 10% 10%;\n"
+        self.username_lin_4.setInputMask("")
+        self.username_lin_4.setText("")
+        self.username_lin_4.setMaxLength(32767)
+        self.username_lin_4.setFrame(False)
+        self.username_lin_4.setPlaceholderText("")
+        self.username_lin_4.setObjectName("username_lin_4")
+        self.gridLayout_35.addWidget(self.username_lin_4, 1, 0, 1, 1)
+        self.label_44 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_44.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_44.setObjectName("label_44")
+        self.gridLayout_35.addWidget(self.label_44, 0, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_35, 1, 0, 1, 2)
+        self.gridLayout_36 = QtWidgets.QGridLayout()
+        self.gridLayout_36.setObjectName("gridLayout_36")
+        self.label_45 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_45.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_45.setObjectName("label_45")
+        self.gridLayout_36.addWidget(self.label_45, 0, 0, 1, 1)
+        self.first_name_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.first_name_lin_4.setMinimumSize(QtCore.QSize(165, 40))
+        self.first_name_lin_4.setMaximumSize(QtCore.QSize(9999999, 16777215))
+        self.first_name_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
 "padding-left:5px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(18, 32, 62);")
-        self.email_lin.setInputMask("")
-        self.email_lin.setText("")
-        self.email_lin.setMaxLength(32767)
-        self.email_lin.setFrame(False)
-        self.email_lin.setPlaceholderText("")
-        self.email_lin.setObjectName("email_lin")
-        self.gridLayout_7.addWidget(self.email_lin, 1, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_7, 5, 1, 1, 3)
-        self.gridLayout_6 = QtWidgets.QGridLayout()
-        self.gridLayout_6.setObjectName("gridLayout_6")
-        self.bio_lin = QtWidgets.QTextEdit(self.widget_3)
-        self.bio_lin.setMinimumSize(QtCore.QSize(350, 80))
-        self.bio_lin.setMaximumSize(QtCore.QSize(350, 80))
-        self.bio_lin.setStyleSheet("border-radius: 10% 10%;\n"
+        self.first_name_lin_4.setInputMask("")
+        self.first_name_lin_4.setText("")
+        self.first_name_lin_4.setMaxLength(32767)
+        self.first_name_lin_4.setFrame(False)
+        self.first_name_lin_4.setPlaceholderText("")
+        self.first_name_lin_4.setObjectName("first_name_lin_4")
+        self.gridLayout_36.addWidget(self.first_name_lin_4, 1, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_36, 2, 0, 1, 1)
+        self.gridLayout_37 = QtWidgets.QGridLayout()
+        self.gridLayout_37.setObjectName("gridLayout_37")
+        self.last_name_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.last_name_lin_4.setMinimumSize(QtCore.QSize(165, 40))
+        self.last_name_lin_4.setMaximumSize(QtCore.QSize(16777215, 9999999))
+        self.last_name_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
 "padding-left:5px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(18, 32, 62);")
-        self.bio_lin.setObjectName("bio_lin")
-        self.gridLayout_6.addWidget(self.bio_lin, 1, 0, 1, 1)
-        self.label_21 = QtWidgets.QLabel(self.widget_3)
-        self.label_21.setMinimumSize(QtCore.QSize(0, 30))
-        self.label_21.setMaximumSize(QtCore.QSize(16777215, 10))
-        self.label_21.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_21.setObjectName("label_21")
-        self.gridLayout_6.addWidget(self.label_21, 0, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_6, 6, 1, 1, 3)
-        self.gridLayout_12 = QtWidgets.QGridLayout()
-        self.gridLayout_12.setObjectName("gridLayout_12")
-        self.label_2 = QtWidgets.QLabel(self.widget_3)
-        self.label_2.setMinimumSize(QtCore.QSize(190, 50))
-        self.label_2.setStyleSheet("background-color: rgb(255, 255, 255,0);\n"
-"color: rgb(171, 175, 183);\n"
-"")
-        self.label_2.setObjectName("label_2")
-        self.gridLayout_12.addWidget(self.label_2, 0, 0, 1, 1)
-        self.gander_combobox = QtWidgets.QComboBox(self.widget_3)
-        self.gander_combobox.setMinimumSize(QtCore.QSize(150, 60))
-        self.gander_combobox.setMaximumSize(QtCore.QSize(150, 60))
-        self.gander_combobox.setStyleSheet("background:transparent;\n"
-"  border-radius: 20px;\n"
-"color: rgb(171, 175, 183);\n"
-"    ;\n"
-" border: 2px solid  #ffffff;\n"
-"font-size:20px;\n"
-"padding:15px;\n"
-"\n"
-"")
-        self.gander_combobox.setObjectName("gander_combobox")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icons/icons/male.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.gander_combobox.addItem(icon, "")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/icons/icons/female.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.gander_combobox.addItem(icon1, "")
-        self.gridLayout_12.addWidget(self.gander_combobox, 0, 1, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_12, 9, 1, 1, 3)
-        self.gridLayout_13 = QtWidgets.QGridLayout()
-        self.gridLayout_13.setObjectName("gridLayout_13")
-        self.password1_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.password1_lin.setMinimumSize(QtCore.QSize(350, 40))
-        self.password1_lin.setMaximumSize(QtCore.QSize(350, 40))
-        self.password1_lin.setStyleSheet("border-radius: 10% 10%;\n"
+        self.last_name_lin_4.setInputMask("")
+        self.last_name_lin_4.setText("")
+        self.last_name_lin_4.setMaxLength(32767)
+        self.last_name_lin_4.setFrame(False)
+        self.last_name_lin_4.setPlaceholderText("")
+        self.last_name_lin_4.setObjectName("last_name_lin_4")
+        self.gridLayout_37.addWidget(self.last_name_lin_4, 1, 0, 1, 1)
+        self.label_46 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_46.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_46.setObjectName("label_46")
+        self.gridLayout_37.addWidget(self.label_46, 0, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_37, 2, 1, 1, 1)
+        self.gridLayout_38 = QtWidgets.QGridLayout()
+        self.gridLayout_38.setObjectName("gridLayout_38")
+        self.label_47 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_47.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_47.setObjectName("label_47")
+        self.gridLayout_38.addWidget(self.label_47, 0, 0, 1, 1)
+        self.name_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.name_lin_4.setMinimumSize(QtCore.QSize(350, 40))
+        self.name_lin_4.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.name_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
 "padding-left:5px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(18, 32, 62);")
-        self.password1_lin.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.password1_lin.setObjectName("password1_lin")
-        self.gridLayout_13.addWidget(self.password1_lin, 1, 0, 1, 1)
-        self.label_17 = QtWidgets.QLabel(self.widget_3)
-        self.label_17.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_17.setObjectName("label_17")
-        self.gridLayout_13.addWidget(self.label_17, 0, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_13, 10, 1, 1, 3)
-        self.gridLayout_14 = QtWidgets.QGridLayout()
-        self.gridLayout_14.setObjectName("gridLayout_14")
-        self.password2_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.password2_lin.setMinimumSize(QtCore.QSize(350, 40))
-        self.password2_lin.setMaximumSize(QtCore.QSize(350, 40))
-        self.password2_lin.setStyleSheet("border-radius: 10% 10%;\n"
+        self.name_lin_4.setInputMask("")
+        self.name_lin_4.setText("")
+        self.name_lin_4.setMaxLength(32767)
+        self.name_lin_4.setFrame(False)
+        self.name_lin_4.setPlaceholderText("")
+        self.name_lin_4.setObjectName("name_lin_4")
+        self.gridLayout_38.addWidget(self.name_lin_4, 1, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_38, 3, 0, 1, 2)
+        self.gridLayout_39 = QtWidgets.QGridLayout()
+        self.gridLayout_39.setObjectName("gridLayout_39")
+        self.label_48 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_48.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_48.setObjectName("label_48")
+        self.gridLayout_39.addWidget(self.label_48, 0, 0, 1, 1)
+        self.email_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.email_lin_4.setMinimumSize(QtCore.QSize(350, 40))
+        self.email_lin_4.setMaximumSize(QtCore.QSize(16777215, 9999999))
+        self.email_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
 "padding-left:5px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(18, 32, 62);")
-        self.password2_lin.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.password2_lin.setObjectName("password2_lin")
-        self.gridLayout_14.addWidget(self.password2_lin, 1, 0, 1, 1)
-        self.label_14 = QtWidgets.QLabel(self.widget_3)
-        self.label_14.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_14.setObjectName("label_14")
-        self.gridLayout_14.addWidget(self.label_14, 0, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_14, 11, 1, 1, 3)
-        self.gridLayout = QtWidgets.QGridLayout()
-        self.gridLayout.setObjectName("gridLayout")
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem2, 0, 2, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem3, 0, 0, 1, 1)
-        self.siginup_btn = QtWidgets.QPushButton(self.widget_3)
-        self.siginup_btn.setMinimumSize(QtCore.QSize(221, 50))
-        self.siginup_btn.setMaximumSize(QtCore.QSize(150, 50))
-        self.siginup_btn.setStyleSheet("QPushButton {\n"
-"    background-color:rgba(6,103,184,255);\n"
-"    color: #FFFFFF;\n"
-"    padding: 2px;\n"
-"    font: bold 15px;\n"
-"    border-width: 6px;\n"
-"    border-radius: 10px;\n"
-"    border-color: #2752B8;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color: #827397;\n"
-"}")
-        self.siginup_btn.setObjectName("siginup_btn")
-        self.gridLayout.addWidget(self.siginup_btn, 0, 1, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout, 12, 1, 1, 3)
-        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_15.addItem(spacerItem4, 6, 0, 1, 1)
-        self.gridLayout_4 = QtWidgets.QGridLayout()
-        self.gridLayout_4.setObjectName("gridLayout_4")
-        self.phone_number_lin = QtWidgets.QLineEdit(self.widget_3)
-        self.phone_number_lin.setMinimumSize(QtCore.QSize(350, 40))
-        self.phone_number_lin.setMaximumSize(QtCore.QSize(350, 40))
-        self.phone_number_lin.setStyleSheet("border-radius: 10% 10%;\n"
+        self.email_lin_4.setInputMask("")
+        self.email_lin_4.setText("")
+        self.email_lin_4.setMaxLength(32767)
+        self.email_lin_4.setFrame(False)
+        self.email_lin_4.setPlaceholderText("")
+        self.email_lin_4.setObjectName("email_lin_4")
+        self.gridLayout_39.addWidget(self.email_lin_4, 1, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_39, 4, 0, 1, 2)
+        self.gridLayout_40 = QtWidgets.QGridLayout()
+        self.gridLayout_40.setObjectName("gridLayout_40")
+        self.bio_lin_4 = QtWidgets.QTextEdit(self.scrollAreaWidgetContents)
+        self.bio_lin_4.setMinimumSize(QtCore.QSize(350, 80))
+        self.bio_lin_4.setMaximumSize(QtCore.QSize(16777215, 9999999))
+        self.bio_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
 "padding-left:5px;\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(18, 32, 62);")
-        self.phone_number_lin.setInputMask("")
-        self.phone_number_lin.setText("")
-        self.phone_number_lin.setMaxLength(32767)
-        self.phone_number_lin.setFrame(False)
-        self.phone_number_lin.setPlaceholderText("")
-        self.phone_number_lin.setObjectName("phone_number_lin")
-        self.gridLayout_4.addWidget(self.phone_number_lin, 1, 0, 1, 1)
-        self.label_23 = QtWidgets.QLabel(self.widget_3)
-        self.label_23.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_23.setObjectName("label_23")
-        self.gridLayout_4.addWidget(self.label_23, 0, 0, 1, 1)
-        self.gridLayout_15.addLayout(self.gridLayout_4, 7, 1, 1, 3)
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.label_24 = QtWidgets.QLabel(self.widget_3)
-        self.label_24.setStyleSheet("color: rgb(171, 175, 183);")
-        self.label_24.setObjectName("label_24")
-        self.horizontalLayout_4.addWidget(self.label_24)
-        self.age_sb = QtWidgets.QSpinBox(self.widget_3)
-        self.age_sb.setStyleSheet("  height: 32px;\n"
+        self.bio_lin_4.setObjectName("bio_lin_4")
+        self.gridLayout_40.addWidget(self.bio_lin_4, 1, 0, 1, 1)
+        self.label_49 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_49.setMinimumSize(QtCore.QSize(0, 30))
+        self.label_49.setMaximumSize(QtCore.QSize(16777215, 10))
+        self.label_49.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_49.setObjectName("label_49")
+        self.gridLayout_40.addWidget(self.label_49, 0, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_40, 5, 0, 1, 2)
+        self.gridLayout_41 = QtWidgets.QGridLayout()
+        self.gridLayout_41.setObjectName("gridLayout_41")
+        self.phone_number_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.phone_number_lin_4.setMinimumSize(QtCore.QSize(350, 40))
+        self.phone_number_lin_4.setMaximumSize(QtCore.QSize(16777215, 9999999))
+        self.phone_number_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.phone_number_lin_4.setInputMask("")
+        self.phone_number_lin_4.setText("")
+        self.phone_number_lin_4.setMaxLength(32767)
+        self.phone_number_lin_4.setFrame(False)
+        self.phone_number_lin_4.setPlaceholderText("")
+        self.phone_number_lin_4.setObjectName("phone_number_lin_4")
+        self.gridLayout_41.addWidget(self.phone_number_lin_4, 1, 0, 1, 1)
+        self.label_50 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_50.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_50.setObjectName("label_50")
+        self.gridLayout_41.addWidget(self.label_50, 0, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_41, 6, 0, 1, 2)
+        self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
+        self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.label_51 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_51.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_51.setObjectName("label_51")
+        self.horizontalLayout_9.addWidget(self.label_51)
+        self.age_sb_4 = QtWidgets.QSpinBox(self.scrollAreaWidgetContents)
+        self.age_sb_4.setStyleSheet("  height: 32px;\n"
 "  border-radius: 4px;\n"
 "\n"
 " border-color:white;\n"
@@ -372,33 +272,125 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.age_sb.setMaximum(130)
-        self.age_sb.setObjectName("age_sb")
-        self.horizontalLayout_4.addWidget(self.age_sb)
-        self.gridLayout_15.addLayout(self.horizontalLayout_4, 8, 1, 1, 3)
-        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_15.addItem(spacerItem5, 8, 0, 1, 1)
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem6)
-        self.profile_picture_lbl = QtWidgets.QLabel(self.widget_3)
-        self.profile_picture_lbl.setMinimumSize(QtCore.QSize(130, 130))
-        self.profile_picture_lbl.setMaximumSize(QtCore.QSize(130, 130))
-        self.profile_picture_lbl.setStyleSheet("border-radius:30% 30%;\n"
+        self.age_sb_4.setMaximum(130)
+        self.age_sb_4.setObjectName("age_sb_4")
+        self.horizontalLayout_9.addWidget(self.age_sb_4)
+        self.horizontalLayout_10.addLayout(self.horizontalLayout_9)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_5 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_5.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_5.setStyleSheet("background-color: rgb(255, 255, 255,0);\n"
+"color: rgb(171, 175, 183);\n"
 "")
-        self.profile_picture_lbl.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.profile_picture_lbl.setText("")
-        self.profile_picture_lbl.setPixmap(QtGui.QPixmap(":/ICONS/icons/aaaaaa.png"))
-        self.profile_picture_lbl.setScaledContents(True)
-        self.profile_picture_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        self.profile_picture_lbl.setObjectName("profile_picture_lbl")
-        self.horizontalLayout_2.addWidget(self.profile_picture_lbl)
-        spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem7)
-        self.gridLayout_15.addLayout(self.horizontalLayout_2, 1, 1, 1, 3)
-        self.gridLayout_5.addWidget(self.widget_3, 0, 0, 1, 1)
-        self.gridLayout_3.addWidget(self.groupBox, 0, 1, 1, 1)
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout.addWidget(self.label_5)
+        self.gander_combobox_4 = QtWidgets.QComboBox(self.scrollAreaWidgetContents)
+        self.gander_combobox_4.setMinimumSize(QtCore.QSize(0, 0))
+        self.gander_combobox_4.setMaximumSize(QtCore.QSize(150, 60))
+        self.gander_combobox_4.setStyleSheet("background:transparent;\n"
+"  border-radius: 20px;\n"
+"color: rgb(171, 175, 183);\n"
+"    ;\n"
+" border: 2px solid  #ffffff;\n"
+"padding:15px;\n"
+"\n"
+"")
+        self.gander_combobox_4.setObjectName("gander_combobox_4")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icons/icons/male.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.gander_combobox_4.addItem(icon, "")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/icons/icons/female.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.gander_combobox_4.addItem(icon1, "")
+        self.horizontalLayout.addWidget(self.gander_combobox_4)
+        self.horizontalLayout_10.addLayout(self.horizontalLayout)
+        self.gridLayout_42.addLayout(self.horizontalLayout_10, 7, 0, 1, 2)
+        self.gridLayout_43 = QtWidgets.QGridLayout()
+        self.gridLayout_43.setObjectName("gridLayout_43")
+        self.password1_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.password1_lin_4.setMinimumSize(QtCore.QSize(350, 40))
+        self.password1_lin_4.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.password1_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.password1_lin_4.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.password1_lin_4.setObjectName("password1_lin_4")
+        self.gridLayout_43.addWidget(self.password1_lin_4, 1, 0, 1, 1)
+        self.label_52 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_52.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_52.setObjectName("label_52")
+        self.gridLayout_43.addWidget(self.label_52, 0, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_43, 8, 0, 1, 2)
+        self.gridLayout_44 = QtWidgets.QGridLayout()
+        self.gridLayout_44.setObjectName("gridLayout_44")
+        self.label_53 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
+        self.label_53.setStyleSheet("color: rgb(171, 175, 183);")
+        self.label_53.setObjectName("label_53")
+        self.gridLayout_44.addWidget(self.label_53, 0, 0, 1, 1)
+        self.password2_lin_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents)
+        self.password2_lin_4.setMinimumSize(QtCore.QSize(350, 40))
+        self.password2_lin_4.setMaximumSize(QtCore.QSize(16777215, 9999999))
+        self.password2_lin_4.setStyleSheet("border-radius: 10% 10%;\n"
+"padding-left:5px;\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(18, 32, 62);")
+        self.password2_lin_4.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.password2_lin_4.setObjectName("password2_lin_4")
+        self.gridLayout_44.addWidget(self.password2_lin_4, 1, 0, 1, 1)
+        self.gridLayout_49 = QtWidgets.QGridLayout()
+        self.gridLayout_49.setObjectName("gridLayout_49")
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_49.addItem(spacerItem2, 0, 2, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_49.addItem(spacerItem3, 0, 0, 1, 1)
+        self.siginup_btn_4 = QtWidgets.QPushButton(self.scrollAreaWidgetContents)
+        self.siginup_btn_4.setMinimumSize(QtCore.QSize(221, 50))
+        self.siginup_btn_4.setMaximumSize(QtCore.QSize(150, 50))
+        self.siginup_btn_4.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}")
+        self.siginup_btn_4.setObjectName("siginup_btn_4")
+        self.gridLayout_49.addWidget(self.siginup_btn_4, 0, 1, 1, 1)
+        self.gridLayout_44.addLayout(self.gridLayout_49, 2, 0, 1, 1)
+        self.gridLayout_42.addLayout(self.gridLayout_44, 9, 0, 1, 2)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.gridLayout_46.addWidget(self.scrollArea, 1, 0, 1, 2)
+        self.login_btn = QtWidgets.QPushButton(self.groupBox)
+        self.login_btn.setMinimumSize(QtCore.QSize(150, 50))
+        self.login_btn.setMaximumSize(QtCore.QSize(150, 50))
+        self.login_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(255,255,255,255);\n"
+"    color: black;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-color:rgba(2, 65, 118, 100);\n"
+"background-postion:calc(100% - 10px) center;\n"
+"}\n"
+"")
+        self.login_btn.setObjectName("login_btn")
+        self.gridLayout_46.addWidget(self.login_btn, 0, 1, 1, 1)
+        self.gridLayout_47.addWidget(self.groupBox, 0, 1, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -407,19 +399,19 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_13.setText(_translate("Form", "Register"))
+        self.label_44.setText(_translate("Form", "Username"))
+        self.label_45.setText(_translate("Form", "First name"))
+        self.label_46.setText(_translate("Form", "Last name"))
+        self.label_47.setText(_translate("Form", "Name"))
+        self.label_48.setText(_translate("Form", "Email"))
+        self.label_49.setText(_translate("Form", "Bio"))
+        self.label_50.setText(_translate("Form", "Phone-num"))
+        self.label_51.setText(_translate("Form", "age"))
+        self.label_5.setText(_translate("Form", "Gander"))
+        self.gander_combobox_4.setItemText(0, _translate("Form", "Male"))
+        self.gander_combobox_4.setItemText(1, _translate("Form", "Female"))
+        self.label_52.setText(_translate("Form", "Password"))
+        self.label_53.setText(_translate("Form", "confirm password"))
+        self.siginup_btn_4.setText(_translate("Form", "SIGNUP"))
         self.login_btn.setText(_translate("Form", "LOGIN"))
-        self.label_18.setText(_translate("Form", "Username"))
-        self.label_20.setText(_translate("Form", "First name"))
-        self.label_22.setText(_translate("Form", "Last name"))
-        self.label_19.setText(_translate("Form", "Name"))
-        self.label_15.setText(_translate("Form", "Email"))
-        self.label_21.setText(_translate("Form", "Bio"))
-        self.label_2.setText(_translate("Form", "Gander"))
-        self.gander_combobox.setItemText(0, _translate("Form", "Male"))
-        self.gander_combobox.setItemText(1, _translate("Form", "Female"))
-        self.label_17.setText(_translate("Form", "Password"))
-        self.label_14.setText(_translate("Form", "confirm password"))
-        self.siginup_btn.setText(_translate("Form", "SIGNUP"))
-        self.label_23.setText(_translate("Form", "Phone-num"))
-        self.label_24.setText(_translate("Form", "age"))
 import app_resources_rc

@@ -85,10 +85,19 @@ class Illminor(QtWidgets.QStackedWidget):
         self.main_manager.blood_btn.clicked.connect(self.handle_main_to_blood)
         self.main_manager.breast_btn.clicked.connect(self.handle_main_to_breast)
         self.main_manager.parkinson_btn.clicked.connect(self.handle_main_to_parkinsor)
+        self.main_manager.user_btn.clicked.connect(self.home_to_user_profile)
+        self.main_manager.diabetes_btn.clicked.connect(self.handle_diabetes)
+
+        self.register_manager.login_btn.clicked.connect(self.signup_to_login)
+        self.register_manager.signupAcceptedSignal.connect(self.signup_to_login)
+
         self.goal_manager.doctor_btn.clicked.connect(self.goal_to_signup_doctor)
         self.goal_manager.patient_btn.clicked.connect(self.goal_to_patient_signup)
         self.profile_manager.home_btn.clicked.connect(self.hndle_profile_to_home)
         self.profile_manager.change_password_btn.clicked.connect(self.hndle_profile_to_change_password)
+        self.profile_manager.editprofile_btn.clicked.connect(self.profile_to_edit_profile)
+        self.profile_manager.logout_btn.clicked.connect(self.handle_logout)
+
         self.profile_edit_manager.change_password_btn.clicked.connect(self.hndle_profile_edit_to_change_password)
         self.profile_edit_manager.home_btn.clicked.connect(self.hndle_profile_edit_to_home)
         self.profile_edit_manager.logout_btn.clicked.connect(self.handle_logout)
@@ -149,6 +158,7 @@ class Illminor(QtWidgets.QStackedWidget):
     def main_to_results(self):
         self.setCurrentIndex(13)
     def signup_to_login(self):
+        self.clear_login()
         self.setCurrentIndex(0)
     def profile_edit_to_profile(self):
         self.setCurrentIndex(10)
@@ -181,12 +191,16 @@ class Illminor(QtWidgets.QStackedWidget):
     def handle_signup_to_goal(self):
         self.setCurrentIndex(1)
 
-
-
     def handle_diabetes(self):
         self.diabetes_manager.base_url=self.base_url
         self.diabetes_manager.token = self.login_manger.userToken
         self.setCurrentIndex(8)
+
+
+
+    def clear_login(self):
+        self.login_manger.username_lin.clear()
+        self.login_manger.password_lin.clear()
 
 
 
