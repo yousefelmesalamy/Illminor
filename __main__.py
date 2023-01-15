@@ -85,8 +85,9 @@ class Illminor(QtWidgets.QStackedWidget):
         self.main_manager.blood_btn.clicked.connect(self.handle_main_to_blood)
         self.main_manager.breast_btn.clicked.connect(self.handle_main_to_breast)
         self.main_manager.parkinson_btn.clicked.connect(self.handle_main_to_parkinsor)
-        self.main_manager.user_btn.clicked.connect(self.home_to_user_profile)
         self.main_manager.diabetes_btn.clicked.connect(self.handle_diabetes)
+        self.main_manager.results_btn.clicked.connect(self.main_to_results)
+
 
         self.register_manager.login_btn.clicked.connect(self.signup_to_login)
         self.register_manager.signupAcceptedSignal.connect(self.signup_to_login)
@@ -110,20 +111,13 @@ class Illminor(QtWidgets.QStackedWidget):
         # self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(2))
         # self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
         # self.login_manger.login_btn.clicked.connect(lambda:self.setCurrentIndex(3))
-        self.main_manager.user_btn.clicked.connect(self.home_to_user_profile)
         self.register_manager.login_btn.clicked.connect(self.signup_to_login)
-        self.main_manager.results_btn.clicked.connect(self.main_to_results)
 
-
-        self.main_manager.diabetes_btn.clicked.connect(self.handle_diabetes)
         self.profile_edit_manager.cancel_btn.clicked.connect(self.profile_edit_to_profile)
 
         # self.login_manger.signup_lbl.clicked.connect(lambda :self.setCurrentIndex(1))
 
 
-
-    def home_to_user_profile(self):
-        self.setCurrentIndex(10)
 
     def goal_to_patient_signup(self):
         self.register_manager.base_url = self.base_url
