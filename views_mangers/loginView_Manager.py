@@ -13,6 +13,7 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
         self.login_btn.clicked.connect(self.handle_login)
         self.base_url = "https://illacc.pythonanywhere.com/login/"
         self.userToken = ''
+        self.username = ''
 
     def handle_login(self):
         msg = QtWidgets.QMessageBox()
@@ -45,6 +46,7 @@ class Login_Manager(QtWidgets.QWidget, login_view.Ui_login_Form):
             try:
                 if self.json_statusCode == 200:
                     self.userToken = self.json_response['token']
+                    self.username = self.json_response['user_name']
                     if self.json_response["is_doctor"] == False :
                         self.PatientloginAcceptedSignal.emit()
                     else:
