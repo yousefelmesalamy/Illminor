@@ -88,8 +88,6 @@ class Register_Manager(QtWidgets.QWidget, register_view.Ui_Form):
         except Exception as e:
             print("response error",e)
 
-
-
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     w = Register_Manager()
