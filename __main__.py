@@ -12,6 +12,7 @@ from views_mangers.heart_manger import Heart_MANGER
 from views_mangers.change_password_manager import CHANGE_PASSWORD_Mnager
 from views_mangers.profileclient_manager import PROFILE_CLIENT_Mnager
 from views_mangers.profileclient_edit_manager import PROFILE_CLIENT_EDIT_Mnager
+from views_mangers.results_manager import RESULTS_MANAGER
 import sys
 
 from PyQt5.QtGui import QImage, QPixmap
@@ -37,6 +38,7 @@ class Illminor(QtWidgets.QStackedWidget):
         self.change_password_manager=CHANGE_PASSWORD_Mnager()
         self.profile_manager=PROFILE_CLIENT_Mnager()
         self.profile_edit_manager=PROFILE_CLIENT_EDIT_Mnager()
+        self.results_manager=RESULTS_MANAGER()
 
 
         # self.showFullScreen()
@@ -56,6 +58,7 @@ class Illminor(QtWidgets.QStackedWidget):
         self.addWidget(self.profile_manager) #10
         self.addWidget(self.profile_edit_manager) #11
         self.addWidget(self.heart_manager) #12
+        self.addWidget(self.results_manager) #13
 
 
 
@@ -71,6 +74,7 @@ class Illminor(QtWidgets.QStackedWidget):
         self.blood_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
         self.diabetes_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
         self.alzahimer_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
+        self.results_manager.back_btn.clicked.connect(lambda: self.setCurrentIndex(3))
 
         #success screen
         self.login_manger.signup_btn.clicked.connect(self.handle_signup_to_goal)
@@ -97,9 +101,25 @@ class Illminor(QtWidgets.QStackedWidget):
         self.profile_edit_manager.change_password_btn.clicked.connect(self.hndle_profile_edit_to_change_password)
         self.profile_edit_manager.home_btn.clicked.connect(self.hndle_profile_edit_to_home)
         self.profile_edit_manager.logout_btn.clicked.connect(self.handle_logout)
-        self.profile_edit_manager.cancel_btn.clicked.connect(self.profile_edit_to_profile)
+        self.profile_manager.logout_btn.clicked.connect(self.handle_logout)
         self.change_password_manager.home_btn.clicked.connect(self.chanage_password_to_home)
         self.change_password_manager.user_btn.clicked.connect(self.chanage_password_to_profile)
+        self.profile_manager.editprofile_btn.clicked.connect(self.profile_to_edit_profile)
+        # self.register_manager.login_btn.clicked.connect(self.signup_to_login)
+        # self.register_manager.login_btn.clicked.connect(lambda :self.setCurrentIndex(0))
+        # self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(2))
+        # self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
+        # self.login_manger.login_btn.clicked.connect(lambda:self.setCurrentIndex(3))
+        self.main_manager.user_btn.clicked.connect(self.home_to_user_profile)
+        self.register_manager.login_btn.clicked.connect(self.signup_to_login)
+        self.main_manager.results_btn.clicked.connect(self.main_to_results)
+
+
+        self.main_manager.diabetes_btn.clicked.connect(self.handle_diabetes)
+        self.profile_edit_manager.cancel_btn.clicked.connect(self.profile_edit_to_profile)
+
+        # self.login_manger.signup_lbl.clicked.connect(lambda :self.setCurrentIndex(1))
+
 
 
     def home_to_user_profile(self):
@@ -110,7 +130,6 @@ class Illminor(QtWidgets.QStackedWidget):
         self.register_manager.is_doctor = False
         self.setCurrentIndex(2)
     def goal_to_signup_doctor(self):
-
         self.register_manager.base_url = self.base_url
         self.register_manager.is_doctor = True
 
@@ -136,6 +155,8 @@ class Illminor(QtWidgets.QStackedWidget):
         self.alzahimer_manager.base_url=self.base_url
         self.alzahimer_manager.token = self.login_manger.userToken
         self.setCurrentIndex(5)
+    def main_to_results(self):
+        self.setCurrentIndex(13)
     def signup_to_login(self):
         self.clear_login()
         self.setCurrentIndex(0)
