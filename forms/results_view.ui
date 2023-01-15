@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1487</width>
-    <height>464</height>
+    <width>2050</width>
+    <height>793</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,30 +20,37 @@ font-family:Ubuntu;
 font-size: 20px;</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="1" column="3">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="back_btn">
+     <property name="text">
+      <string/>
      </property>
-     <property name="sizeHint" stdset="0">
+     <property name="icon">
+      <iconset resource="app_resources.qrc">
+       <normaloff>:/ICONS/icons/back-button.png</normaloff>:/ICONS/icons/back-button.png</iconset>
+     </property>
+     <property name="iconSize">
       <size>
-       <width>20</width>
-       <height>40</height>
+       <width>50</width>
+       <height>50</height>
       </size>
      </property>
-    </spacer>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
    </item>
-   <item row="2" column="2" rowspan="2" colspan="2">
+   <item row="2" column="2">
     <widget class="QTableWidget" name="tableWidget">
      <property name="minimumSize">
       <size>
-       <width>1251</width>
+       <width>1451</width>
        <height>350</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>1251</width>
+       <width>1451</width>
        <height>350</height>
       </size>
      </property>
@@ -191,6 +198,11 @@ font-size: 20px;</string>
      </column>
      <column>
       <property name="text">
+       <string>breast_model</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
        <string>bloodTest_model</string>
       </property>
      </column>
@@ -247,8 +259,8 @@ color:rgb(18,32,62,255);
      </property>
     </widget>
    </item>
-   <item row="4" column="3">
-    <spacer name="verticalSpacer_2">
+   <item row="1" column="2">
+    <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
@@ -256,19 +268,6 @@ color:rgb(18,32,62,255);
       <size>
        <width>20</width>
        <height>40</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="3" column="4">
-    <spacer name="horizontalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>25</width>
-       <height>20</height>
       </size>
      </property>
     </spacer>
@@ -286,25 +285,31 @@ color:rgb(18,32,62,255);
      </property>
     </spacer>
    </item>
-   <item row="0" column="0">
-    <widget class="QPushButton" name="back_btn">
-     <property name="text">
-      <string/>
+   <item row="3" column="2">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
-     <property name="icon">
-      <iconset resource="app_resources.qrc">
-       <normaloff>:/ICONS/icons/back-button.png</normaloff>:/ICONS/icons/back-button.png</iconset>
-     </property>
-     <property name="iconSize">
+     <property name="sizeHint" stdset="0">
       <size>
-       <width>50</width>
-       <height>50</height>
+       <width>20</width>
+       <height>40</height>
       </size>
      </property>
-     <property name="flat">
-      <bool>true</bool>
+    </spacer>
+   </item>
+   <item row="2" column="3">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
-    </widget>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>

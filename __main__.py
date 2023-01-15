@@ -150,6 +150,8 @@ class Illminor(QtWidgets.QStackedWidget):
         self.alzahimer_manager.token = self.login_manger.userToken
         self.setCurrentIndex(5)
     def main_to_results(self):
+        self.results_manager.base_url=self.base_url
+        self.results_manager.token = self.login_manger.userToken
         self.setCurrentIndex(13)
     def signup_to_login(self):
         self.clear_login()
