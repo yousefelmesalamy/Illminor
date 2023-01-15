@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="ICONS">
+    <file>icons/settings.png</file>
     <file>icons/home.png</file>
     <file>icons/edit.png</file>
     <file>icons/22.png</file>

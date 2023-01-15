@@ -106,32 +106,48 @@ class Illminor(QtWidgets.QStackedWidget):
         self.change_password_manager.home_btn.clicked.connect(self.chanage_password_to_home)
         self.change_password_manager.user_btn.clicked.connect(self.chanage_password_to_profile)
         self.profile_manager.editprofile_btn.clicked.connect(self.profile_to_edit_profile)
-        # self.register_manager.login_btn.clicked.connect(self.signup_to_login)
-        # self.register_manager.login_btn.clicked.connect(lambda :self.setCurrentIndex(0))
-        # self.goal_manager.doctor_btn.clicked.connect(lambda :self.setCurrentIndex(2))
-        # self.goal_manager.patient_btn.clicked.connect(lambda :self.setCurrentIndex(2))
-        # self.login_manger.login_btn.clicked.connect(lambda:self.setCurrentIndex(3))
+
         self.register_manager.login_btn.clicked.connect(self.signup_to_login)
 
         self.profile_edit_manager.cancel_btn.clicked.connect(self.profile_edit_to_profile)
-
-        # self.login_manger.signup_lbl.clicked.connect(lambda :self.setCurrentIndex(1))
-
-
 
     def goal_to_patient_signup(self):
         self.register_manager.base_url = self.base_url
         self.register_manager.is_doctor = False
         self.setCurrentIndex(2)
+
     def goal_to_signup_doctor(self):
         self.register_manager.base_url = self.base_url
         self.register_manager.is_doctor = True
-
         self.setCurrentIndex(2)
+
+    def handle_doctor_login(self):
+        self.profile_manager.firstTime=True
+        self.profile_manager.groupBox_4.setVisible(False)
+        self.setCurrentIndex(3)
+
+    def handle_patient_login(self):
+        self.profile_manager.firstTime = True
+        self.profile_manager.groupBox_4.setVisible(True)
+        self.main_manager.results_btn.setVisible(False)
+        self.setCurrentIndex(3)
+
+    def handle_main_to_change_password(self):
+        self.setCurrentIndex(9)
+
+    def handle_main_to_user_profile(self):
+        if self.profile_manager.firstTime:
+            self.profile_manager.username = self.login_manger.username
+            self.profile_manager.token = self.login_manger.userToken
+            self.profile_manager.base_url = self.base_url
+            self.profile_manager.run()
+        self.setCurrentIndex(10)
+
     def handle_main_to_parkinsor(self):
         self.parkinson_manager.base_url=self.base_url
         self.parkinson_manager.token = self.login_manger.userToken
         self.setCurrentIndex(4)
+
 
     def  handle_main_to_breast(self):
         self.breast_manager.base_url=self.base_url
@@ -164,6 +180,7 @@ class Illminor(QtWidgets.QStackedWidget):
     def chanage_password_to_home(self):
         self.setCurrentIndex(3)
     def handle_logout(self):
+        self.clear_login()
         self.setCurrentIndex(0)
     def hndle_profile_edit_to_home(self):
         self.setCurrentIndex(3)
@@ -173,15 +190,7 @@ class Illminor(QtWidgets.QStackedWidget):
         self.setCurrentIndex(9)
     def hndle_profile_to_home(self):
         self.setCurrentIndex(3)
-    def handle_main_to_change_password(self):
-        self.setCurrentIndex(9)
-    def handle_main_to_user_profile(self):
-        self.setCurrentIndex(10)
-    def handle_doctor_login(self):
-        self.setCurrentIndex(3)
-    def handle_patient_login(self):
-        self.main_manager.results_btn.setVisible(False)
-        self.setCurrentIndex(3)
+
     def handle_signup_to_goal(self):
         self.setCurrentIndex(1)
 

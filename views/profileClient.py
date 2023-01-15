@@ -14,199 +14,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1029, 707)
+        Form.resize(1474, 868)
         Form.setStyleSheet("\n"
 "background-color: rgb(239, 243, 252);\n"
 "font-family:Ubuntu;\n"
 "font-size: 20px;")
-        self.gridLayout_4 = QtWidgets.QGridLayout(Form)
-        self.gridLayout_4.setObjectName("gridLayout_4")
-        self.groupBox_2 = QtWidgets.QGroupBox(Form)
-        self.groupBox_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.groupBox_2.setMaximumSize(QtCore.QSize(600, 4567890))
-        self.groupBox_2.setStyleSheet("QGroupBox{\n"
-"    background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 20% 20%;\n"
-"color: white;\n"
-"\n"
-"\n"
-";}\n"
-"")
-        self.groupBox_2.setTitle("")
-        self.groupBox_2.setObjectName("groupBox_2")
-        self.gridLayout_2 = QtWidgets.QGridLayout(self.groupBox_2)
-        self.gridLayout_2.setObjectName("gridLayout_2")
-        spacerItem = QtWidgets.QSpacerItem(106, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem, 0, 0, 1, 1)
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem1)
-        self.groupBox_3 = QtWidgets.QGroupBox(self.groupBox_2)
-        self.groupBox_3.setMinimumSize(QtCore.QSize(220, 260))
-        self.groupBox_3.setMaximumSize(QtCore.QSize(220, 260))
-        self.groupBox_3.setStyleSheet("QGroupBox{\n"
-"    background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 20% 20%;\n"
-"color: white;\n"
-"\n"
-"\n"
-";}\n"
-"\n"
-"")
-        self.groupBox_3.setObjectName("groupBox_3")
-        self.gridLayout_3 = QtWidgets.QGridLayout(self.groupBox_3)
-        self.gridLayout_3.setObjectName("gridLayout_3")
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.profile_lbl = QtWidgets.QLabel(self.groupBox_3)
-        self.profile_lbl.setMinimumSize(QtCore.QSize(200, 200))
-        self.profile_lbl.setMaximumSize(QtCore.QSize(200, 200))
-        self.profile_lbl.setStyleSheet("border-radius:100% 100%;\n"
-"border: 2px solid #bebebe ;\n"
-"")
-        self.profile_lbl.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.profile_lbl.setText("")
-        self.profile_lbl.setPixmap(QtGui.QPixmap(":/ICONS/icons/aaaaaa.png"))
-        self.profile_lbl.setScaledContents(True)
-        self.profile_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        self.profile_lbl.setObjectName("profile_lbl")
-        self.verticalLayout.addWidget(self.profile_lbl)
-        self.user_name_lbl = QtWidgets.QLabel(self.groupBox_3)
-        self.user_name_lbl.setMinimumSize(QtCore.QSize(0, 33))
-        self.user_name_lbl.setMaximumSize(QtCore.QSize(390, 33))
-        self.user_name_lbl.setStyleSheet("color:rgb(57,57,57,255);\n"
-"background-color: rgb(255, 255, 255,0);")
-        self.user_name_lbl.setText("")
-        self.user_name_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        self.user_name_lbl.setObjectName("user_name_lbl")
-        self.verticalLayout.addWidget(self.user_name_lbl)
-        self.gridLayout_3.addLayout(self.verticalLayout, 0, 0, 1, 1)
-        self.horizontalLayout.addWidget(self.groupBox_3)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem2)
-        self.gridLayout_2.addLayout(self.horizontalLayout, 0, 1, 2, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(106, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem3, 1, 2, 1, 1)
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.firstname_lbl = QtWidgets.QLabel(self.groupBox_2)
-        self.firstname_lbl.setMinimumSize(QtCore.QSize(350, 60))
-        self.firstname_lbl.setMaximumSize(QtCore.QSize(350, 60))
-        self.firstname_lbl.setStyleSheet("border-radius:20% 20%;\n"
-"\n"
-"background-color:rgb(249,250,252,255);\n"
-"padding-left:8px;\n"
-"")
-        self.firstname_lbl.setText("")
-        self.firstname_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        self.firstname_lbl.setObjectName("firstname_lbl")
-        self.verticalLayout_2.addWidget(self.firstname_lbl)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem4)
-        self.lastname_lbl = QtWidgets.QLabel(self.groupBox_2)
-        self.lastname_lbl.setMinimumSize(QtCore.QSize(350, 60))
-        self.lastname_lbl.setMaximumSize(QtCore.QSize(350, 60))
-        self.lastname_lbl.setStyleSheet("border-radius:20% 20%;\n"
-"\n"
-"background-color:rgb(249,250,252,255);\n"
-"padding-left:8px;\n"
-"")
-        self.lastname_lbl.setText("")
-        self.lastname_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        self.lastname_lbl.setObjectName("lastname_lbl")
-        self.verticalLayout_2.addWidget(self.lastname_lbl)
-        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem5)
-        self.email_lbl_2 = QtWidgets.QLabel(self.groupBox_2)
-        self.email_lbl_2.setMinimumSize(QtCore.QSize(350, 60))
-        self.email_lbl_2.setMaximumSize(QtCore.QSize(350, 60))
-        self.email_lbl_2.setStyleSheet("border-radius:20% 20%;\n"
-"\n"
-"background-color:rgb(249,250,252,255);\n"
-"padding-left:8px;\n"
-"")
-        self.email_lbl_2.setText("")
-        self.email_lbl_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.email_lbl_2.setObjectName("email_lbl_2")
-        self.verticalLayout_2.addWidget(self.email_lbl_2)
-        spacerItem6 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem6)
-        self.egnder_lbl = QtWidgets.QLabel(self.groupBox_2)
-        self.egnder_lbl.setMinimumSize(QtCore.QSize(350, 60))
-        self.egnder_lbl.setMaximumSize(QtCore.QSize(350, 60))
-        self.egnder_lbl.setStyleSheet("border-radius:20% 20%;\n"
-"\n"
-"background-color:rgb(249,250,252,255);\n"
-"padding-left:8px;\n"
-"")
-        self.egnder_lbl.setText("")
-        self.egnder_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        self.egnder_lbl.setObjectName("egnder_lbl")
-        self.verticalLayout_2.addWidget(self.egnder_lbl)
-        spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem7)
-        self.userdoctor_lbl = QtWidgets.QLabel(self.groupBox_2)
-        self.userdoctor_lbl.setMinimumSize(QtCore.QSize(350, 60))
-        self.userdoctor_lbl.setMaximumSize(QtCore.QSize(350, 60))
-        self.userdoctor_lbl.setStyleSheet("border-radius:20% 20%;\n"
-"\n"
-"background-color:rgb(249,250,252,255);\n"
-"padding-left:8px;\n"
-"")
-        self.userdoctor_lbl.setText("")
-        self.userdoctor_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        self.userdoctor_lbl.setObjectName("userdoctor_lbl")
-        self.verticalLayout_2.addWidget(self.userdoctor_lbl)
-        self.gridLayout_2.addLayout(self.verticalLayout_2, 2, 1, 1, 1)
-        spacerItem8 = QtWidgets.QSpacerItem(106, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem8, 2, 2, 1, 1)
-        spacerItem9 = QtWidgets.QSpacerItem(106, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem9, 2, 0, 1, 1)
-        spacerItem10 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_2.addItem(spacerItem10, 3, 1, 1, 1)
-        self.editprofile_btn = QtWidgets.QPushButton(self.groupBox_2)
-        self.editprofile_btn.setEnabled(True)
-        self.editprofile_btn.setStyleSheet("QPushButton{\n"
-"background-color: rgb(255, 255, 255,0);\n"
-"border-radius:5% 5%;\n"
-"    border-color: rgb(0, 0, 0);\n"
-"\n"
-"\n"
-";\n"
-"}\n"
-"QPushButton:pressed{\n"
-"padding-left:5px;\n"
-"padding-top:5px;\n"
-"background-postion:calc(100% - 10px) center;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(56, 163, 255,.5);\n"
-"}")
-        self.editprofile_btn.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/ICONS/icons/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.editprofile_btn.setIcon(icon)
-        self.editprofile_btn.setIconSize(QtCore.QSize(100, 30))
-        self.editprofile_btn.setFlat(True)
-        self.editprofile_btn.setObjectName("editprofile_btn")
-        self.gridLayout_2.addWidget(self.editprofile_btn, 0, 2, 1, 1)
-        self.gridLayout_4.addWidget(self.groupBox_2, 1, 2, 1, 1)
-        self.label_3 = QtWidgets.QLabel(Form)
-        self.label_3.setMinimumSize(QtCore.QSize(250, 35))
-        self.label_3.setMaximumSize(QtCore.QSize(250, 35))
-        self.label_3.setStyleSheet("font-size:40px;")
-        self.label_3.setObjectName("label_3")
-        self.gridLayout_4.addWidget(self.label_3, 0, 1, 1, 1)
-        spacerItem11 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_4.addItem(spacerItem11, 1, 1, 1, 1)
-        spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout_4.addItem(spacerItem12, 2, 2, 1, 1)
-        spacerItem13 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_4.addItem(spacerItem13, 1, 3, 1, 1)
+        self.gridLayout_6 = QtWidgets.QGridLayout(Form)
+        self.gridLayout_6.setObjectName("gridLayout_6")
         self.groupBox = QtWidgets.QGroupBox(Form)
         self.groupBox.setMinimumSize(QtCore.QSize(105, 0))
         self.groupBox.setMaximumSize(QtCore.QSize(105, 16777215))
@@ -222,8 +36,8 @@ class Ui_Form(object):
         self.groupBox.setObjectName("groupBox")
         self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
         self.gridLayout.setObjectName("gridLayout")
-        spacerItem14 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout.addItem(spacerItem14, 3, 0, 1, 1)
+        spacerItem = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem, 3, 0, 1, 1)
         self.user_btn = QtWidgets.QPushButton(self.groupBox)
         self.user_btn.setMinimumSize(QtCore.QSize(80, 80))
         self.user_btn.setStyleSheet("QPushButton{\n"
@@ -245,9 +59,9 @@ class Ui_Form(object):
 "QPushButton:hover {\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165,.5), stop:1 rgba(12, 148, 207,.1));}")
         self.user_btn.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/ICONS/icons/22.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.user_btn.setIcon(icon1)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/ICONS/icons/22.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.user_btn.setIcon(icon)
         self.user_btn.setIconSize(QtCore.QSize(40, 40))
         self.user_btn.setFlat(True)
         self.user_btn.setObjectName("user_btn")
@@ -277,9 +91,9 @@ class Ui_Form(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(226, 120, 255,.5);}")
         self.home_btn.setText("")
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/ICONS/icons/home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.home_btn.setIcon(icon2)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/ICONS/icons/home.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.home_btn.setIcon(icon1)
         self.home_btn.setIconSize(QtCore.QSize(50, 50))
         self.home_btn.setFlat(True)
         self.home_btn.setObjectName("home_btn")
@@ -308,15 +122,15 @@ class Ui_Form(object):
 "QPushButton:hover {\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(3, 67, 165,.5), stop:1 rgba(12, 148, 207,.1));}")
         self.change_password_btn.setText("")
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/ICONS/icons/password.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.change_password_btn.setIcon(icon3)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap(":/ICONS/icons/password.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.change_password_btn.setIcon(icon2)
         self.change_password_btn.setIconSize(QtCore.QSize(40, 40))
         self.change_password_btn.setFlat(True)
         self.change_password_btn.setObjectName("change_password_btn")
         self.gridLayout.addWidget(self.change_password_btn, 6, 0, 1, 2)
-        spacerItem15 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem15, 7, 0, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem1, 7, 0, 1, 1)
         self.logout_btn = QtWidgets.QPushButton(self.groupBox)
         self.logout_btn.setMinimumSize(QtCore.QSize(80, 80))
         self.logout_btn.setMaximumSize(QtCore.QSize(80, 80))
@@ -335,18 +149,412 @@ class Ui_Form(object):
 "    background-color: rgb(255, 0, 0,.5);}\n"
 "")
         self.logout_btn.setText("")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/ICONS/icons/log-out.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.logout_btn.setIcon(icon4)
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap(":/ICONS/icons/log-out.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.logout_btn.setIcon(icon3)
         self.logout_btn.setIconSize(QtCore.QSize(60, 60))
         self.logout_btn.setFlat(True)
         self.logout_btn.setObjectName("logout_btn")
         self.gridLayout.addWidget(self.logout_btn, 0, 0, 1, 2)
-        spacerItem16 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout.addItem(spacerItem16, 5, 0, 1, 1)
-        spacerItem17 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.gridLayout.addItem(spacerItem17, 1, 0, 1, 1)
-        self.gridLayout_4.addWidget(self.groupBox, 0, 0, 3, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem2, 5, 0, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem3, 1, 0, 1, 1)
+        self.gridLayout_6.addWidget(self.groupBox, 0, 0, 2, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_6.addItem(spacerItem4, 0, 1, 1, 1)
+        self.groupBox_2 = QtWidgets.QGroupBox(Form)
+        self.groupBox_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.groupBox_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.groupBox_2.setStyleSheet("QGroupBox{\n"
+"    background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 20% 20%;\n"
+"color: white;\n"
+"\n"
+"\n"
+";}\n"
+"")
+        self.groupBox_2.setTitle("")
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.gridLayout_5 = QtWidgets.QGridLayout(self.groupBox_2)
+        self.gridLayout_5.setObjectName("gridLayout_5")
+        spacerItem5 = QtWidgets.QSpacerItem(20, 22, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.gridLayout_5.addItem(spacerItem5, 1, 1, 1, 1)
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_5.addItem(spacerItem6, 2, 0, 1, 1)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.name_lbl = QtWidgets.QLabel(self.groupBox_2)
+        self.name_lbl.setMinimumSize(QtCore.QSize(350, 60))
+        self.name_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.name_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"font-size:100%\n"
+"")
+        self.name_lbl.setText("")
+        self.name_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.name_lbl.setObjectName("name_lbl")
+        self.verticalLayout_2.addWidget(self.name_lbl)
+        spacerItem7 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_2.addItem(spacerItem7)
+        self.email_lbl = QtWidgets.QLabel(self.groupBox_2)
+        self.email_lbl.setMinimumSize(QtCore.QSize(350, 60))
+        self.email_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.email_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.email_lbl.setText("")
+        self.email_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.email_lbl.setObjectName("email_lbl")
+        self.verticalLayout_2.addWidget(self.email_lbl)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_2.addItem(spacerItem8)
+        self.gender_lbl = QtWidgets.QLabel(self.groupBox_2)
+        self.gender_lbl.setMinimumSize(QtCore.QSize(350, 60))
+        self.gender_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.gender_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.gender_lbl.setText("")
+        self.gender_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.gender_lbl.setObjectName("gender_lbl")
+        self.verticalLayout_2.addWidget(self.gender_lbl)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_2.addItem(spacerItem9)
+        self.userdoctor_lbl = QtWidgets.QLabel(self.groupBox_2)
+        self.userdoctor_lbl.setMinimumSize(QtCore.QSize(0, 60))
+        self.userdoctor_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.userdoctor_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.userdoctor_lbl.setText("")
+        self.userdoctor_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.userdoctor_lbl.setObjectName("userdoctor_lbl")
+        self.verticalLayout_2.addWidget(self.userdoctor_lbl)
+        spacerItem10 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_2.addItem(spacerItem10)
+        self.phone_lbl = QtWidgets.QLabel(self.groupBox_2)
+        self.phone_lbl.setMinimumSize(QtCore.QSize(0, 60))
+        self.phone_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.phone_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.phone_lbl.setText("")
+        self.phone_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.phone_lbl.setObjectName("phone_lbl")
+        self.verticalLayout_2.addWidget(self.phone_lbl)
+        spacerItem11 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_2.addItem(spacerItem11)
+        self.bio_lbl = QtWidgets.QLabel(self.groupBox_2)
+        self.bio_lbl.setMinimumSize(QtCore.QSize(0, 60))
+        self.bio_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.bio_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.bio_lbl.setText("")
+        self.bio_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.bio_lbl.setObjectName("bio_lbl")
+        self.verticalLayout_2.addWidget(self.bio_lbl)
+        self.gridLayout_5.addLayout(self.verticalLayout_2, 2, 1, 1, 1)
+        spacerItem12 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_5.addItem(spacerItem12, 2, 2, 1, 1)
+        spacerItem13 = QtWidgets.QSpacerItem(20, 52, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.gridLayout_5.addItem(spacerItem13, 3, 1, 1, 1)
+        self.gridLayout_2 = QtWidgets.QGridLayout()
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.groupBox_3 = QtWidgets.QGroupBox(self.groupBox_2)
+        self.groupBox_3.setMinimumSize(QtCore.QSize(220, 260))
+        self.groupBox_3.setMaximumSize(QtCore.QSize(220, 260))
+        self.groupBox_3.setStyleSheet("QGroupBox{\n"
+"    background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 20% 20%;\n"
+"color: white;\n"
+"\n"
+"\n"
+";}\n"
+"\n"
+"")
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.groupBox_3)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.profile_lbl = QtWidgets.QLabel(self.groupBox_3)
+        self.profile_lbl.setMinimumSize(QtCore.QSize(200, 200))
+        self.profile_lbl.setMaximumSize(QtCore.QSize(200, 200))
+        self.profile_lbl.setStyleSheet("border-radius:10% 10%;\n"
+"")
+        self.profile_lbl.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.profile_lbl.setText("")
+        self.profile_lbl.setPixmap(QtGui.QPixmap(":/ICONS/icons/aaaaaa.png"))
+        self.profile_lbl.setScaledContents(True)
+        self.profile_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.profile_lbl.setObjectName("profile_lbl")
+        self.verticalLayout.addWidget(self.profile_lbl)
+        self.user_name_lbl = QtWidgets.QLabel(self.groupBox_3)
+        self.user_name_lbl.setMinimumSize(QtCore.QSize(0, 33))
+        self.user_name_lbl.setMaximumSize(QtCore.QSize(390, 33))
+        self.user_name_lbl.setStyleSheet("color:rgb(57,57,57,255);\n"
+"background-color: rgb(255, 255, 255,0);")
+        self.user_name_lbl.setText("")
+        self.user_name_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.user_name_lbl.setObjectName("user_name_lbl")
+        self.verticalLayout.addWidget(self.user_name_lbl)
+        self.gridLayout_3.addLayout(self.verticalLayout, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.groupBox_3, 0, 1, 2, 1)
+        spacerItem14 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem14, 0, 2, 1, 1)
+        self.editprofile_btn = QtWidgets.QPushButton(self.groupBox_2)
+        self.editprofile_btn.setMaximumSize(QtCore.QSize(25, 25))
+        self.editprofile_btn.setStyleSheet("QPushButton{\n"
+"background-color: rgb(255, 255, 255,0);\n"
+"border-radius:15% 15%;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-postion:calc(100% - 10px) center;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(226, 120, 255,.5);\n"
+"}")
+        self.editprofile_btn.setText("")
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap(":/ICONS/icons/settings.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.editprofile_btn.setIcon(icon4)
+        self.editprofile_btn.setObjectName("editprofile_btn")
+        self.gridLayout_2.addWidget(self.editprofile_btn, 0, 3, 1, 1)
+        spacerItem15 = QtWidgets.QSpacerItem(78, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem15, 1, 0, 1, 1)
+        self.gridLayout_5.addLayout(self.gridLayout_2, 0, 0, 1, 3)
+        self.gridLayout_6.addWidget(self.groupBox_2, 0, 2, 2, 1)
+        self.groupBox_4 = QtWidgets.QGroupBox(Form)
+        self.groupBox_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.groupBox_4.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.groupBox_4.setStyleSheet("QGroupBox{\n"
+"    background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 20% 20%;\n"
+"color: white;\n"
+"\n"
+"\n"
+";}\n"
+"")
+        self.groupBox_4.setTitle("")
+        self.groupBox_4.setObjectName("groupBox_4")
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.groupBox_4)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.name_lbl_2 = QtWidgets.QLabel(self.groupBox_4)
+        self.name_lbl_2.setMinimumSize(QtCore.QSize(350, 250))
+        self.name_lbl_2.setMaximumSize(QtCore.QSize(16777215, 250))
+        font = QtGui.QFont()
+        font.setFamily("Ubuntu")
+        font.setPointSize(-1)
+        self.name_lbl_2.setFont(font)
+        self.name_lbl_2.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,0);\n"
+"padding-left:8px;\n"
+"font-size: 30px;")
+        self.name_lbl_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.name_lbl_2.setObjectName("name_lbl_2")
+        self.gridLayout_4.addWidget(self.name_lbl_2, 0, 0, 1, 1)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.bloodTest_lbl = QtWidgets.QLabel(self.groupBox_4)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.bloodTest_lbl.sizePolicy().hasHeightForWidth())
+        self.bloodTest_lbl.setSizePolicy(sizePolicy)
+        self.bloodTest_lbl.setMinimumSize(QtCore.QSize(200, 60))
+        self.bloodTest_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.bloodTest_lbl.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.bloodTest_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"font-size:100%\n"
+"")
+        self.bloodTest_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.bloodTest_lbl.setObjectName("bloodTest_lbl")
+        self.verticalLayout_3.addWidget(self.bloodTest_lbl)
+        spacerItem16 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_3.addItem(spacerItem16)
+        self.diabtesTest_lbl = QtWidgets.QLabel(self.groupBox_4)
+        self.diabtesTest_lbl.setMinimumSize(QtCore.QSize(200, 60))
+        self.diabtesTest_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.diabtesTest_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.diabtesTest_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.diabtesTest_lbl.setObjectName("diabtesTest_lbl")
+        self.verticalLayout_3.addWidget(self.diabtesTest_lbl)
+        spacerItem17 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_3.addItem(spacerItem17)
+        self.gender_lbl_2 = QtWidgets.QLabel(self.groupBox_4)
+        self.gender_lbl_2.setMinimumSize(QtCore.QSize(200, 60))
+        self.gender_lbl_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.gender_lbl_2.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.gender_lbl_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.gender_lbl_2.setObjectName("gender_lbl_2")
+        self.verticalLayout_3.addWidget(self.gender_lbl_2)
+        spacerItem18 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_3.addItem(spacerItem18)
+        self.userdoctor_lbl_2 = QtWidgets.QLabel(self.groupBox_4)
+        self.userdoctor_lbl_2.setMinimumSize(QtCore.QSize(0, 60))
+        self.userdoctor_lbl_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.userdoctor_lbl_2.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.userdoctor_lbl_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.userdoctor_lbl_2.setObjectName("userdoctor_lbl_2")
+        self.verticalLayout_3.addWidget(self.userdoctor_lbl_2)
+        spacerItem19 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_3.addItem(spacerItem19)
+        self.bio_lbl_3 = QtWidgets.QLabel(self.groupBox_4)
+        self.bio_lbl_3.setMinimumSize(QtCore.QSize(0, 60))
+        self.bio_lbl_3.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.bio_lbl_3.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.bio_lbl_3.setAlignment(QtCore.Qt.AlignCenter)
+        self.bio_lbl_3.setObjectName("bio_lbl_3")
+        self.verticalLayout_3.addWidget(self.bio_lbl_3)
+        spacerItem20 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_3.addItem(spacerItem20)
+        self.bio_lbl_4 = QtWidgets.QLabel(self.groupBox_4)
+        self.bio_lbl_4.setMinimumSize(QtCore.QSize(0, 60))
+        self.bio_lbl_4.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.bio_lbl_4.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.bio_lbl_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.bio_lbl_4.setObjectName("bio_lbl_4")
+        self.verticalLayout_3.addWidget(self.bio_lbl_4)
+        self.horizontalLayout_2.addLayout(self.verticalLayout_3)
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.bloodResult_lbl = QtWidgets.QLabel(self.groupBox_4)
+        self.bloodResult_lbl.setMinimumSize(QtCore.QSize(350, 60))
+        self.bloodResult_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.bloodResult_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"font-size:100%\n"
+"")
+        self.bloodResult_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.bloodResult_lbl.setObjectName("bloodResult_lbl")
+        self.verticalLayout_4.addWidget(self.bloodResult_lbl)
+        spacerItem21 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_4.addItem(spacerItem21)
+        self.diabtesResult_lbl = QtWidgets.QLabel(self.groupBox_4)
+        self.diabtesResult_lbl.setMinimumSize(QtCore.QSize(350, 60))
+        self.diabtesResult_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.diabtesResult_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.diabtesResult_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.diabtesResult_lbl.setObjectName("diabtesResult_lbl")
+        self.verticalLayout_4.addWidget(self.diabtesResult_lbl)
+        spacerItem22 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_4.addItem(spacerItem22)
+        self.parkinsonResult_lbl = QtWidgets.QLabel(self.groupBox_4)
+        self.parkinsonResult_lbl.setMinimumSize(QtCore.QSize(350, 60))
+        self.parkinsonResult_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.parkinsonResult_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.parkinsonResult_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.parkinsonResult_lbl.setObjectName("parkinsonResult_lbl")
+        self.verticalLayout_4.addWidget(self.parkinsonResult_lbl)
+        spacerItem23 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_4.addItem(spacerItem23)
+        self.alzhimarResult_lbl = QtWidgets.QLabel(self.groupBox_4)
+        self.alzhimarResult_lbl.setMinimumSize(QtCore.QSize(0, 60))
+        self.alzhimarResult_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.alzhimarResult_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.alzhimarResult_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.alzhimarResult_lbl.setObjectName("alzhimarResult_lbl")
+        self.verticalLayout_4.addWidget(self.alzhimarResult_lbl)
+        spacerItem24 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_4.addItem(spacerItem24)
+        self.heartResult_lbl = QtWidgets.QLabel(self.groupBox_4)
+        self.heartResult_lbl.setMinimumSize(QtCore.QSize(0, 60))
+        self.heartResult_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.heartResult_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.heartResult_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.heartResult_lbl.setObjectName("heartResult_lbl")
+        self.verticalLayout_4.addWidget(self.heartResult_lbl)
+        spacerItem25 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.verticalLayout_4.addItem(spacerItem25)
+        self.chestResult_lbl = QtWidgets.QLabel(self.groupBox_4)
+        self.chestResult_lbl.setMinimumSize(QtCore.QSize(0, 60))
+        self.chestResult_lbl.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.chestResult_lbl.setStyleSheet("border-radius:20% 20%;\n"
+"\n"
+"background-color:rgb(249,250,252,255);\n"
+"padding-left:8px;\n"
+"")
+        self.chestResult_lbl.setAlignment(QtCore.Qt.AlignCenter)
+        self.chestResult_lbl.setObjectName("chestResult_lbl")
+        self.verticalLayout_4.addWidget(self.chestResult_lbl)
+        self.horizontalLayout_2.addLayout(self.verticalLayout_4)
+        self.gridLayout_4.addLayout(self.horizontalLayout_2, 2, 0, 1, 1)
+        spacerItem26 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.gridLayout_4.addItem(spacerItem26, 1, 0, 1, 1)
+        spacerItem27 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.gridLayout_4.addItem(spacerItem27, 3, 0, 1, 1)
+        self.gridLayout_6.addWidget(self.groupBox_4, 0, 4, 2, 1)
+        spacerItem28 = QtWidgets.QSpacerItem(38, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_6.addItem(spacerItem28, 1, 3, 1, 1)
+        spacerItem29 = QtWidgets.QSpacerItem(37, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_6.addItem(spacerItem29, 1, 5, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -355,5 +563,17 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.groupBox_3.setTitle(_translate("Form", "GroupBox"))
-        self.label_3.setText(_translate("Form", "Client Profile"))
+        self.name_lbl_2.setText(_translate("Form", "Last Tests Results"))
+        self.bloodTest_lbl.setText(_translate("Form", "Blood Test"))
+        self.diabtesTest_lbl.setText(_translate("Form", "Diabtes Test"))
+        self.gender_lbl_2.setText(_translate("Form", "Parkinson Test"))
+        self.userdoctor_lbl_2.setText(_translate("Form", "Alzhimar Test"))
+        self.bio_lbl_3.setText(_translate("Form", "Heart Test"))
+        self.bio_lbl_4.setText(_translate("Form", "Chest Test"))
+        self.bloodResult_lbl.setText(_translate("Form", "-"))
+        self.diabtesResult_lbl.setText(_translate("Form", "-"))
+        self.parkinsonResult_lbl.setText(_translate("Form", "-"))
+        self.alzhimarResult_lbl.setText(_translate("Form", "-"))
+        self.heartResult_lbl.setText(_translate("Form", "-"))
+        self.chestResult_lbl.setText(_translate("Form", "-"))
 import app_resources_rc
