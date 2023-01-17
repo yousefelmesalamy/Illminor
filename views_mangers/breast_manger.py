@@ -20,6 +20,7 @@ class BREAST_MANGER(QtWidgets.QWidget, breast_model.Ui_Form):
         # self.back_btn_2.clicked.connect(self.checker)
         self.pickProfile_lbl.mousePressEvent = self.getfiles
         self.msg = QtWidgets.QMessageBox()
+        self.msg.setStyleSheet("min-width: 10em; ")
 
     def getfiles(self , event):
 
@@ -52,15 +53,15 @@ class BREAST_MANGER(QtWidgets.QWidget, breast_model.Ui_Form):
 
         try:
             response = requests.post(test_url, json=data, headers=headers)
-            if response.status_code == 200 :
+            if response.status_code == 201 :
                 self.msg.setIcon(self.msg.Information)
                 self.msg.setWindowTitle("Information")
-                self.msg.setText(str(response.json()["response"]))
+                self.msg.setText(str(response.json()["result"]))
                 self.msg.exec_()
             else:
                 self.msg.setIcon(self.msg.Critical)
                 self.msg.setWindowTitle("Error")
-                self.msg.setText(str(response.json()["response"]))
+                self.msg.setText(str(response.json()["result"]))
                 self.msg.exec_()
         except Exception as e :
             print(e)

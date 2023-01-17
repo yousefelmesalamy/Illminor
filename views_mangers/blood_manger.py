@@ -16,6 +16,7 @@ class Blood_MANGER(QtWidgets.QWidget, blood_model.Ui_Form):
 
     def run(self):
         msg = QtWidgets.QMessageBox()
+        msg.setStyleSheet("min-width: 10em; ")
         try :
             self.blood_url = f"{self.base_url}/bloodTest/"
             age = int(self.age_lin.text())

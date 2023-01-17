@@ -18,6 +18,7 @@ class PROFILE_CLIENT_Mnager(QtWidgets.QWidget, profileClient.Ui_Form):
 
     def run(self):
         msg = QtWidgets.QMessageBox()
+        msg.setStyleSheet("min-width: 10em; ")
         headers = {"Accept": "application/json ; indent=4",
                    "Content-Type": "application/json", "Authorization": f"Token {self.token}"}
 

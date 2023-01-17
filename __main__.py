@@ -22,6 +22,12 @@ class Illminor(QtWidgets.QStackedWidget):
     def __init__(self , name=None, *args, **kwargs ):
         super(Illminor, self).__init__()
 
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":ICONS/icons/Untitled-1.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.setWindowIcon(icon)
+        _translate = QtCore.QCoreApplication.translate
+        self.setWindowTitle(_translate("Form", "Illminor"))
+
         self.base_url = "https://illacc.pythonanywhere.com"
 
         #install widget

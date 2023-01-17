@@ -16,6 +16,7 @@ class Diabetes_MANGER(QtWidgets.QWidget, diabetes_model.Ui_Form):
 
     def run(self):
         msg = QtWidgets.QMessageBox()
+        msg.setStyleSheet("min-width: 10em; ")
 
         diabetes_url = f"{self.base_url}/diabtesTest/"
 

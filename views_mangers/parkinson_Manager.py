@@ -15,6 +15,7 @@ class Parkinson_Mnager(QtWidgets.QWidget, parkinson_molde.Ui_Form):
 
     def run(self):
         msg = QtWidgets.QMessageBox()
+        msg.setStyleSheet("min-width: 10em; ")
         try:
             self.test_url = f"{self.base_url}/parkinsonTest/"
 

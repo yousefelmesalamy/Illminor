@@ -15,6 +15,7 @@ class Alzahimer_MANGER(QtWidgets.QWidget, alzhimer_model.Ui_Form):
         self.show_result_btn.clicked.connect(self.run)
     def run(self):
         msg = QtWidgets.QMessageBox()
+        msg.setStyleSheet("min-width: 10em; ")
         try :
             self.test_url = f"{self.base_url}/alzhimarTest/"
 
