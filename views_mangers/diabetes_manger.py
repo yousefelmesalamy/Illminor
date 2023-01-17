@@ -16,6 +16,7 @@ class Diabetes_MANGER(QtWidgets.QWidget, diabetes_model.Ui_Form):
 
     def run(self):
         msg = QtWidgets.QMessageBox()
+
         diabetes_url = f"{self.base_url}/diabtesTest/"
 
 
@@ -53,10 +54,6 @@ class Diabetes_MANGER(QtWidgets.QWidget, diabetes_model.Ui_Form):
                 print(e)
         except Exception as x :
             print(x)
-
-
-
-
 
 if __name__ == "__main__":
     import sys

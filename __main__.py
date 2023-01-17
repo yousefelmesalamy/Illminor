@@ -148,7 +148,6 @@ class Illminor(QtWidgets.QStackedWidget):
         self.parkinson_manager.token = self.login_manger.userToken
         self.setCurrentIndex(4)
 
-
     def  handle_main_to_breast(self):
         self.breast_manager.base_url=self.base_url
         self.breast_manager.token = self.login_manger.userToken

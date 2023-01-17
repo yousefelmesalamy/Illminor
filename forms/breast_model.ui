@@ -215,7 +215,7 @@ background-color: rgb(234, 237, 255,0);
     </spacer>
    </item>
    <item row="4" column="4">
-    <widget class="QPushButton" name="show_result_btn_3">
+    <widget class="QPushButton" name="show_result_btn">
      <property name="minimumSize">
       <size>
        <width>250</width>

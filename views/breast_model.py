@@ -86,10 +86,10 @@ class Ui_Form(object):
         self.gridLayout.addItem(spacerItem5, 3, 4, 1, 1)
         spacerItem6 = QtWidgets.QSpacerItem(287, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout.addItem(spacerItem6, 4, 0, 1, 4)
-        self.show_result_btn_3 = QtWidgets.QPushButton(Form)
-        self.show_result_btn_3.setMinimumSize(QtCore.QSize(250, 50))
-        self.show_result_btn_3.setMaximumSize(QtCore.QSize(330, 50))
-        self.show_result_btn_3.setStyleSheet("QPushButton {\n"
+        self.show_result_btn = QtWidgets.QPushButton(Form)
+        self.show_result_btn.setMinimumSize(QtCore.QSize(250, 50))
+        self.show_result_btn.setMaximumSize(QtCore.QSize(330, 50))
+        self.show_result_btn.setStyleSheet("QPushButton {\n"
 "    background-color:rgba(6,103,184,255);\n"
 "    color: #FFFFFF;\n"
 "    padding: 2px;\n"
@@ -107,8 +107,8 @@ class Ui_Form(object):
 "background-color:rgba(2, 65, 118, 100);\n"
 "background-postion:calc(100% - 10px) center;}\n"
 "")
-        self.show_result_btn_3.setObjectName("show_result_btn_3")
-        self.gridLayout.addWidget(self.show_result_btn_3, 4, 4, 1, 1)
+        self.show_result_btn.setObjectName("show_result_btn")
+        self.gridLayout.addWidget(self.show_result_btn, 4, 4, 1, 1)
         spacerItem7 = QtWidgets.QSpacerItem(201, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout.addItem(spacerItem7, 4, 5, 1, 3)
         spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -121,5 +121,5 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_25.setText(_translate("Form", "BREAST CANCER CHECK"))
-        self.show_result_btn_3.setText(_translate("Form", "Show result"))
+        self.show_result_btn.setText(_translate("Form", "Show result"))
 import app_resources_rc
