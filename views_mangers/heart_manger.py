@@ -18,14 +18,8 @@ class Heart_MANGER(QtWidgets.QWidget, heart_model.Ui_Form):
         try :
             self.test_url = f"{self.base_url}/heartTest/"
 
-            age = int(self.Age_sb.text())
-            sex = self.Sex_combobox.currentText()
-            if sex == "Male" :
-                sex = 0
-            else:
-                sex = 1
+            Age = int(self.Age_sb.text())
 
-            Age = float(self.Age_sb.text())
             Sex = self.Sex_combobox.currentText()
             if Sex == "Male":
                 Sex = 0

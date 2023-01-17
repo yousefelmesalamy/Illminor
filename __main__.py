@@ -128,7 +128,8 @@ class Illminor(QtWidgets.QStackedWidget):
         self.setCurrentIndex(2)
 
     def handle_doctor_login(self):
-        self.profile_manager.firstTime=True
+        self.profile_manager.firstTime = True
+        self.main_manager.results_btn.setVisible(True)
         self.profile_manager.groupBox_4.setVisible(False)
         self.setCurrentIndex(3)
 
@@ -165,7 +166,7 @@ class Illminor(QtWidgets.QStackedWidget):
     def handle_main_to_heart(self):
         self.heart_manager.base_url=self.base_url
         self.heart_manager.token = self.login_manger.userToken
-        self.heart_manager.run()
+        # self.heart_manager.run()
         self.setCurrentIndex(12)
     def handle_main_to_alzahimer(self):
         self.alzahimer_manager.base_url=self.base_url
