@@ -25,11 +25,8 @@ class BREAST_MANGER(QtWidgets.QWidget, breast_model.Ui_Form):
         except Exception as e :
             print(e)
 
-        except Exception as e :
-            print(e)
-
     def checker(self):
-            self.acceptedSignal.emit()
+        self.acceptedSignal.emit()
 
 
 

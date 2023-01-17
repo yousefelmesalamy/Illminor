@@ -160,12 +160,15 @@ class Illminor(QtWidgets.QStackedWidget):
     def handle_main_to_heart(self):
         self.heart_manager.base_url=self.base_url
         self.heart_manager.token = self.login_manger.userToken
+        self.heart_manager.run()
         self.setCurrentIndex(12)
     def handle_main_to_alzahimer(self):
         self.alzahimer_manager.base_url=self.base_url
         self.alzahimer_manager.token = self.login_manger.userToken
         self.setCurrentIndex(5)
     def main_to_results(self):
+        self.results_manager.base_url = self.base_url
+        self.results_manager.token = self.login_manger.userToken
         self.setCurrentIndex(13)
     def signup_to_login(self):
         self.clear_login()
@@ -199,13 +202,9 @@ class Illminor(QtWidgets.QStackedWidget):
         self.diabetes_manager.token = self.login_manger.userToken
         self.setCurrentIndex(8)
 
-
-
     def clear_login(self):
         self.login_manger.username_lin.clear()
         self.login_manger.password_lin.clear()
-
-
 
 if __name__ == "__main__":
 

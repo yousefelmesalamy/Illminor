@@ -13,6 +13,7 @@ class Heart_MANGER(QtWidgets.QWidget, heart_model.Ui_Form):
         self.token = ''
         self.show_result_btn_2.clicked.connect(self.run)
     def run(self):
+        msg = QtWidgets.QMessageBox()
         try :
             self.test_url = f"{self.base_url}/heartTest/"
 
@@ -61,7 +62,10 @@ class Heart_MANGER(QtWidgets.QWidget, heart_model.Ui_Form):
 
             try :
                 response = requests.post(self.test_url, json=data, headers=headers)
-                print(response.json())
+                msg.setIcon(msg.Information)
+                msg.setWindowTitle("Information")
+                msg.setText(str(response.json()["response"]))
+                msg.exec_()
             except Exception as e :
                 print(e)
         except Exception as x :

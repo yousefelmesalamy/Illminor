@@ -12,11 +12,13 @@ class RESULTS_MANAGER(QtWidgets.QWidget, results_view.Ui_Form):
         self.setupUi(self)
         self.base_url = "https://illacc.pythonanywhere.com"
         self.token = "ad144b2560cc077fe1dd116d8c007c09c80aeac4"
-        self.run()
+        self.first_time = True
+        self.reload_btn.clicked.connect(self.run)
+        # self.run()
 
 
     def run(self):
-        # self.tableWidget.setRowCount(0)
+        self.tableWidget.setRowCount(0)
         table_headers = ['patient', 'blood test', 'diabtes test', 'parkinson test', 'alzhimar test', 'heart test']
         self.tableWidget.setHorizontalHeaderLabels(table_headers)
 
@@ -30,7 +32,8 @@ class RESULTS_MANAGER(QtWidgets.QWidget, results_view.Ui_Form):
             print("ss",s)
 
         rowPosition = self.tableWidget.rowCount()
-        for rows in self.reply['results'] :
+
+        for rows in self.reply['results']:
 
             try:
                 self.tableWidget.insertRow(rowPosition)

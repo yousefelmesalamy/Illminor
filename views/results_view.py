@@ -21,10 +21,8 @@ class Ui_Form(object):
 "font-size: 20px;")
         self.gridLayout = QtWidgets.QGridLayout(Form)
         self.gridLayout.setObjectName("gridLayout")
-        spacerItem = QtWidgets.QSpacerItem(94, 20, QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem, 2, 4, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(482, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem1, 0, 1, 1, 1)
+        spacerItem = QtWidgets.QSpacerItem(482, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 0, 1, 1, 1)
         self.label_4 = QtWidgets.QLabel(Form)
         self.label_4.setMaximumSize(QtCore.QSize(135, 16777215))
         font = QtGui.QFont()
@@ -39,6 +37,10 @@ class Ui_Form(object):
         self.label_4.setAlignment(QtCore.Qt.AlignCenter)
         self.label_4.setObjectName("label_4")
         self.gridLayout.addWidget(self.label_4, 0, 2, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(648, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem1, 0, 3, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 55, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.gridLayout.addItem(spacerItem2, 4, 1, 1, 1)
         self.tableWidget = QtWidgets.QTableWidget(Form)
         self.tableWidget.setMinimumSize(QtCore.QSize(1247, 300))
         self.tableWidget.setMaximumSize(QtCore.QSize(16777215, 16777215))
@@ -68,7 +70,7 @@ class Ui_Form(object):
 "\n"
 "QHeaderView {\n"
 "    background-color: #000000;\n"
-"    color: black;\n"
+"    color: white;\n"
 "    border-bottom: 2px solid #BDBDBD;\n"
 "    font-weight: bold;\n"
 "    \n"
@@ -91,12 +93,8 @@ class Ui_Form(object):
         self.tableWidget.verticalHeader().setCascadingSectionResizes(False)
         self.tableWidget.verticalHeader().setHighlightSections(True)
         self.gridLayout.addWidget(self.tableWidget, 2, 1, 2, 3)
-        spacerItem2 = QtWidgets.QSpacerItem(648, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem2, 0, 3, 1, 1)
         spacerItem3 = QtWidgets.QSpacerItem(94, 20, QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout.addItem(spacerItem3, 3, 0, 1, 1)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 55, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
-        self.gridLayout.addItem(spacerItem4, 4, 1, 1, 1)
         self.back_btn = QtWidgets.QPushButton(Form)
         self.back_btn.setMinimumSize(QtCore.QSize(60, 60))
         self.back_btn.setMaximumSize(QtCore.QSize(60, 60))
@@ -126,6 +124,36 @@ class Ui_Form(object):
         self.back_btn.setFlat(True)
         self.back_btn.setObjectName("back_btn")
         self.gridLayout.addWidget(self.back_btn, 0, 0, 1, 1)
+        self.reload_btn = QtWidgets.QPushButton(Form)
+        self.reload_btn.setMinimumSize(QtCore.QSize(60, 60))
+        self.reload_btn.setMaximumSize(QtCore.QSize(60, 60))
+        self.reload_btn.setStyleSheet("QPushButton {\n"
+"    background-color:rgba(6,103,184,255);\n"
+"    color: #FFFFFF;\n"
+"    padding: 2px;\n"
+"    font: bold 15px;\n"
+"    border-width: 6px;\n"
+"    border-radius: 10px;\n"
+"    border-color: #2752B8;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #827397;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"padding-left:5px;\n"
+"padding-top:5px;\n"
+"background-color:rgba(2, 65, 118, 100);\n"
+"background-postion:calc(100% - 10px) center;}\n"
+"")
+        self.reload_btn.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/ICONS/icons/refresh-arrow.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.reload_btn.setIcon(icon1)
+        self.reload_btn.setIconSize(QtCore.QSize(40, 40))
+        self.reload_btn.setObjectName("reload_btn")
+        self.gridLayout.addWidget(self.reload_btn, 2, 0, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(94, 20, QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem4, 2, 4, 1, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)

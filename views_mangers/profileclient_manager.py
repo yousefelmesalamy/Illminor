@@ -16,8 +16,6 @@ class PROFILE_CLIENT_Mnager(QtWidgets.QWidget, profileClient.Ui_Form):
         self.token = ""
         self.firstTime = True
 
-
-
     def run(self):
         msg = QtWidgets.QMessageBox()
         headers = {"Accept": "application/json ; indent=4",
@@ -74,15 +72,15 @@ class PROFILE_CLIENT_Mnager(QtWidgets.QWidget, profileClient.Ui_Form):
         heartTest_model=response["heartTest_model"]
         # chestTest_model=response["chestTest_model"]
         if bloodTest_model != None :
-            self.bloodResult_lbl.setText("bloodTest_model")
+            self.bloodResult_lbl.setText(bloodTest_model)
         if diabtesTest_model != None :
-            self.diabtesResult_lbl.setText("diabtesTest_model")
+            self.diabtesResult_lbl.setText(diabtesTest_model)
         if parkinsonTest_model != None :
-            self.parkinsonResult_lbl.setText("parkinsonTest_model")
+            self.parkinsonResult_lbl.setText(parkinsonTest_model)
         if alzhimarTest_model != None :
-            self.alzhimarResult_lbl.setText("alzhimarTest_model")
+            self.alzhimarResult_lbl.setText(alzhimarTest_model)
         if heartTest_model != None :
-            self.heartResult_lbl.setText("heartTest_model")
+            self.heartResult_lbl.setText(heartTest_model)
         # if chestTest_model != None :
         #     self.chestResult_lbl.setText("chestTest_model")
 

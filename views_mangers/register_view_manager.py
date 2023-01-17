@@ -19,10 +19,16 @@ class Register_Manager(QtWidgets.QWidget, register_view.Ui_Form):
         self.profile_picture_lbl_4.mousePressEvent = self.getfiles
 
     def getfiles(self , event):
+        msg = QtWidgets.QMessageBox()
         self.fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self, 'Single File', '', 'Images (*.png, *.jpeg , *.jpg) ')
         try :
-            self.image = QtGui.QImage(self.fileName)
-            self.profile_picture_lbl_4.setPixmap(QtGui.QPixmap(self.image).scaled(150,150))
+            if len(self.fileName) >5 :
+                self.image = QtGui.QImage(self.fileName)
+                self.profile_picture_lbl_4.setPixmap(QtGui.QPixmap(self.image).scaled(150,150))
+            else:
+                msg.setWindowTitle("Warning")
+                msg.setText("You Must Select A Photo")
+                msg.exec_()
         except Exception as e:
             print(e)
 
@@ -72,7 +78,9 @@ class Register_Manager(QtWidgets.QWidget, register_view.Ui_Form):
                 ('profile_picture', (self.fileName, open(self.fileName, 'rb').read(), 'image/jpeg'))
             ]
         except Exception as RRR :
-            print("file_error",RRR)
+            msg.setWindowTitle("Warning")
+            msg.setText("You Must Select A Photo")
+            msg.exec_()
         try :
             response = requests.post(self.register_url, data=data, files=files, headers=headers)
             if response.status_code == 201:
@@ -86,7 +94,7 @@ class Register_Manager(QtWidgets.QWidget, register_view.Ui_Form):
                 msg.exec_()
 
         except Exception as e:
-            print("response error",e)
+            print("response error", e)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])

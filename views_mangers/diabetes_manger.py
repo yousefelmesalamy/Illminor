@@ -15,6 +15,7 @@ class Diabetes_MANGER(QtWidgets.QWidget, diabetes_model.Ui_Form):
         self.show_result_btn.clicked.connect(self.run)
 
     def run(self):
+        msg = QtWidgets.QMessageBox()
         diabetes_url = f"{self.base_url}/diabtesTest/"
 
 
@@ -44,7 +45,10 @@ class Diabetes_MANGER(QtWidgets.QWidget, diabetes_model.Ui_Form):
 
             try :
                 response = requests.post(diabetes_url, json=data, headers=headers)
-                print(response.json())
+                msg.setIcon(msg.Information)
+                msg.setWindowTitle("Information")
+                msg.setText(str(response.json()["response"]))
+                msg.exec_()
             except Exception as e :
                 print(e)
         except Exception as x :
