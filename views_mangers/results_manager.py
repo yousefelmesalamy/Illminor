@@ -43,6 +43,7 @@ class RESULTS_MANAGER(QtWidgets.QWidget, results_view.Ui_Form):
                 self.tableWidget.setItem(0, 3, QTableWidgetItem(rows['parkinsonTest_model']))
                 self.tableWidget.setItem(0, 4, QTableWidgetItem(rows['alzhimarTest_model']))
                 self.tableWidget.setItem(0, 5, QTableWidgetItem(rows['heartTest_model']))
+                self.tableWidget.setItem(0, 6, QTableWidgetItem(rows['chestTest_model']))
             except Exception as e:
                 print('QTableWidgetItem Error', e)
 
