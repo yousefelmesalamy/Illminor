@@ -85,6 +85,9 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.eTIV_sb.setDecimals(4)
+        self.eTIV_sb.setMinimum(0.0)
+        self.eTIV_sb.setMaximum(999999999999999.0)
         self.eTIV_sb.setObjectName("eTIV_sb")
         self.horizontalLayout_6.addWidget(self.eTIV_sb)
         self.gridLayout.addLayout(self.horizontalLayout_6, 5, 0, 1, 1)
@@ -149,6 +152,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.ASF_sb.setDecimals(4)
+        self.ASF_sb.setMaximum(1e+26)
         self.ASF_sb.setObjectName("ASF_sb")
         self.horizontalLayout_8.addWidget(self.ASF_sb)
         self.gridLayout.addLayout(self.horizontalLayout_8, 7, 0, 1, 1)
@@ -266,6 +271,10 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.nWBV_sb.setDecimals(4)
+        self.nWBV_sb.setMaximum(999999999999999.0)
+        self.nWBV_sb.setSingleStep(1.999999)
+        self.nWBV_sb.setProperty("value", 0.0)
         self.nWBV_sb.setObjectName("nWBV_sb")
         self.horizontalLayout_7.addWidget(self.nWBV_sb)
         self.gridLayout.addLayout(self.horizontalLayout_7, 6, 0, 1, 1)

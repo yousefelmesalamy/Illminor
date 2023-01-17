@@ -116,6 +116,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.glucose_sb.setMaximum(999.0)
         self.glucose_sb.setObjectName("glucose_sb")
         self.horizontalLayout_6.addWidget(self.glucose_sb)
         self.gridLayout.addLayout(self.horizontalLayout_6, 1, 0, 1, 1)
@@ -233,6 +234,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.insulin_sb.setMaximum(999999999.0)
         self.insulin_sb.setObjectName("insulin_sb")
         self.horizontalLayout_3.addWidget(self.insulin_sb)
         self.gridLayout.addLayout(self.horizontalLayout_3, 4, 0, 1, 1)
@@ -311,6 +313,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.dpf_sb.setDecimals(4)
         self.dpf_sb.setObjectName("dpf_sb")
         self.horizontalLayout.addWidget(self.dpf_sb)
         self.gridLayout.addLayout(self.horizontalLayout, 6, 0, 1, 1)

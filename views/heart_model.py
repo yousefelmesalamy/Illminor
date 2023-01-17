@@ -121,6 +121,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.thalach_sb.setMaximum(99999999999.0)
         self.thalach_sb.setObjectName("thalach_sb")
         self.gridLayout_2.addWidget(self.thalach_sb, 7, 1, 1, 1)
         self.label_6 = QtWidgets.QLabel(self.groupBox)
@@ -205,6 +206,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.chol_sb.setMaximum(999999999999.0)
         self.chol_sb.setObjectName("chol_sb")
         self.gridLayout_2.addWidget(self.chol_sb, 4, 1, 1, 1)
         self.oldpeak_sb = QtWidgets.QDoubleSpinBox(self.groupBox)
@@ -345,6 +347,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.trestbps_sb.setMaximum(9999999999.0)
         self.trestbps_sb.setObjectName("trestbps_sb")
         self.gridLayout_2.addWidget(self.trestbps_sb, 3, 1, 1, 1)
         self.label_3 = QtWidgets.QLabel(self.groupBox)

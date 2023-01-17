@@ -173,6 +173,15 @@ QLineEdit:focus {
 
 </string>
           </property>
+          <property name="decimals">
+           <number>4</number>
+          </property>
+          <property name="minimum">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>999999999999999.000000000000000</double>
+          </property>
          </widget>
         </item>
        </layout>
@@ -273,6 +282,12 @@ QLineEdit:focus {
 }
 
 </string>
+          </property>
+          <property name="decimals">
+           <number>4</number>
+          </property>
+          <property name="maximum">
+           <double>100000000000000004764729344.000000000000000</double>
           </property>
          </widget>
         </item>
@@ -420,6 +435,18 @@ QLineEdit:focus {
 }
 
 </string>
+          </property>
+          <property name="decimals">
+           <number>4</number>
+          </property>
+          <property name="maximum">
+           <double>999999999999999.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>1.999999000000000</double>
+          </property>
+          <property name="value">
+           <double>0.000000000000000</double>
           </property>
          </widget>
         </item>

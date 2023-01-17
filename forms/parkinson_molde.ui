@@ -347,7 +347,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-307</y>
            <width>404</width>
            <height>1010</height>
           </rect>
@@ -461,6 +461,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>999999999.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="11" column="1">
@@ -522,6 +528,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>100000000000000000.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="16" column="0">
@@ -567,6 +579,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>999999999999.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="2" column="1">
@@ -601,6 +619,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>999999999999999.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -646,6 +670,12 @@ QLineEdit:focus {
 }
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>10000000000000000.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="18" column="1">
@@ -680,6 +710,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>9999999999.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -729,6 +765,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>100000000000000000.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="2" column="0">
@@ -773,6 +815,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>99999999999.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -890,6 +938,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>99999999999999.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="8" column="1">
@@ -924,6 +978,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>10000000000000000.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -982,6 +1042,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>9999999.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -1068,6 +1134,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>9999999999.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="4" column="0">
@@ -1149,6 +1221,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>99999999.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="2" column="0">
@@ -1193,6 +1271,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>1000000000000000000.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -1239,6 +1323,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>10000000000000000905969664.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="8" column="0">
@@ -1284,6 +1374,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>999999999999999.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="16" column="1">
@@ -1318,6 +1414,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>10000000000000000.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -1364,6 +1466,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>9999999.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="14" column="1">
@@ -1398,6 +1506,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>10000000000000000.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -1460,6 +1574,12 @@ QLineEdit:focus {
 
 </string>
               </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>100000000000000000.000000000000000</double>
+              </property>
              </widget>
             </item>
             <item row="0" column="1">
@@ -1494,6 +1614,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>99999999999999.000000000000000</double>
               </property>
              </widget>
             </item>
@@ -1539,6 +1665,12 @@ QLineEdit:focus {
 }
 
 </string>
+              </property>
+              <property name="decimals">
+               <number>7</number>
+              </property>
+              <property name="maximum">
+               <double>100000000000000000.000000000000000</double>
               </property>
              </widget>
             </item>

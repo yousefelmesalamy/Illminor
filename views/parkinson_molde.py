@@ -178,7 +178,7 @@ class Ui_Form(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 404, 1010))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, -307, 404, 1010))
         self.scrollAreaWidgetContents.setStyleSheet(" border-color:transparent;\n"
 "background-color:transparent;")
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
@@ -239,6 +239,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.spread2_sb.setDecimals(7)
+        self.spread2_sb.setMaximum(999999999.0)
         self.spread2_sb.setObjectName("spread2_sb")
         self.gridLayout_3.addWidget(self.spread2_sb, 16, 1, 1, 1)
         spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -275,6 +277,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.HNR_sb.setDecimals(7)
+        self.HNR_sb.setMaximum(1e+17)
         self.HNR_sb.setObjectName("HNR_sb")
         self.gridLayout_3.addWidget(self.HNR_sb, 10, 1, 1, 1)
         self.label_19 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -311,6 +315,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.DFA_sb.setDecimals(7)
+        self.DFA_sb.setMaximum(999999999999.0)
         self.DFA_sb.setObjectName("DFA_sb")
         self.gridLayout_3.addWidget(self.DFA_sb, 12, 1, 1, 1)
         self.Shimmer_DDA_sb = QtWidgets.QDoubleSpinBox(self.scrollAreaWidgetContents)
@@ -343,6 +349,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.Shimmer_DDA_sb.setDecimals(7)
+        self.Shimmer_DDA_sb.setMaximum(999999999999999.0)
         self.Shimmer_DDA_sb.setObjectName("Shimmer_DDA_sb")
         self.gridLayout_3.addWidget(self.Shimmer_DDA_sb, 2, 1, 1, 1)
         self.label_18 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -378,6 +386,8 @@ class Ui_Form(object):
 "  border: 3px solid #555;\n"
 "}\n"
 "")
+        self.Shimmer_APQ3_sb.setDecimals(7)
+        self.Shimmer_APQ3_sb.setMaximum(1e+16)
         self.Shimmer_APQ3_sb.setObjectName("Shimmer_APQ3_sb")
         self.gridLayout_3.addWidget(self.Shimmer_APQ3_sb, 4, 1, 1, 1)
         self.D2_sb = QtWidgets.QDoubleSpinBox(self.scrollAreaWidgetContents)
@@ -410,6 +420,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.D2_sb.setDecimals(7)
+        self.D2_sb.setMaximum(9999999999.0)
         self.D2_sb.setObjectName("D2_sb")
         self.gridLayout_3.addWidget(self.D2_sb, 18, 1, 1, 1)
         spacerItem11 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -444,6 +456,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.Shimmer_APQ5_sb.setDecimals(7)
+        self.Shimmer_APQ5_sb.setMaximum(1e+17)
         self.Shimmer_APQ5_sb.setObjectName("Shimmer_APQ5_sb")
         self.gridLayout_3.addWidget(self.Shimmer_APQ5_sb, 6, 1, 1, 1)
         self.label_12 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -480,6 +494,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.PPE_sb.setDecimals(7)
+        self.PPE_sb.setMaximum(99999999999.0)
         self.PPE_sb.setObjectName("PPE_sb")
         self.gridLayout_3.addWidget(self.PPE_sb, 20, 1, 1, 1)
         spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -527,6 +543,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_Shimmer_dB_sb.setDecimals(7)
+        self.MDVP_Shimmer_dB_sb.setMaximum(99999999999999.0)
         self.MDVP_Shimmer_dB_sb.setObjectName("MDVP_Shimmer_dB_sb")
         self.gridLayout_3.addWidget(self.MDVP_Shimmer_dB_sb, 0, 1, 1, 1)
         self.MDVP_APQ_sb = QtWidgets.QDoubleSpinBox(self.scrollAreaWidgetContents)
@@ -559,6 +577,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_APQ_sb.setDecimals(7)
+        self.MDVP_APQ_sb.setMaximum(1e+16)
         self.MDVP_APQ_sb.setObjectName("MDVP_APQ_sb")
         self.gridLayout_3.addWidget(self.MDVP_APQ_sb, 8, 1, 1, 1)
         self.label_22 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -597,6 +617,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.spread1_sb.setDecimals(7)
+        self.spread1_sb.setMaximum(9999999.0)
         self.spread1_sb.setObjectName("spread1_sb")
         self.gridLayout_3.addWidget(self.spread1_sb, 14, 1, 1, 1)
         self.label_11 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -644,6 +666,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_PPQ_sb.setDecimals(7)
+        self.MDVP_PPQ_sb.setMaximum(9999999999.0)
         self.MDVP_PPQ_sb.setObjectName("MDVP_PPQ_sb")
         self.gridLayout.addWidget(self.MDVP_PPQ_sb, 12, 1, 1, 1)
         self.label_5 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -688,6 +712,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_Jitter_Abs_sb.setDecimals(7)
+        self.MDVP_Jitter_Abs_sb.setMaximum(99999999.0)
         self.MDVP_Jitter_Abs_sb.setObjectName("MDVP_Jitter_Abs_sb")
         self.gridLayout.addWidget(self.MDVP_Jitter_Abs_sb, 8, 1, 1, 1)
         self.label_4 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -724,6 +750,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.RPDE_sb.setDecimals(7)
+        self.RPDE_sb.setMaximum(1e+18)
         self.RPDE_sb.setObjectName("RPDE_sb")
         self.gridLayout.addWidget(self.RPDE_sb, 20, 1, 1, 1)
         self.label_7 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -760,6 +788,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_Jitter_sb.setDecimals(7)
+        self.MDVP_Jitter_sb.setMaximum(1e+25)
         self.MDVP_Jitter_sb.setObjectName("MDVP_Jitter_sb")
         self.gridLayout.addWidget(self.MDVP_Jitter_sb, 5, 1, 1, 1)
         self.label_6 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -796,6 +826,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.NHR_sb.setDecimals(7)
+        self.NHR_sb.setMaximum(999999999999999.0)
         self.NHR_sb.setObjectName("NHR_sb")
         self.gridLayout.addWidget(self.NHR_sb, 18, 1, 1, 1)
         self.MDVP_Shimmer_sb = QtWidgets.QDoubleSpinBox(self.scrollAreaWidgetContents)
@@ -828,6 +860,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_Shimmer_sb.setDecimals(7)
+        self.MDVP_Shimmer_sb.setMaximum(1e+16)
         self.MDVP_Shimmer_sb.setObjectName("MDVP_Shimmer_sb")
         self.gridLayout.addWidget(self.MDVP_Shimmer_sb, 16, 1, 1, 1)
         self.label_8 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -864,6 +898,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_RAP_sb.setDecimals(7)
+        self.MDVP_RAP_sb.setMaximum(9999999.0)
         self.MDVP_RAP_sb.setObjectName("MDVP_RAP_sb")
         self.gridLayout.addWidget(self.MDVP_RAP_sb, 10, 1, 1, 1)
         self.Jitter_DDP_sb = QtWidgets.QDoubleSpinBox(self.scrollAreaWidgetContents)
@@ -896,6 +932,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.Jitter_DDP_sb.setDecimals(7)
+        self.Jitter_DDP_sb.setMaximum(1e+16)
         self.Jitter_DDP_sb.setObjectName("Jitter_DDP_sb")
         self.gridLayout.addWidget(self.Jitter_DDP_sb, 14, 1, 1, 1)
         spacerItem22 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -932,6 +970,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_Flo_Hz_sb.setDecimals(7)
+        self.MDVP_Flo_Hz_sb.setMaximum(1e+17)
         self.MDVP_Flo_Hz_sb.setObjectName("MDVP_Flo_Hz_sb")
         self.gridLayout.addWidget(self.MDVP_Flo_Hz_sb, 2, 1, 1, 1)
         self.MDVP_Fo_Hz_sb = QtWidgets.QDoubleSpinBox(self.scrollAreaWidgetContents)
@@ -964,6 +1004,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_Fo_Hz_sb.setDecimals(7)
+        self.MDVP_Fo_Hz_sb.setMaximum(99999999999999.0)
         self.MDVP_Fo_Hz_sb.setObjectName("MDVP_Fo_Hz_sb")
         self.gridLayout.addWidget(self.MDVP_Fo_Hz_sb, 0, 1, 1, 1)
         self.label_23 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
@@ -1000,6 +1042,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.MDVP_Fhi_Hz_sb.setDecimals(7)
+        self.MDVP_Fhi_Hz_sb.setMaximum(1e+17)
         self.MDVP_Fhi_Hz_sb.setObjectName("MDVP_Fhi_Hz_sb")
         self.gridLayout.addWidget(self.MDVP_Fhi_Hz_sb, 4, 1, 1, 1)
         spacerItem24 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)

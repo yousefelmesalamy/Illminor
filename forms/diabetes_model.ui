@@ -167,6 +167,9 @@ QLineEdit:focus {
 
 </string>
           </property>
+          <property name="maximum">
+           <double>999.000000000000000</double>
+          </property>
          </widget>
         </item>
        </layout>
@@ -314,6 +317,9 @@ QLineEdit:focus {
 
 </string>
           </property>
+          <property name="maximum">
+           <double>999999999.000000000000000</double>
+          </property>
          </widget>
         </item>
        </layout>
@@ -411,6 +417,9 @@ QLineEdit:focus {
 }
 
 </string>
+          </property>
+          <property name="decimals">
+           <number>4</number>
           </property>
          </widget>
         </item>

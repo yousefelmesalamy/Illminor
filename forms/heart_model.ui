@@ -193,6 +193,9 @@ QLineEdit:focus {
 
 </string>
         </property>
+        <property name="maximum">
+         <double>99999999999.000000000000000</double>
+        </property>
        </widget>
       </item>
       <item row="5" column="0">
@@ -312,6 +315,9 @@ QLineEdit:focus {
 }
 
 </string>
+        </property>
+        <property name="maximum">
+         <double>999999999999.000000000000000</double>
         </property>
        </widget>
       </item>
@@ -482,6 +488,9 @@ QLineEdit:focus {
 }
 
 </string>
+        </property>
+        <property name="maximum">
+         <double>9999999999.000000000000000</double>
         </property>
        </widget>
       </item>

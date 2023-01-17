@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(873, 876)
+        Form.resize(878, 876)
         Form.setStyleSheet("font-family:Ubuntu;\n"
 "font-size: 20px;\n"
 "background-color: rgb(239, 243, 252);")
@@ -134,6 +134,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.adiponcetin_sb.setDecimals(7)
         self.adiponcetin_sb.setObjectName("adiponcetin_sb")
         self.gridLayout.addWidget(self.adiponcetin_sb, 7, 1, 1, 1)
         self.label_3 = QtWidgets.QLabel(self.groupBox_2)
@@ -174,6 +175,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.insuline_sb.setDecimals(3)
         self.insuline_sb.setObjectName("insuline_sb")
         self.gridLayout.addWidget(self.insuline_sb, 4, 1, 1, 1)
         self.glucouse_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
@@ -250,6 +252,8 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.mcp_sb.setDecimals(5)
+        self.mcp_sb.setMaximum(1e+16)
         self.mcp_sb.setObjectName("mcp_sb")
         self.gridLayout.addWidget(self.mcp_sb, 9, 1, 1, 1)
         self.homa_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
@@ -282,6 +286,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.homa_sb.setDecimals(7)
         self.homa_sb.setObjectName("homa_sb")
         self.gridLayout.addWidget(self.homa_sb, 5, 1, 1, 1)
         self.label_4 = QtWidgets.QLabel(self.groupBox_2)
@@ -318,6 +323,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.resistiin_sb.setDecimals(7)
         self.resistiin_sb.setObjectName("resistiin_sb")
         self.gridLayout.addWidget(self.resistiin_sb, 8, 1, 1, 1)
         self.leptin_sb = QtWidgets.QDoubleSpinBox(self.groupBox_2)
@@ -350,6 +356,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
+        self.leptin_sb.setDecimals(7)
         self.leptin_sb.setObjectName("leptin_sb")
         self.gridLayout.addWidget(self.leptin_sb, 6, 1, 1, 1)
         self.leptin = QtWidgets.QLabel(self.groupBox_2)
@@ -394,7 +401,7 @@ class Ui_Form(object):
 "}\n"
 "\n"
 "")
-        self.bmi_sb.setDecimals(5)
+        self.bmi_sb.setDecimals(8)
         self.bmi_sb.setMaximum(10000000.0)
         self.bmi_sb.setObjectName("bmi_sb")
         self.gridLayout.addWidget(self.bmi_sb, 2, 1, 1, 1)
