@@ -14,6 +14,7 @@ class Parkinson_Mnager(QtWidgets.QWidget, parkinson_molde.Ui_Form):
         self.show_result_btn.clicked.connect(self.run)
 
     def run(self):
+        msg = QtWidgets.QMessageBox()
         try:
             self.test_url = f"{self.base_url}/parkinsonTest/"
 
@@ -76,7 +77,10 @@ class Parkinson_Mnager(QtWidgets.QWidget, parkinson_molde.Ui_Form):
 
             try:
                 response = requests.post(self.test_url, json=data, headers=headers)
-                print(response.json())
+                msg.setIcon(msg.Information)
+                msg.setWindowTitle("Information")
+                msg.setText(str(response.json()["response"]))
+                msg.exec_()
             except Exception as e:
                 print(e)
         except Exception as x:

@@ -14,13 +14,9 @@ class Alzahimer_MANGER(QtWidgets.QWidget, alzhimer_model.Ui_Form):
         self.token = ''
         self.show_result_btn.clicked.connect(self.run)
     def run(self):
+        msg = QtWidgets.QMessageBox()
         try :
             self.test_url = f"{self.base_url}/alzhimarTest/"
-
-            print(self.test_url)
-            print(self.token)
-            print(self.base_url)
-
 
             Age = int(self.Age_sb.text())
             gender = self.gender_comboBox.currentText()
@@ -54,18 +50,16 @@ class Alzahimer_MANGER(QtWidgets.QWidget, alzhimer_model.Ui_Form):
             headers = {"Accept":"application/json ; indent=4",
                        "Content-Type":"application/json", "Authorization":f"Token {self.token}"}
 
-            try :
+            try:
                 response = requests.post(self.test_url, json=data, headers=headers)
-                print(response.json())
-            except Exception as e :
+                msg.setIcon(msg.Information)
+                msg.setWindowTitle("Information")
+                msg.setText(str(response.json()["response"]))
+                msg.exec_()
+            except Exception as e:
                 print(e)
-        except Exception as x :
+        except Exception as x:
             print(x)
-
-
-
-
-
 
 
 if __name__ == "__main__":

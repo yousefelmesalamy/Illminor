@@ -15,9 +15,9 @@ class Blood_MANGER(QtWidgets.QWidget, blood_model.Ui_Form):
         self.show_result_btn.clicked.connect(self.run)
 
     def run(self):
+        msg = QtWidgets.QMessageBox()
         try :
             self.blood_url = f"{self.base_url}/bloodTest/"
-
             age = int(self.age_lin.text())
             bmi = float(self.bmi_sb.text())
             glucouse = float(self.glucouse_sb.text())
@@ -48,10 +48,13 @@ class Blood_MANGER(QtWidgets.QWidget, blood_model.Ui_Form):
 
             try :
                 response = requests.post(self.blood_url, json=data, headers=headers)
-                print(response.json())
-            except Exception as e :
+                msg.setIcon(msg.Information)
+                msg.setWindowTitle("Information")
+                msg.setText(str(response.json()["response"]))
+                msg.exec_()
+            except Exception as e:
                 print(e)
-        except Exception as x :
+        except Exception as x:
             print(x)
 
 
