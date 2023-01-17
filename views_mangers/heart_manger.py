@@ -17,24 +17,27 @@ class Heart_MANGER(QtWidgets.QWidget, heart_model.Ui_Form):
         try :
             self.test_url = f"{self.base_url}/heartTest/"
 
-            age = int(self.age_sb.text())
-            sex = self.sex_comboBox.currentText()
+            age = int(self.Age_sb.text())
+            sex = self.Sex_combobox.currentText()
             if sex == "Male" :
                 sex = 0
             else:
                 sex = 1
 
-            cp = float(self.cp_sb.text())
-            trestbps = float(self.trestbps_sb.text())
-            chol = float(self.chol_sb.text())
-            fbs = float(self.fbs_sb.text())
-            restecg = float(self.restecg_sb.text())
-            thalach = float(self.thalach_sb.text())
-            exang = float(self.exang_sb.text())
-            oldpeak = float(self.oldpeak_sb.text())
-            slope = float(self.slope_sb.text())
-            ca = float(self.ca_sb.text())
-            thal = float(self.thal_sb.text())
+            Age = float(self.Age_sb.text())
+            Sex = self.Sex_combobox.currentText()
+            if Sex == "Male":
+                Sex = 0
+            else:
+                Sex = 1
+            ChestPainType = float(self.ChestPainType_sb.text())
+            Cholesterol = float(self.Cholesterol_sb.text())
+            FastingBS = float(self.FastingBS_sb.text())
+            MaxHR = float(self.MaxHR_sb.text())
+            ExerciseAngina = float(self.ExerciseAngina_sb.text())
+            Oldpeak = float(self.Oldpeak_sb.text())
+            ST_Slope = float(self.ST_Slope_sb.text())
+
 
         except Exception as param_errors :
             print("param errors",param_errors)
@@ -43,19 +46,16 @@ class Heart_MANGER(QtWidgets.QWidget, heart_model.Ui_Form):
 
             data = {
 
-                "age":age,
-                "sex":sex,
-                "cp": cp,
-                "trestbps":trestbps,
-                "chol":chol,
-                "fbs":fbs,
-                "restecg":restecg,
-                "thalach":thalach,
-                "exang":exang,
-                "oldpeak":oldpeak,
-                "slope":slope,
-                "ca":ca,
-                "thal":thal,
+                "Age":Age,
+                "Sex":Sex,
+                "Cholesterol": Cholesterol,
+                "ChestPainType":ChestPainType,
+                "FastingBS":FastingBS,
+                "MaxHR":MaxHR,
+                "ExerciseAngina":ExerciseAngina,
+                "ST_Slope":ST_Slope,
+                "Oldpeak":Oldpeak,
+
             }
             headers = {"Accept":"application/json ; indent=4",
                        "Content-Type":"application/json", "Authorization":f"Token {self.token}"}
