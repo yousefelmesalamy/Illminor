@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1022</width>
-    <height>912</height>
+    <width>1028</width>
+    <height>927</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -150,18 +150,63 @@ background-color:transparent;</string>
       <bool>false</bool>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="7" column="0">
-       <widget class="QLabel" name="label_8">
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_9">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255,0);</string>
         </property>
         <property name="text">
-         <string>thalach</string>
+         <string>ST_Slope</string>
         </property>
        </widget>
       </item>
-      <item row="7" column="1">
-       <widget class="QDoubleSpinBox" name="thalach_sb">
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="ChestPainType_sb">
+        <property name="styleSheet">
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+        </property>
+        <property name="text">
+         <string>Oldpeak</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QDoubleSpinBox" name="ExerciseAngina_sb">
         <property name="styleSheet">
          <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -198,18 +243,146 @@ QLineEdit:focus {
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+        </property>
+        <property name="text">
+         <string>age</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QDoubleSpinBox" name="FastingBS_sb">
+        <property name="styleSheet">
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
        <widget class="QLabel" name="label_6">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255,0);</string>
         </property>
         <property name="text">
-         <string>fbs</string>
+         <string>FastingBS</string>
         </property>
        </widget>
       </item>
-      <item row="9" column="1">
-       <widget class="QDoubleSpinBox" name="slope_sb">
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="Cholesterol_sb">
+        <property name="styleSheet">
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+        </property>
+        <property name="maximum">
+         <double>999999999999.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="Age_sb">
+        <property name="styleSheet">
+         <string notr="true">  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #959595;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  outline: none;
+
+  caret-color: transparent;;
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+
+QLineEdit{
+border: 1px solid #ABAFB7;
+
+}
+QLineEdit:focus {
+  border: 3px solid #555;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+        </property>
+        <property name="text">
+         <string>ExerciseAngina</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QDoubleSpinBox" name="MaxHR_sb">
         <property name="styleSheet">
          <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -253,76 +426,8 @@ QLineEdit:focus {
         </property>
        </widget>
       </item>
-      <item row="9" column="0">
-       <widget class="QLabel" name="label_9">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>slope</string>
-        </property>
-       </widget>
-      </item>
-      <item row="11" column="0">
-       <widget class="QLabel" name="label_12">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>thal</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>age</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="1">
-       <widget class="QDoubleSpinBox" name="chol_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-        </property>
-        <property name="maximum">
-         <double>999999999999.000000000000000</double>
-        </property>
-       </widget>
-      </item>
-      <item row="12" column="1">
-       <widget class="QDoubleSpinBox" name="oldpeak_sb">
+      <item row="8" column="1">
+       <widget class="QDoubleSpinBox" name="ST_Slope_sb">
         <property name="styleSheet">
          <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -356,28 +461,8 @@ QLineEdit:focus {
         </property>
        </widget>
       </item>
-      <item row="12" column="0">
-       <widget class="QLabel" name="label_26">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>oldpeak</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_4">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>trestbps</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="1">
-       <widget class="QDoubleSpinBox" name="restecg_sb">
+      <item row="7" column="1">
+       <widget class="QDoubleSpinBox" name="Oldpeak_sb">
         <property name="styleSheet">
          <string notr="true">  height: 32px;
   border-radius: 4px;
@@ -411,86 +496,23 @@ QLineEdit:focus {
         </property>
        </widget>
       </item>
-      <item row="11" column="1">
-       <widget class="QDoubleSpinBox" name="thal_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-        </property>
-       </widget>
-      </item>
-      <item row="6" column="0">
+      <item row="5" column="0">
        <widget class="QLabel" name="label_7">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255,0);</string>
         </property>
         <property name="text">
-         <string>restecg</string>
+         <string>MaxHR</string>
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
-       <widget class="QDoubleSpinBox" name="trestbps_sb">
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_5">
         <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
+         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
         </property>
-        <property name="maximum">
-         <double>9999999999.000000000000000</double>
+        <property name="text">
+         <string>Cholesterol</string>
         </property>
        </widget>
       </item>
@@ -500,152 +522,12 @@ QLineEdit:focus {
          <string notr="true">background-color: rgb(255, 255, 255,0);</string>
         </property>
         <property name="text">
-         <string>cp</string>
-        </property>
-       </widget>
-      </item>
-      <item row="5" column="1">
-       <widget class="QDoubleSpinBox" name="fbs_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-        </property>
-       </widget>
-      </item>
-      <item row="14" column="1">
-       <widget class="QDoubleSpinBox" name="pregnancies_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-        </property>
-       </widget>
-      </item>
-      <item row="10" column="1">
-       <widget class="QDoubleSpinBox" name="ca_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="1">
-       <widget class="QDoubleSpinBox" name="exang_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
+         <string>ChestPainType</string>
         </property>
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QComboBox" name="sex_comboBox">
+       <widget class="QComboBox" name="Sex_combobox">
         <property name="minimumSize">
          <size>
           <width>0</width>
@@ -680,116 +562,6 @@ padding:15px;
            <normaloff>:/icons/icons/female.png</normaloff>:/icons/icons/female.png</iconset>
          </property>
         </item>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QDoubleSpinBox" name="cp_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-        </property>
-       </widget>
-      </item>
-      <item row="8" column="0">
-       <widget class="QLabel" name="label_10">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>exang</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QSpinBox" name="age_sb">
-        <property name="styleSheet">
-         <string notr="true">  height: 32px;
-  border-radius: 4px;
-  border: 1px solid #959595;
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  width: 80px;
-  outline: none;
-
-  caret-color: transparent;;
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-
-QLineEdit{
-border: 1px solid #ABAFB7;
-
-}
-QLineEdit:focus {
-  border: 3px solid #555;
-}
-
-</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_5">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>chol</string>
-        </property>
-       </widget>
-      </item>
-      <item row="10" column="0">
-       <widget class="QLabel" name="label_11">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>ca</string>
-        </property>
-       </widget>
-      </item>
-      <item row="14" column="0">
-       <widget class="QLabel" name="label_27">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255,0);</string>
-        </property>
-        <property name="text">
-         <string>pregnancies</string>
-        </property>
        </widget>
       </item>
      </layout>
