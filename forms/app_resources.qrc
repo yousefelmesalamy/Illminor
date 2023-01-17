@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="ICONS">
+    <file>icons/refresh-arrow.png</file>
+    <file>icons/refresh-page-option.png</file>
     <file>icons/Untitled-1.png</file>
     <file>icons/refresh-arrow.png</file>
     <file>icons/refresh (1).png</file>
