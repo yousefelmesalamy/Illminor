@@ -134,7 +134,7 @@ QTableView::item:selected {
 
 QHeaderView {
     background-color: #000000;
-    color: white;
+    color: black;
     border-bottom: 2px solid #BDBDBD;
 	font-weight: bold;
 	
@@ -152,13 +152,13 @@ QTableView::item[text=null] {
       <number>0</number>
      </property>
      <property name="columnCount">
-      <number>6</number>
+      <number>7</number>
      </property>
      <attribute name="horizontalHeaderCascadingSectionResizes">
       <bool>false</bool>
      </attribute>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>200</number>
+      <number>180</number>
      </attribute>
      <attribute name="horizontalHeaderHighlightSections">
       <bool>true</bool>
@@ -175,9 +175,16 @@ QTableView::item[text=null] {
      <attribute name="verticalHeaderCascadingSectionResizes">
       <bool>false</bool>
      </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>36</number>
+     </attribute>
      <attribute name="verticalHeaderHighlightSections">
       <bool>true</bool>
      </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>36</number>
+     </attribute>
+     <column/>
      <column/>
      <column/>
      <column/>

@@ -19,7 +19,7 @@ class RESULTS_MANAGER(QtWidgets.QWidget, results_view.Ui_Form):
 
     def run(self):
         self.tableWidget.setRowCount(0)
-        table_headers = ['patient', 'blood test', 'diabtes test', 'parkinson test', 'alzhimar test', 'heart test']
+        table_headers = ['Patient', 'Blood Test', 'Diabtes Test', 'Parkinson Test', 'Alzhimar Test', 'Heart Test', 'Chest Test']
         self.tableWidget.setHorizontalHeaderLabels(table_headers)
 
         self.result_url = f"{self.base_url}/users/"
